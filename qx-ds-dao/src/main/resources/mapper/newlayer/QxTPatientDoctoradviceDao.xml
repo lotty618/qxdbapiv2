@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTPatientDoctoradviceDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatientDoctoradvice">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="DAUID" jdbcType="VARCHAR" property="dauid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="INHOSTYPE" jdbcType="VARCHAR" property="inhostype" />
+    <result column="INHOSNO" jdbcType="VARCHAR" property="inhosno" />
+    <result column="PLANTIME" jdbcType="TIMESTAMP" property="plantime" />
+    <result column="OPNAME" jdbcType="VARCHAR" property="opname" />
+    <result column="ORDERDATE" jdbcType="TIMESTAMP" property="orderdate" />
+    <result column="ORDERDOCTORNAME" jdbcType="VARCHAR" property="orderdoctorname" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="OPTYPE" jdbcType="DECIMAL" property="optype" />
+    <result column="ORDERLOCALCN" jdbcType="VARCHAR" property="orderlocalcn" />
+    <result column="DATASTATUS" jdbcType="DECIMAL" property="datastatus" />
+    <result column="ISINVALID" jdbcType="DECIMAL" property="isinvalid" />
+    <result column="ISDEL" jdbcType="DECIMAL" property="isdel" />
+    <result column="CREATETIME" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="UPDATETIME" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="HOCUS" jdbcType="VARCHAR" property="hocus" />
+    <result column="ORDER_DOCTOR_CODE" jdbcType="VARCHAR" property="orderDoctorCode" />
+  </resultMap>
+</mapper>

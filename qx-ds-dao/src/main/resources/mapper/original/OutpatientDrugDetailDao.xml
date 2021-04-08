@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientDrugDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientDrugDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <id column="OUTPAT_DRUG_ID" jdbcType="VARCHAR" property="outpatDrugId" />
+    <result column="PRESCRIBE_NO" jdbcType="VARCHAR" property="prescribeNo" />
+    <result column="CN_MEDICINE_TYPE_CODE" jdbcType="VARCHAR" property="cnMedicineTypeCode" />
+    <result column="DRUG_TYPE_CODE" jdbcType="VARCHAR" property="drugTypeCode" />
+    <result column="DRUG_LOCAL_CODE" jdbcType="VARCHAR" property="drugLocalCode" />
+    <result column="DRUG_NAME" jdbcType="VARCHAR" property="drugName" />
+    <result column="DRUG_FORM_CODE" jdbcType="VARCHAR" property="drugFormCode" />
+    <result column="DRUG_USE_DAYS" jdbcType="DECIMAL" property="drugUseDays" />
+    <result column="DRUG_USE_FREQ" jdbcType="VARCHAR" property="drugUseFreq" />
+    <result column="DRUG_DOSE_UNIT" jdbcType="VARCHAR" property="drugDoseUnit" />
+    <result column="DRUG_PER_DOSE" jdbcType="DECIMAL" property="drugPerDose" />
+    <result column="DRUG_TOTAL_DOSE" jdbcType="DECIMAL" property="drugTotalDose" />
+    <result column="PER_USE_NUM" jdbcType="DECIMAL" property="perUseNum" />
+    <result column="PER_USE_NUM_UNIT" jdbcType="VARCHAR" property="perUseNumUnit" />
+    <result column="GIVE_DRUG_WAY_NAME" jdbcType="VARCHAR" property="giveDrugWayName" />
+    <result column="DRUG_ROUTE_CODE" jdbcType="VARCHAR" property="drugRouteCode" />
+    <result column="DRUG_STD_CODE" jdbcType="VARCHAR" property="drugStdCode" />
+    <result column="DRUG_STD_NAME" jdbcType="VARCHAR" property="drugStdName" />
+    <result column="DRUG_TOTAL_UNIT" jdbcType="VARCHAR" property="drugTotalUnit" />
+    <result column="SPEC" jdbcType="DECIMAL" property="spec" />
+    <result column="SKIN_TEST_DISCRIMINATION" jdbcType="VARCHAR" property="skinTestDiscrimination" />
+    <result column="GROUP_NO" jdbcType="VARCHAR" property="groupNo" />
+    <result column="DDD_VALUE" jdbcType="DECIMAL" property="dddValue" />
+    <result column="CRUCIAL_DRUG_NAME" jdbcType="VARCHAR" property="crucialDrugName" />
+    <result column="CRUCIAL_DRUG_USAGE" jdbcType="VARCHAR" property="crucialDrugUsage" />
+    <result column="DRUG_ADVERSE_REACTION" jdbcType="VARCHAR" property="drugAdverseReaction" />
+    <result column="HAS_CONTIGENCY" jdbcType="DECIMAL" property="hasContigency" />
+    <result column="PLACE_OF_ORI" jdbcType="VARCHAR" property="placeOfOri" />
+    <result column="ANT_GRADE" jdbcType="VARCHAR" property="antGrade" />
+    <result column="HAS_SPI_DRUG" jdbcType="VARCHAR" property="hasSpiDrug" />
+    <result column="HAS_ANE_DRUG" jdbcType="VARCHAR" property="hasAneDrug" />
+    <result column="HAS_BASIC_DRUG" jdbcType="VARCHAR" property="hasBasicDrug" />
+    <result column="HAS_DRUG_INF" jdbcType="VARCHAR" property="hasDrugInf" />
+    <result column="DRUG_PAC_SPE_UNIT" jdbcType="VARCHAR" property="drugPacSpeUnit" />
+    <result column="DRUG_PAC_SPE_FAC" jdbcType="VARCHAR" property="drugPacSpeFac" />
+    <result column="MED_OFR_QUA" jdbcType="DECIMAL" property="medOfrQua" />
+    <result column="MED_OFR_UNIT" jdbcType="VARCHAR" property="medOfrUnit" />
+    <result column="FOOTNOTE" jdbcType="VARCHAR" property="footnote" />
+    <result column="DRUG_STOP_DTIME" jdbcType="TIMESTAMP" property="drugStopDtime" />
+    <result column="DRUG_START_DTIME" jdbcType="TIMESTAMP" property="drugStartDtime" />
+    <result column="MED_OFR_DTIME" jdbcType="TIMESTAMP" property="medOfrDtime" />
+    <result column="PROV_HEALTHCARE_CODE" jdbcType="VARCHAR" property="provHealthcareCode" />
+    <result column="CITY_HEALTHCARE_CODE" jdbcType="VARCHAR" property="cityHealthcareCode" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, SET_SER_NUM, OUTPAT_DRUG_ID, PRESCRIBE_NO, 
+    CN_MEDICINE_TYPE_CODE, DRUG_TYPE_CODE, DRUG_LOCAL_CODE, DRUG_NAME, DRUG_FORM_CODE, 
+    DRUG_USE_DAYS, DRUG_USE_FREQ, DRUG_DOSE_UNIT, DRUG_PER_DOSE, DRUG_TOTAL_DOSE, PER_USE_NUM, 
+    PER_USE_NUM_UNIT, GIVE_DRUG_WAY_NAME, DRUG_ROUTE_CODE, DRUG_STD_CODE, DRUG_STD_NAME, 
+    DRUG_TOTAL_UNIT, SPEC, SKIN_TEST_DISCRIMINATION, GROUP_NO, DDD_VALUE, CRUCIAL_DRUG_NAME, 
+    CRUCIAL_DRUG_USAGE, DRUG_ADVERSE_REACTION, HAS_CONTIGENCY, PLACE_OF_ORI, ANT_GRADE, 
+    HAS_SPI_DRUG, HAS_ANE_DRUG, HAS_BASIC_DRUG, HAS_DRUG_INF, DRUG_PAC_SPE_UNIT, DRUG_PAC_SPE_FAC, 
+    MED_OFR_QUA, MED_OFR_UNIT, FOOTNOTE, DRUG_STOP_DTIME, DRUG_START_DTIME, MED_OFR_DTIME, 
+    PROV_HEALTHCARE_CODE, CITY_HEALTHCARE_CODE, NOTES, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

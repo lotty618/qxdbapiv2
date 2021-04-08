@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EhrLaboratoryReportDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EhrLaboratoryReport">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="RETRIEVE_DATE" jdbcType="TIMESTAMP" property="retrieveDate" />
+    <result column="CATALOG_CODE" jdbcType="VARCHAR" property="catalogCode" />
+    <result column="CATALOG_NAME" jdbcType="VARCHAR" property="catalogName" />
+    <result column="REPORT_TITLE" jdbcType="VARCHAR" property="reportTitle" />
+    <result column="EFFECTIVE_DTIME" jdbcType="TIMESTAMP" property="effectiveDtime" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="BIRTH_DATE" jdbcType="TIMESTAMP" property="birthDate" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="CONTACTS_TEL_NO" jdbcType="VARCHAR" property="contactsTelNo" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="AUTHOR_ID" jdbcType="VARCHAR" property="authorId" />
+    <result column="REPORT_CREATE_DATE" jdbcType="TIMESTAMP" property="reportCreateDate" />
+    <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName" />
+    <result column="AUTHENTICATOR_ID" jdbcType="VARCHAR" property="authenticatorId" />
+    <result column="AUTHENTICATOR_NAME" jdbcType="VARCHAR" property="authenticatorName" />
+    <result column="AUTHENTICATOR_DATE" jdbcType="TIMESTAMP" property="authenticatorDate" />
+    <result column="PARTICIPANT_ID" jdbcType="VARCHAR" property="participantId" />
+    <result column="PARTICIPANT_NAME" jdbcType="VARCHAR" property="participantName" />
+    <result column="PARTICIPANT_DATE" jdbcType="TIMESTAMP" property="participantDate" />
+    <result column="PARTICIPANT_DEPT_CODE" jdbcType="VARCHAR" property="participantDeptCode" />
+    <result column="PARTICIPANT_DEPT_NAME" jdbcType="VARCHAR" property="participantDeptName" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="ORDER_PRIORITY" jdbcType="VARCHAR" property="orderPriority" />
+    <result column="SPECIMEN_NO" jdbcType="VARCHAR" property="specimenNo" />
+    <result column="SPECIMEN_CLASS" jdbcType="VARCHAR" property="specimenClass" />
+    <result column="SPECIMEN_DETERMINER_CODE" jdbcType="VARCHAR" property="specimenDeterminerCode" />
+    <result column="SPECIMEN_DETERMINER_NAME" jdbcType="VARCHAR" property="specimenDeterminerName" />
+    <result column="SPECIMEN_RISK_CODE" jdbcType="VARCHAR" property="specimenRiskCode" />
+    <result column="SPECIMEN_RISK_NAME" jdbcType="VARCHAR" property="specimenRiskName" />
+    <result column="SPECIMEN_QUANTITY_CODE" jdbcType="VARCHAR" property="specimenQuantityCode" />
+    <result column="SPECIMEN_QUANTITY_NAME" jdbcType="VARCHAR" property="specimenQuantityName" />
+    <result column="SPECIMEN_REJECTREASON_CD" jdbcType="VARCHAR" property="specimenRejectreasonCd" />
+    <result column="SPECIMEN_REJECTREASON_NM" jdbcType="VARCHAR" property="specimenRejectreasonNm" />
+    <result column="PERFORMER_DEPT_CODE" jdbcType="VARCHAR" property="performerDeptCode" />
+    <result column="PERFORMER_DEPT_NAME" jdbcType="VARCHAR" property="performerDeptName" />
+    <result column="PERFORMER_DOCTOR" jdbcType="VARCHAR" property="performerDoctor" />
+    <result column="LAB_PERFORMER_DATE" jdbcType="TIMESTAMP" property="labPerformerDate" />
+    <result column="DIAGNOSE_CODE" jdbcType="VARCHAR" property="diagnoseCode" />
+    <result column="DIAGNOSE_NAME" jdbcType="VARCHAR" property="diagnoseName" />
+    <result column="DIAG_ORG_NAME" jdbcType="VARCHAR" property="diagOrgName" />
+    <result column="DIAG_DATE" jdbcType="TIMESTAMP" property="diagDate" />
+    <result column="SPECIMEN_STATUS" jdbcType="VARCHAR" property="specimenStatus" />
+    <result column="SPECIMEN_SAMPLE_DATE" jdbcType="TIMESTAMP" property="specimenSampleDate" />
+    <result column="SPECIMEN_RECEIVE_DATE" jdbcType="TIMESTAMP" property="specimenReceiveDate" />
+    <result column="LAB_METHOD_NAME" jdbcType="VARCHAR" property="labMethodName" />
+    <result column="SPECIMEN_NAME" jdbcType="VARCHAR" property="specimenName" />
+    <result column="LAB_INSTRUMENT" jdbcType="VARCHAR" property="labInstrument" />
+    <result column="LAB_PURPOSE" jdbcType="VARCHAR" property="labPurpose" />
+    <result column="SPECIMEN_COLLECT_OPERATOR" jdbcType="VARCHAR" property="specimenCollectOperator" />
+    <result column="SPECIMEN_ACCEPT_OPERATOR" jdbcType="VARCHAR" property="specimenAcceptOperator" />
+    <result column="PRINT_DATE" jdbcType="TIMESTAMP" property="printDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="PRINT_REPORT_TYPE" jdbcType="VARCHAR" property="printReportType" />
+    <result column="PRINT_REPORT_TYPE_CODE" jdbcType="VARCHAR" property="printReportTypeCode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, REPORT_FORM_NO, EVENT_TYPE_CN, RETRIEVE_DATE, 
+    CATALOG_CODE, "CATALOG_NAME", REPORT_TITLE, EFFECTIVE_DTIME, "NAME", SEX_CODE, SEX_CN,
+    BIRTH_DATE, AGE, CONTACTS_TEL_NO, DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, 
+    AUTHOR_ID, REPORT_CREATE_DATE, AUTHOR_NAME, AUTHENTICATOR_ID, AUTHENTICATOR_NAME, 
+    AUTHENTICATOR_DATE, PARTICIPANT_ID, PARTICIPANT_NAME, PARTICIPANT_DATE, PARTICIPANT_DEPT_CODE, 
+    PARTICIPANT_DEPT_NAME, ORDER_ID, ORDER_PRIORITY, SPECIMEN_NO, SPECIMEN_CLASS, SPECIMEN_DETERMINER_CODE, 
+    SPECIMEN_DETERMINER_NAME, SPECIMEN_RISK_CODE, SPECIMEN_RISK_NAME, SPECIMEN_QUANTITY_CODE, 
+    SPECIMEN_QUANTITY_NAME, SPECIMEN_REJECTREASON_CD, SPECIMEN_REJECTREASON_NM, PERFORMER_DEPT_CODE, 
+    PERFORMER_DEPT_NAME, PERFORMER_DOCTOR, LAB_PERFORMER_DATE, DIAGNOSE_CODE, DIAGNOSE_NAME, 
+    DIAG_ORG_NAME, DIAG_DATE, SPECIMEN_STATUS, SPECIMEN_SAMPLE_DATE, SPECIMEN_RECEIVE_DATE, 
+    LAB_METHOD_NAME, SPECIMEN_NAME, LAB_INSTRUMENT, LAB_PURPOSE, SPECIMEN_COLLECT_OPERATOR, 
+    SPECIMEN_ACCEPT_OPERATOR, PRINT_DATE, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, 
+    CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, PRINT_REPORT_TYPE, 
+    PRINT_REPORT_TYPE_CODE
+  </sql>
+</mapper>

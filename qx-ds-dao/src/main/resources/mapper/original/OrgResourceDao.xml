@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OrgResourceDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OrgResource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="RESOURCES_ID" jdbcType="VARCHAR" property="resourcesId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="YEAR" jdbcType="DECIMAL" property="year" />
+    <result column="DEPT_COUNT" jdbcType="DECIMAL" property="deptCount" />
+    <result column="FORMATION_BEDS" jdbcType="DECIMAL" property="formationBeds" />
+    <result column="ACTION_BED_COUNT" jdbcType="DECIMAL" property="actionBedCount" />
+    <result column="DOCTOR_COUNT" jdbcType="DECIMAL" property="doctorCount" />
+    <result column="PRACTICING_DOC_COUNT" jdbcType="DECIMAL" property="practicingDocCount" />
+    <result column="REGISTER_NURSE_COUNT" jdbcType="DECIMAL" property="registerNurseCount" />
+    <result column="PHARMACIST_COUNT" jdbcType="DECIMAL" property="pharmacistCount" />
+    <result column="HEATH_TECHCS_COUNT" jdbcType="DECIMAL" property="heathTechcsCount" />
+    <result column="OTHER_TECHCS_COUNT" jdbcType="DECIMAL" property="otherTechcsCount" />
+    <result column="MANAGER_COUNT" jdbcType="DECIMAL" property="managerCount" />
+    <result column="TEST_TECHCS_COUNT" jdbcType="DECIMAL" property="testTechcsCount" />
+    <result column="IMGAGE_TECHCS_COUNT" jdbcType="DECIMAL" property="imgageTechcsCount" />
+    <result column="ACTION_OPEN_BED_DAYS" jdbcType="DECIMAL" property="actionOpenBedDays" />
+    <result column="ACTION_OCCU_BED_DAYS" jdbcType="DECIMAL" property="actionOccuBedDays" />
+    <result column="OUT_OCCU_BED_DAYS" jdbcType="DECIMAL" property="outOccuBedDays" />
+    <result column="OBS_BED_DAYS" jdbcType="DECIMAL" property="obsBedDays" />
+    <result column="OUT_COUNT" jdbcType="DECIMAL" property="outCount" />
+    <result column="UP_TEN_THOUS_COUNT" jdbcType="DECIMAL" property="upTenThousCount" />
+    <result column="BET_10_49_W_COUNT" jdbcType="DECIMAL" property="bet1049WCount" />
+    <result column="BET_50_99_W_COUNT" jdbcType="DECIMAL" property="bet5099WCount" />
+    <result column="UP_100_W_COUNT" jdbcType="DECIMAL" property="up100WCount" />
+    <result column="UP_TEN_THS_WORTH" jdbcType="DECIMAL" property="upTenThsWorth" />
+    <result column="NEG_PRESS_BEDS" jdbcType="DECIMAL" property="negPressBeds" />
+    <result column="PICU_BEDS" jdbcType="DECIMAL" property="picuBeds" />
+    <result column="RICU_BEDS" jdbcType="DECIMAL" property="ricuBeds" />
+    <result column="CERTFD_ASS_DOC_COUNT" jdbcType="DECIMAL" property="certfdAssDocCount" />
+    <result column="CERTFD_PUB_DOC_COUNT" jdbcType="DECIMAL" property="certfdPubDocCount" />
+    <result column="CERTFD_MOU_DOC_COUNT" jdbcType="DECIMAL" property="certfdMouDocCount" />
+    <result column="CERTFD_CLIN_DOC_COUNT" jdbcType="DECIMAL" property="certfdClinDocCount" />
+    <result column="CERTFD_TRDN_DOC_COUNT" jdbcType="DECIMAL" property="certfdTrdnDocCount" />
+    <result column="CERTFD_ASS_PUB_DOC_COUNT" jdbcType="DECIMAL" property="certfdAssPubDocCount" />
+    <result column="CERTFD_ASS_MOU_DOC_COUNT" jdbcType="DECIMAL" property="certfdAssMouDocCount" />
+    <result column="CERTFD_ASS_CLIN_DOC_COUNT" jdbcType="DECIMAL" property="certfdAssClinDocCount" />
+    <result column="CERTFD_ASS_TRDN_DOC_COUNT" jdbcType="DECIMAL" property="certfdAssTrdnDocCount" />
+    <result column="ICU_DOC_COUNT" jdbcType="DECIMAL" property="icuDocCount" />
+    <result column="CLIN_NURSE_COUNT" jdbcType="DECIMAL" property="clinNurseCount" />
+    <result column="WARD_NURSE_COUNT" jdbcType="DECIMAL" property="wardNurseCount" />
+    <result column="ICU_NURSE_COUNT" jdbcType="DECIMAL" property="icuNurseCount" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, RESOURCES_ID, ORG_ID, ORG_NAME, "YEAR", DEPT_COUNT, FORMATION_BEDS, ACTION_BED_COUNT,
+    DOCTOR_COUNT, PRACTICING_DOC_COUNT, REGISTER_NURSE_COUNT, PHARMACIST_COUNT, HEATH_TECHCS_COUNT, 
+    OTHER_TECHCS_COUNT, MANAGER_COUNT, TEST_TECHCS_COUNT, IMGAGE_TECHCS_COUNT, ACTION_OPEN_BED_DAYS, 
+    ACTION_OCCU_BED_DAYS, OUT_OCCU_BED_DAYS, OBS_BED_DAYS, OUT_COUNT, UP_TEN_THOUS_COUNT, 
+    BET_10_49_W_COUNT, BET_50_99_W_COUNT, UP_100_W_COUNT, UP_TEN_THS_WORTH, NEG_PRESS_BEDS, 
+    PICU_BEDS, RICU_BEDS, CERTFD_ASS_DOC_COUNT, CERTFD_PUB_DOC_COUNT, CERTFD_MOU_DOC_COUNT, 
+    CERTFD_CLIN_DOC_COUNT, CERTFD_TRDN_DOC_COUNT, CERTFD_ASS_PUB_DOC_COUNT, CERTFD_ASS_MOU_DOC_COUNT, 
+    CERTFD_ASS_CLIN_DOC_COUNT, CERTFD_ASS_TRDN_DOC_COUNT, ICU_DOC_COUNT, CLIN_NURSE_COUNT, 
+    WARD_NURSE_COUNT, ICU_NURSE_COUNT, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, 
+    CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

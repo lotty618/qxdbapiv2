@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInfaustReportInfoDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInfaustReportInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="IRIUID" jdbcType="VARCHAR" property="iriuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="INFAUST_EVENT_NO" jdbcType="VARCHAR" property="infaustEventNo" />
+    <result column="INFAUST_EVENT_TYPE" jdbcType="VARCHAR" property="infaustEventType" />
+    <result column="INFAUST_EVENT_TYPE_CN" jdbcType="VARCHAR" property="infaustEventTypeCn" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="VISIT_TYPE" jdbcType="VARCHAR" property="visitType" />
+    <result column="VISIT_TYPE_CN" jdbcType="VARCHAR" property="visitTypeCn" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="VISIT_NO" jdbcType="VARCHAR" property="visitNo" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="INFAUST_LEVEL" jdbcType="VARCHAR" property="infaustLevel" />
+    <result column="INFAUST_LEVEL_CN" jdbcType="VARCHAR" property="infaustLevelCn" />
+    <result column="REPORT_PERSON_ID" jdbcType="VARCHAR" property="reportPersonId" />
+    <result column="REPORT_PERSON_NAME" jdbcType="VARCHAR" property="reportPersonName" />
+    <result column="REPORT_DEPT_CODE" jdbcType="VARCHAR" property="reportDeptCode" />
+    <result column="REPORT_DEPT_NAME" jdbcType="VARCHAR" property="reportDeptName" />
+    <result column="REPORT_TIME" jdbcType="TIMESTAMP" property="reportTime" />
+    <result column="EVENT_TIME" jdbcType="TIMESTAMP" property="eventTime" />
+    <result column="EVENT_DEPT_CODE" jdbcType="VARCHAR" property="eventDeptCode" />
+    <result column="EVENT_DEPT_NAME" jdbcType="VARCHAR" property="eventDeptName" />
+    <result column="EVENT_COURSE" jdbcType="VARCHAR" property="eventCourse" />
+    <result column="EVENT_CAUSE" jdbcType="VARCHAR" property="eventCause" />
+    <result column="CORRECTIVE_ACTION" jdbcType="VARCHAR" property="correctiveAction" />
+    <result column="SOLVE_DEPT_CODE" jdbcType="VARCHAR" property="solveDeptCode" />
+    <result column="SOLVE_DEPT_NAME" jdbcType="VARCHAR" property="solveDeptName" />
+    <result column="SOLVE_ID" jdbcType="VARCHAR" property="solveId" />
+    <result column="SOLVE_NAME" jdbcType="VARCHAR" property="solveName" />
+    <result column="SOLVE_ADVISE" jdbcType="VARCHAR" property="solveAdvise" />
+    <result column="INTERVAL_TIME" jdbcType="VARCHAR" property="intervalTime" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_NAME" jdbcType="VARCHAR" property="cancelName" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="ISTYPICAL" jdbcType="VARCHAR" property="istypical" />
+    <result column="NSOLVE_DEPT_CODE" jdbcType="VARCHAR" property="nsolveDeptCode" />
+    <result column="NSOLVE_DEPT_NAME" jdbcType="VARCHAR" property="nsolveDeptName" />
+    <result column="NSOLVE_ID" jdbcType="VARCHAR" property="nsolveId" />
+    <result column="NSOLVE_NAME" jdbcType="VARCHAR" property="nsolveName" />
+    <result column="SOLVED_DEPT_CODE" jdbcType="VARCHAR" property="solvedDeptCode" />
+    <result column="SOLVED_DEPT_NAME" jdbcType="VARCHAR" property="solvedDeptName" />
+    <result column="SOLVED_ID" jdbcType="VARCHAR" property="solvedId" />
+    <result column="SOLVED_NAME" jdbcType="VARCHAR" property="solvedName" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

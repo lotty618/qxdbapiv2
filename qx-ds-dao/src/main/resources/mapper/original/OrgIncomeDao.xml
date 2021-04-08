@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OrgIncomeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OrgIncome">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="INCOME_ID" jdbcType="VARCHAR" property="incomeId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="YEAR" jdbcType="DECIMAL" property="year" />
+    <result column="MONTH" jdbcType="DECIMAL" property="month" />
+    <result column="OUTPATIENT_INCOME" jdbcType="DECIMAL" property="outpatientIncome" />
+    <result column="OUTPATIENT_REGIST_INCOME" jdbcType="DECIMAL" property="outpatientRegistIncome" />
+    <result column="OUTPATIENT_INSPECT_INCOME" jdbcType="DECIMAL" property="outpatientInspectIncome" />
+    <result column="OUTPATIENT_CHECK_INCOME" jdbcType="DECIMAL" property="outpatientCheckIncome" />
+    <result column="OUTPATIENT_TEST_INCOME" jdbcType="DECIMAL" property="outpatientTestIncome" />
+    <result column="OUTPATIENT_TREATMENT_INCOME" jdbcType="DECIMAL" property="outpatientTreatmentIncome" />
+    <result column="OUTPATIENT_OPERATE_INCOME" jdbcType="DECIMAL" property="outpatientOperateIncome" />
+    <result column="OUTPATIENT_MATERIAL_INCOME" jdbcType="DECIMAL" property="outpatientMaterialIncome" />
+    <result column="OUTPATIENT_MED_INCOME" jdbcType="DECIMAL" property="outpatientMedIncome" />
+    <result column="OUTPATIENT_WESTERN_MED_INCOME" jdbcType="DECIMAL" property="outpatientWesternMedIncome" />
+    <result column="OUTPATIENT_CN_PATENT_INCOME" jdbcType="DECIMAL" property="outpatientCnPatentIncome" />
+    <result column="OUTPATIENT_CN_HERBAL_INCOME" jdbcType="DECIMAL" property="outpatientCnHerbalIncome" />
+    <result column="OUTPATIENT_OTHER_INCOME" jdbcType="DECIMAL" property="outpatientOtherIncome" />
+    <result column="INPATIENT_INCOME" jdbcType="DECIMAL" property="inpatientIncome" />
+    <result column="INPATIENT_BED_INCOME" jdbcType="DECIMAL" property="inpatientBedIncome" />
+    <result column="INPATIENT_INSPECT_INCOME" jdbcType="DECIMAL" property="inpatientInspectIncome" />
+    <result column="INPATIENT_CHECK_INCOME" jdbcType="DECIMAL" property="inpatientCheckIncome" />
+    <result column="INPATIENT_TEST_INCOME" jdbcType="DECIMAL" property="inpatientTestIncome" />
+    <result column="INPATIENT_TREATMENT_INCOME" jdbcType="DECIMAL" property="inpatientTreatmentIncome" />
+    <result column="INPATIENT_OPERATE_INCOME" jdbcType="DECIMAL" property="inpatientOperateIncome" />
+    <result column="INPATIENT_NURSING_INCOME" jdbcType="DECIMAL" property="inpatientNursingIncome" />
+    <result column="INPATIENT_MATERIAL_INCOME" jdbcType="DECIMAL" property="inpatientMaterialIncome" />
+    <result column="INPATIENT_MED_INCOME" jdbcType="DECIMAL" property="inpatientMedIncome" />
+    <result column="INPATIENT_WESTERN_MED_INCOME" jdbcType="DECIMAL" property="inpatientWesternMedIncome" />
+    <result column="INPATIENT_CN_PATENT_INCOME" jdbcType="DECIMAL" property="inpatientCnPatentIncome" />
+    <result column="INPATIENT_CN_HERBAL_INCOME" jdbcType="DECIMAL" property="inpatientCnHerbalIncome" />
+    <result column="INPATIENT_OTHER_INCOME" jdbcType="DECIMAL" property="inpatientOtherIncome" />
+    <result column="FINANCE_SUB_INCOME" jdbcType="DECIMAL" property="financeSubIncome" />
+    <result column="TOTAL_EXPDEND" jdbcType="DECIMAL" property="totalExpdend" />
+    <result column="MEDICAL_EXPDEND" jdbcType="DECIMAL" property="medicalExpdend" />
+    <result column="CLIN_SVR_EXPDEND" jdbcType="DECIMAL" property="clinSvrExpdend" />
+    <result column="MEDICAL_TECH_EXPDEND" jdbcType="DECIMAL" property="medicalTechExpdend" />
+    <result column="MEDICAL_ASS_EXPDEND" jdbcType="DECIMAL" property="medicalAssExpdend" />
+    <result column="FINAC_ALC_EXPDEND" jdbcType="DECIMAL" property="finacAlcExpdend" />
+    <result column="EDU_ITEM_EXPDEND" jdbcType="DECIMAL" property="eduItemExpdend" />
+    <result column="MNG_EXPDEND" jdbcType="DECIMAL" property="mngExpdend" />
+    <result column="RETIRED_EXPDEND" jdbcType="DECIMAL" property="retiredExpdend" />
+    <result column="STAFF_EXPDEND" jdbcType="DECIMAL" property="staffExpdend" />
+    <result column="BASE_WAGE_EXPDEND" jdbcType="DECIMAL" property="baseWageExpdend" />
+    <result column="ALLOWANCE_EXPDEND" jdbcType="DECIMAL" property="allowanceExpdend" />
+    <result column="BONUS_EXPDEND" jdbcType="DECIMAL" property="bonusExpdend" />
+    <result column="MERIT_EXPDEND" jdbcType="DECIMAL" property="meritExpdend" />
+    <result column="MATERIAL_EXPDEND" jdbcType="DECIMAL" property="materialExpdend" />
+    <result column="MED_EXPDEND" jdbcType="DECIMAL" property="medExpdend" />
+    <result column="INTRO_TALENTS_EXPDEND" jdbcType="DECIMAL" property="introTalentsExpdend" />
+    <result column="MEDC_ACCI_COPST_FUNDS" jdbcType="DECIMAL" property="medcAcciCopstFunds" />
+    <result column="TOTAL_ASSET_FUNDS" jdbcType="DECIMAL" property="totalAssetFunds" />
+    <result column="FLOW_ASSET_FUNDS" jdbcType="DECIMAL" property="flowAssetFunds" />
+    <result column="NET_ASSET_FUNDS" jdbcType="DECIMAL" property="netAssetFunds" />
+    <result column="DEBT_FUNDS" jdbcType="DECIMAL" property="debtFunds" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, INCOME_ID, ORG_ID, ORG_NAME, "YEAR", "MONTH", OUTPATIENT_INCOME, OUTPATIENT_REGIST_INCOME,
+    OUTPATIENT_INSPECT_INCOME, OUTPATIENT_CHECK_INCOME, OUTPATIENT_TEST_INCOME, OUTPATIENT_TREATMENT_INCOME, 
+    OUTPATIENT_OPERATE_INCOME, OUTPATIENT_MATERIAL_INCOME, OUTPATIENT_MED_INCOME, OUTPATIENT_WESTERN_MED_INCOME, 
+    OUTPATIENT_CN_PATENT_INCOME, OUTPATIENT_CN_HERBAL_INCOME, OUTPATIENT_OTHER_INCOME, 
+    INPATIENT_INCOME, INPATIENT_BED_INCOME, INPATIENT_INSPECT_INCOME, INPATIENT_CHECK_INCOME, 
+    INPATIENT_TEST_INCOME, INPATIENT_TREATMENT_INCOME, INPATIENT_OPERATE_INCOME, INPATIENT_NURSING_INCOME, 
+    INPATIENT_MATERIAL_INCOME, INPATIENT_MED_INCOME, INPATIENT_WESTERN_MED_INCOME, INPATIENT_CN_PATENT_INCOME, 
+    INPATIENT_CN_HERBAL_INCOME, INPATIENT_OTHER_INCOME, FINANCE_SUB_INCOME, TOTAL_EXPDEND, 
+    MEDICAL_EXPDEND, CLIN_SVR_EXPDEND, MEDICAL_TECH_EXPDEND, MEDICAL_ASS_EXPDEND, FINAC_ALC_EXPDEND, 
+    EDU_ITEM_EXPDEND, MNG_EXPDEND, RETIRED_EXPDEND, STAFF_EXPDEND, BASE_WAGE_EXPDEND, 
+    ALLOWANCE_EXPDEND, BONUS_EXPDEND, MERIT_EXPDEND, MATERIAL_EXPDEND, MED_EXPDEND, INTRO_TALENTS_EXPDEND, 
+    MEDC_ACCI_COPST_FUNDS, TOTAL_ASSET_FUNDS, FLOW_ASSET_FUNDS, NET_ASSET_FUNDS, DEBT_FUNDS, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

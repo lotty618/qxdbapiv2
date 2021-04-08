@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.HealthExamBasicDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.HealthExamBasic">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="HEALTH_EXAM_FORM_NO" jdbcType="VARCHAR" property="healthExamFormNo" />
+    <result column="HEALTH_RECORD_NO" jdbcType="VARCHAR" property="healthRecordNo" />
+    <result column="CARD_NO" jdbcType="VARCHAR" property="cardNo" />
+    <result column="EXAM_START_DATE" jdbcType="TIMESTAMP" property="examStartDate" />
+    <result column="EXAM_END_DATE" jdbcType="TIMESTAMP" property="examEndDate" />
+    <result column="RETRIEVE_DATE" jdbcType="TIMESTAMP" property="retrieveDate" />
+    <result column="TOTAL_FEE" jdbcType="DECIMAL" property="totalFee" />
+    <result column="REPORT_TITLE" jdbcType="VARCHAR" property="reportTitle" />
+    <result column="EFFECTIVE_DATE" jdbcType="TIMESTAMP" property="effectiveDate" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_NAME" jdbcType="VARCHAR" property="sexName" />
+    <result column="BIRTH_DATE" jdbcType="TIMESTAMP" property="birthDate" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="EMPLOYER_NAME" jdbcType="VARCHAR" property="employerName" />
+    <result column="ID_NO" jdbcType="VARCHAR" property="idNo" />
+    <result column="OCCUPATION_CODE" jdbcType="VARCHAR" property="occupationCode" />
+    <result column="OCCUPATION_NAME" jdbcType="VARCHAR" property="occupationName" />
+    <result column="MARRIAGE_CODE" jdbcType="VARCHAR" property="marriageCode" />
+    <result column="MARRIAGE_NAME" jdbcType="VARCHAR" property="marriageName" />
+    <result column="EXAM_SUMMARY" jdbcType="VARCHAR" property="examSummary" />
+    <result column="EXAM_CHIEF_DOCTOR" jdbcType="VARCHAR" property="examChiefDoctor" />
+    <result column="HEALTH_GUIDE" jdbcType="VARCHAR" property="healthGuide" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="DIAG_EXPLAN" jdbcType="VARCHAR" property="diagExplan" />
+    <result column="FOOD_GUIDANCE" jdbcType="VARCHAR" property="foodGuidance" />
+    <result column="SUMMARIZE_DATE" jdbcType="TIMESTAMP" property="summarizeDate" />
+    <result column="CHECK_DOCTOR" jdbcType="VARCHAR" property="checkDoctor" />
+    <result column="CHECK_DATE" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="PRINT_DATE" jdbcType="TIMESTAMP" property="printDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, HEALTH_EXAM_FORM_NO, HEALTH_RECORD_NO, CARD_NO, EXAM_START_DATE, 
+    EXAM_END_DATE, RETRIEVE_DATE, TOTAL_FEE, REPORT_TITLE, EFFECTIVE_DATE, "NAME", SEX_CODE,
+    SEX_NAME, BIRTH_DATE, AGE, ADDRESS, EMPLOYER_NAME, ID_NO, OCCUPATION_CODE, OCCUPATION_NAME, 
+    MARRIAGE_CODE, MARRIAGE_NAME, EXAM_SUMMARY, EXAM_CHIEF_DOCTOR, HEALTH_GUIDE, NOTES, 
+    DIAG_EXPLAN, FOOD_GUIDANCE, SUMMARIZE_DATE, CHECK_DOCTOR, CHECK_DATE, PRINT_DATE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

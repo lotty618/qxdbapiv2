@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTpPersonDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTpPerson">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="AUID" jdbcType="VARCHAR" property="auid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="PERSON_ID" jdbcType="VARCHAR" property="personId" />
+    <result column="DEPT_ID" jdbcType="VARCHAR" property="deptId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="STSID" jdbcType="VARCHAR" property="stsid" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="PERSON_NAME" jdbcType="VARCHAR" property="personName" />
+    <result column="TITLE_NAME" jdbcType="VARCHAR" property="titleName" />
+    <result column="TITLE_TYPE" jdbcType="DECIMAL" property="titleType" />
+    <result column="WORKNO" jdbcType="VARCHAR" property="workno" />
+    <result column="SPELL" jdbcType="VARCHAR" property="spell" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_NAME" jdbcType="VARCHAR" property="sexName" />
+    <result column="ID_NO" jdbcType="VARCHAR" property="idNo" />
+    <result column="COUNTRY_CODE" jdbcType="VARCHAR" property="countryCode" />
+    <result column="COUNTRY_CN" jdbcType="VARCHAR" property="countryCn" />
+    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="PRACTICIAN_CODE" jdbcType="VARCHAR" property="practicianCode" />
+    <result column="NOSOCOMIAL_CODE" jdbcType="VARCHAR" property="nosocomialCode" />
+    <result column="RESPONSIBILITY_NAME" jdbcType="VARCHAR" property="responsibilityName" />
+    <result column="ASSESS_DATE" jdbcType="TIMESTAMP" property="assessDate" />
+    <result column="ACTIVE_STATUS_NAME" jdbcType="VARCHAR" property="activeStatusName" />
+    <result column="ACTIVE_STATUS_CODE" jdbcType="VARCHAR" property="activeStatusCode" />
+    <result column="ATTEND_DATE" jdbcType="TIMESTAMP" property="attendDate" />
+    <result column="NATIONALITY_NAME" jdbcType="VARCHAR" property="nationalityName" />
+    <result column="MARRIAGE_NAME" jdbcType="VARCHAR" property="marriageName" />
+    <result column="EDUCATION_NAME" jdbcType="VARCHAR" property="educationName" />
+    <result column="TEL_NO" jdbcType="VARCHAR" property="telNo" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="PHOTO" jdbcType="VARCHAR" property="photo" />
+    <result column="STD_DEPT_NAME" jdbcType="VARCHAR" property="stdDeptName" />
+    <result column="POLITICAL_STATUS" jdbcType="VARCHAR" property="politicalStatus" />
+    <result column="IS_PERMANENT_STAFF" jdbcType="DECIMAL" property="isPermanentStaff" />
+    <result column="PRACTIONER_TYPE_NAME" jdbcType="VARCHAR" property="practionerTypeName" />
+    <result column="PRACTIONER_TYPE_CODE" jdbcType="VARCHAR" property="practionerTypeCode" />
+    <result column="NAME_PY" jdbcType="VARCHAR" property="namePy" />
+    <result column="NAME_PINYIN" jdbcType="VARCHAR" property="namePinyin" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

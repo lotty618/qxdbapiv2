@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInpatientExpenseDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInpatientExpenseDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="IEXDUID" jdbcType="VARCHAR" property="iexduid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IEXUID" jdbcType="VARCHAR" property="iexuid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <result column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <result column="TREATMENT_FEE_ID" jdbcType="VARCHAR" property="treatmentFeeId" />
+    <result column="INPATIENT_FEE_TYPE_CODE" jdbcType="VARCHAR" property="inpatientFeeTypeCode" />
+    <result column="INPATIENT_FEE_TYPE_CN" jdbcType="VARCHAR" property="inpatientFeeTypeCn" />
+    <result column="INPATIENT_SETTLE_WAY_CODE" jdbcType="VARCHAR" property="inpatientSettleWayCode" />
+    <result column="INPATIENT_SETTLE_WAY_CN" jdbcType="VARCHAR" property="inpatientSettleWayCn" />
+    <result column="PRICE_ITEM_STD_CODE" jdbcType="VARCHAR" property="priceItemStdCode" />
+    <result column="PRICE_ITEM_STD_NAME" jdbcType="VARCHAR" property="priceItemStdName" />
+    <result column="PRICE_ITEM_LOCAL_CODE" jdbcType="VARCHAR" property="priceItemLocalCode" />
+    <result column="PRICE_ITEM_LOCAL_NAME" jdbcType="VARCHAR" property="priceItemLocalName" />
+    <result column="PRICE_ITEM_UNIT" jdbcType="DECIMAL" property="priceItemUnit" />
+    <result column="PRICE_ITEM_PRICE" jdbcType="DECIMAL" property="priceItemPrice" />
+    <result column="PRICE_ITEM_QUANTITY" jdbcType="DECIMAL" property="priceItemQuantity" />
+    <result column="FEE_AMOUNT" jdbcType="DECIMAL" property="feeAmount" />
+    <result column="INSURANCE_CHARGES" jdbcType="DECIMAL" property="insuranceCharges" />
+    <result column="SELF_PAYMENT" jdbcType="DECIMAL" property="selfPayment" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_NAME" jdbcType="VARCHAR" property="applyDeptName" />
+    <result column="APPLY_DOCTOR" jdbcType="VARCHAR" property="applyDoctor" />
+    <result column="EXEC_DEPT_CODE" jdbcType="VARCHAR" property="execDeptCode" />
+    <result column="EXEC_DEPT_NAME" jdbcType="VARCHAR" property="execDeptName" />
+    <result column="EXEC_DOCTOR" jdbcType="VARCHAR" property="execDoctor" />
+    <result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, IEXDUID, IHUID, PUID, QID, IEXUID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, SET_SER_NUM, 
+    TREATMENT_FEE_ID, INPATIENT_FEE_TYPE_CODE, INPATIENT_FEE_TYPE_CN, INPATIENT_SETTLE_WAY_CODE, 
+    INPATIENT_SETTLE_WAY_CN, PRICE_ITEM_STD_CODE, PRICE_ITEM_STD_NAME, PRICE_ITEM_LOCAL_CODE, 
+    PRICE_ITEM_LOCAL_NAME, PRICE_ITEM_UNIT, PRICE_ITEM_PRICE, PRICE_ITEM_QUANTITY, FEE_AMOUNT, 
+    INSURANCE_CHARGES, SELF_PAYMENT, NOTES, APPLY_DEPT_CODE, APPLY_DEPT_NAME, APPLY_DOCTOR, 
+    EXEC_DEPT_CODE, EXEC_DEPT_NAME, EXEC_DOCTOR, "OPERATOR", STATUS_CODE, STATUS_CN,
+    CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, EFFECTIVE, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

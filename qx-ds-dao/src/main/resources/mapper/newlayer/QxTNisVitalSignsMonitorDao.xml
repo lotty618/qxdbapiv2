@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTNisVitalSignsMonitorDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTNisVitalSignsMonitor">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="NVSMUID" jdbcType="VARCHAR" property="nvsmuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="DECIMAL" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="IN_DATE" jdbcType="TIMESTAMP" property="inDate" />
+    <result column="WRITE_DATE" jdbcType="TIMESTAMP" property="writeDate" />
+    <result column="BREATHING_RATE" jdbcType="VARCHAR" property="breathingRate" />
+    <result column="VENTILATOR_MARK" jdbcType="VARCHAR" property="ventilatorMark" />
+    <result column="PULSES" jdbcType="VARCHAR" property="pulses" />
+    <result column="HEART_RATE" jdbcType="VARCHAR" property="heartRate" />
+    <result column="TEMPERATURE" jdbcType="VARCHAR" property="temperature" />
+    <result column="SBP" jdbcType="VARCHAR" property="sbp" />
+    <result column="DBP" jdbcType="VARCHAR" property="dbp" />
+    <result column="WEIGHT" jdbcType="VARCHAR" property="weight" />
+    <result column="ABDOMEN_CIRCUM" jdbcType="VARCHAR" property="abdomenCircum" />
+    <result column="NURSING_OBS_ITEM_NAME" jdbcType="VARCHAR" property="nursingObsItemName" />
+    <result column="NURSING_OBS_ITEM_CODE" jdbcType="VARCHAR" property="nursingObsItemCode" />
+    <result column="NURSE_SIGNATURE" jdbcType="VARCHAR" property="nurseSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="NURSING_OBS_RESULT" jdbcType="VARCHAR" property="nursingObsResult" />
+  </resultMap>
+</mapper>

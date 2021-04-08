@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTRiskDaValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTRiskDaValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="RDVUID" jdbcType="VARCHAR" property="rdvuid" />
+    <result column="RVUID" jdbcType="VARCHAR" property="rvuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="ORDER_DATE" jdbcType="TIMESTAMP" property="orderDate" />
+    <result column="ORDER_DOCTOR_NAME" jdbcType="VARCHAR" property="orderDoctorName" />
+    <result column="ORDER_LOCAL_CN" jdbcType="VARCHAR" property="orderLocalCn" />
+    <result column="DAUID" jdbcType="VARCHAR" property="dauid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

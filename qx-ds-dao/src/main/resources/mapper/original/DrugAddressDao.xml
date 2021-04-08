@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.DrugAddressDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.DrugAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="REVISION" jdbcType="VARCHAR" property="revision" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="DRUG_CODE" jdbcType="VARCHAR" property="drugCode" />
+    <result column="DRUG_ORIGIN" jdbcType="VARCHAR" property="drugOrigin" />
+    <result column="PRICESTOCK" jdbcType="VARCHAR" property="pricestock" />
+    <result column="PRICERETAIL" jdbcType="VARCHAR" property="priceretail" />
+    <result column="PRICEWHOLESALE" jdbcType="VARCHAR" property="pricewholesale" />
+    <result column="MONEYSTOCK" jdbcType="VARCHAR" property="moneystock" />
+    <result column="MONEYRETAIL" jdbcType="VARCHAR" property="moneyretail" />
+    <result column="MONEYWHOLESALE" jdbcType="VARCHAR" property="moneywholesale" />
+    <result column="ISABOLISH" jdbcType="VARCHAR" property="isabolish" />
+    <result column="APPROVALNUM" jdbcType="VARCHAR" property="approvalnum" />
+    <result column="GMPAPPROVE" jdbcType="VARCHAR" property="gmpapprove" />
+    <result column="MAKEPRICETYPE" jdbcType="VARCHAR" property="makepricetype" />
+    <result column="MAKEPRICEFORMULA" jdbcType="VARCHAR" property="makepriceformula" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, REVISION, ORG_ID, DRUG_CODE, DRUG_ORIGIN, PRICESTOCK, PRICERETAIL, PRICEWHOLESALE, 
+    MONEYSTOCK, MONEYRETAIL, MONEYWHOLESALE, ISABOLISH, APPROVALNUM, GMPAPPROVE, MAKEPRICETYPE, 
+    MAKEPRICEFORMULA, STATUS_CODE, STATUS_CN, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    SYSCR_TIME, SYSUP_TIME, EFFECTIVE
+  </sql>
+</mapper>

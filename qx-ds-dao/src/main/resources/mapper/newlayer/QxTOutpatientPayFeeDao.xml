@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientPayFeeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientPayFee">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="OPFUID" jdbcType="VARCHAR" property="opfuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <result column="INV_NUM" jdbcType="VARCHAR" property="invNum" />
+    <result column="SET_SOU" jdbcType="DECIMAL" property="setSou" />
+    <result column="CHA_REC" jdbcType="DECIMAL" property="chaRec" />
+    <result column="COST_AMOUNT" jdbcType="DECIMAL" property="costAmount" />
+    <result column="HEALTHCARE_AMOUNT" jdbcType="DECIMAL" property="healthcareAmount" />
+    <result column="OWN_EXP_AMOUNT" jdbcType="DECIMAL" property="ownExpAmount" />
+    <result column="EXA_FEE" jdbcType="DECIMAL" property="exaFee" />
+    <result column="TRE_FEE" jdbcType="DECIMAL" property="treFee" />
+    <result column="SUR_FEE" jdbcType="DECIMAL" property="surFee" />
+    <result column="RADIO_CHA_FEE" jdbcType="DECIMAL" property="radioChaFee" />
+    <result column="LAB_FEE" jdbcType="DECIMAL" property="labFee" />
+    <result column="CHA_FEE" jdbcType="DECIMAL" property="chaFee" />
+    <result column="OTH_FEE" jdbcType="DECIMAL" property="othFee" />
+    <result column="CN_HERB_MED" jdbcType="DECIMAL" property="cnHerbMed" />
+    <result column="CN_MED_COSTS" jdbcType="DECIMAL" property="cnMedCosts" />
+    <result column="CHA_REF_TIME" jdbcType="TIMESTAMP" property="chaRefTime" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, OPFUID, PUID, PNUID, ORGUID, QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, SET_SER_NUM, 
+    INV_NUM, SET_SOU, CHA_REC, COST_AMOUNT, HEALTHCARE_AMOUNT, OWN_EXP_AMOUNT, EXA_FEE, 
+    TRE_FEE, SUR_FEE, RADIO_CHA_FEE, LAB_FEE, CHA_FEE, OTH_FEE, CN_HERB_MED, CN_MED_COSTS, 
+    CHA_REF_TIME, LAST_UPD_DATE, EFFECTIVE, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

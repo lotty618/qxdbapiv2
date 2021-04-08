@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.BuyPurchaseDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.BuyPurchase">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="BUY_ID" jdbcType="VARCHAR" property="buyId" />
+    <id column="BUY_NO" jdbcType="VARCHAR" property="buyNo" />
+    <result column="DRUG_CODE" jdbcType="VARCHAR" property="drugCode" />
+    <result column="DRUG_NAME" jdbcType="VARCHAR" property="drugName" />
+    <result column="DRUG_SPEC" jdbcType="VARCHAR" property="drugSpec" />
+    <result column="UNITS" jdbcType="VARCHAR" property="units" />
+    <result column="DRUG_FORM" jdbcType="VARCHAR" property="drugForm" />
+    <result column="TOXI_PROPERTY" jdbcType="VARCHAR" property="toxiProperty" />
+    <result column="DOSE_PER_UNIT" jdbcType="VARCHAR" property="dosePerUnit" />
+    <result column="DOSE_UNITS" jdbcType="VARCHAR" property="doseUnits" />
+    <result column="DRUG_INDICATOR" jdbcType="VARCHAR" property="drugIndicator" />
+    <result column="INPUT_CODE" jdbcType="VARCHAR" property="inputCode" />
+    <result column="WANT_NUMBER" jdbcType="VARCHAR" property="wantNumber" />
+    <result column="STORER" jdbcType="VARCHAR" property="storer" />
+    <result column="STOCK_NUMBER" jdbcType="VARCHAR" property="stockNumber" />
+    <result column="STOCK_SUPPLIER" jdbcType="VARCHAR" property="stockSupplier" />
+    <result column="BUYER" jdbcType="VARCHAR" property="buyer" />
+    <result column="CHECK_NUMBER" jdbcType="VARCHAR" property="checkNumber" />
+    <result column="CHECK_SUPPLIER" jdbcType="VARCHAR" property="checkSupplier" />
+    <result column="CHECKER" jdbcType="VARCHAR" property="checker" />
+    <result column="FLAG" jdbcType="VARCHAR" property="flag" />
+    <result column="PACK_SPEC" jdbcType="VARCHAR" property="packSpec" />
+    <result column="PACK_UNIT" jdbcType="VARCHAR" property="packUnit" />
+    <result column="FIRM_ID" jdbcType="VARCHAR" property="firmId" />
+    <result column="PURCHASE_PRICE" jdbcType="VARCHAR" property="purchasePrice" />
+    <result column="STORAGE" jdbcType="VARCHAR" property="storage" />
+    <result column="EXECUTED_NUMBER" jdbcType="VARCHAR" property="executedNumber" />
+    <result column="IMPORT_DOCUMENT" jdbcType="VARCHAR" property="importDocument" />
+    <result column="ISBASE" jdbcType="VARCHAR" property="isbase" />
+    <result column="ISCENTRALIZE" jdbcType="VARCHAR" property="iscentralize" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ORG_ID, BUY_ID, BUY_NO, DRUG_CODE, DRUG_NAME, DRUG_SPEC, UNITS, DRUG_FORM, TOXI_PROPERTY, 
+    DOSE_PER_UNIT, DOSE_UNITS, DRUG_INDICATOR, INPUT_CODE, WANT_NUMBER, STORER, STOCK_NUMBER, 
+    STOCK_SUPPLIER, BUYER, CHECK_NUMBER, CHECK_SUPPLIER, CHECKER, FLAG, PACK_SPEC, PACK_UNIT, 
+    FIRM_ID, PURCHASE_PRICE, "STORAGE", EXECUTED_NUMBER, IMPORT_DOCUMENT, ISBASE, ISCENTRALIZE,
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

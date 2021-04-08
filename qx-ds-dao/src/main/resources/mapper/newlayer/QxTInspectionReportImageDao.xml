@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInspectionReportImageDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInspectionReportImage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="IRIUID" jdbcType="VARCHAR" property="iriuid" />
+    <result column="IRUID" jdbcType="VARCHAR" property="iruid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <result column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <result column="IMAGE_ID" jdbcType="VARCHAR" property="imageId" />
+    <result column="IMAGE_SAVE_PATH" jdbcType="VARCHAR" property="imageSavePath" />
+    <result column="IMAGE" jdbcType="VARCHAR" property="image" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="REMOTEUSER" jdbcType="VARCHAR" property="remoteuser" />
+    <result column="REMOTEPWD" jdbcType="VARCHAR" property="remotepwd" />
+    <result column="PATH_TYPE" jdbcType="VARCHAR" property="pathType" />
+    <result column="PATH_PORT" jdbcType="VARCHAR" property="pathPort" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, IRIUID, IRUID, QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_TYPE_CN, EVENT_NO, 
+    REPORT_FORM_NO, IMAGE_ID, IMAGE_SAVE_PATH, IMAGE, MODIFIED_TIME, EFFECTIVE, REMOTEUSER, 
+    REMOTEPWD, PATH_TYPE, PATH_PORT, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EventTreatmentRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EventTreatmentRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="TREATMENT_ID" jdbcType="VARCHAR" property="treatmentId" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="E_ORDER_NO" jdbcType="VARCHAR" property="eOrderNo" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="WEIGHT" jdbcType="DECIMAL" property="weight" />
+    <result column="DISEASE_DIAGNOSIS" jdbcType="VARCHAR" property="diseaseDiagnosis" />
+    <result column="DISEASE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diseaseDiagnosisName" />
+    <result column="GUIDE_SUGGEST" jdbcType="VARCHAR" property="guideSuggest" />
+    <result column="DIAG_OPERTION_MARK" jdbcType="VARCHAR" property="diagOpertionMark" />
+    <result column="ALLERGY_HISTORY_MARK" jdbcType="VARCHAR" property="allergyHistoryMark" />
+    <result column="ALLERGY_HISTORY" jdbcType="VARCHAR" property="allergyHistory" />
+    <result column="ORDER_REMARK" jdbcType="VARCHAR" property="orderRemark" />
+    <result column="TREAMENT_FUTURE" jdbcType="VARCHAR" property="treamentFuture" />
+    <result column="VISIT_WAY_CODE" jdbcType="VARCHAR" property="visitWayCode" />
+    <result column="VISIT_WAY_CN" jdbcType="VARCHAR" property="visitWayCn" />
+    <result column="FOLLOWUP_DATE" jdbcType="TIMESTAMP" property="followupDate" />
+    <result column="FOLLOWUP_PERIOD_CODE" jdbcType="VARCHAR" property="followupPeriodCode" />
+    <result column="FOLLOWUP_PERIOD_CN" jdbcType="VARCHAR" property="followupPeriodCn" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_CN" jdbcType="VARCHAR" property="operationCn" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="BODY_PART_CODE" jdbcType="VARCHAR" property="bodyPartCode" />
+    <result column="BODY_PART_NAME" jdbcType="VARCHAR" property="bodyPartName" />
+    <result column="OPERATION_METHOD_DESC" jdbcType="VARCHAR" property="operationMethodDesc" />
+    <result column="OPERATION_COUNT" jdbcType="DECIMAL" property="operationCount" />
+    <result column="ORDER_PERFORMER" jdbcType="VARCHAR" property="orderPerformer" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="MEDICINE_NAME" jdbcType="VARCHAR" property="medicineName" />
+    <result column="DRUGS_USAGE" jdbcType="VARCHAR" property="drugsUsage" />
+    <result column="DRUG_USING_FREQ_CODE" jdbcType="VARCHAR" property="drugUsingFreqCode" />
+    <result column="DRUG_USING_FREQ_CN" jdbcType="VARCHAR" property="drugUsingFreqCn" />
+    <result column="DRUG_DOSE_UNIT" jdbcType="VARCHAR" property="drugDoseUnit" />
+    <result column="DRUG_PRE_DOSE" jdbcType="DECIMAL" property="drugPreDose" />
+    <result column="DRUG_TOTAL_DOSE" jdbcType="DECIMAL" property="drugTotalDose" />
+    <result column="DRUG_ROUTE_CODE" jdbcType="VARCHAR" property="drugRouteCode" />
+    <result column="DRUG_ROUTE_CN" jdbcType="VARCHAR" property="drugRouteCn" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, TREATMENT_ID, EVENT_TYPE_CN, E_ORDER_NO, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, WEIGHT, DISEASE_DIAGNOSIS, DISEASE_DIAGNOSIS_NAME, GUIDE_SUGGEST, DIAG_OPERTION_MARK, 
+    ALLERGY_HISTORY_MARK, ALLERGY_HISTORY, ORDER_REMARK, TREAMENT_FUTURE, VISIT_WAY_CODE, 
+    VISIT_WAY_CN, FOLLOWUP_DATE, FOLLOWUP_PERIOD_CODE, FOLLOWUP_PERIOD_CN, OPERATION_CODE, 
+    OPERATION_CN, OPERATION_DATE, BODY_PART_CODE, BODY_PART_NAME, OPERATION_METHOD_DESC, 
+    OPERATION_COUNT, ORDER_PERFORMER, SIGNATURE_DATE, MEDICINE_NAME, DRUGS_USAGE, DRUG_USING_FREQ_CODE, 
+    DRUG_USING_FREQ_CN, DRUG_DOSE_UNIT, DRUG_PRE_DOSE, DRUG_TOTAL_DOSE, DRUG_ROUTE_CODE, 
+    DRUG_ROUTE_CN, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

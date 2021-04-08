@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OrgStaffDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OrgStaff">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="STAFF_ID" jdbcType="VARCHAR" property="staffId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SPELL" jdbcType="DECIMAL" property="spell" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_NAME" jdbcType="VARCHAR" property="sexName" />
+    <result column="ID_NO" jdbcType="VARCHAR" property="idNo" />
+    <result column="COUNTRY_CODE" jdbcType="VARCHAR" property="countryCode" />
+    <result column="COUNTRY_CN" jdbcType="VARCHAR" property="countryCn" />
+    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="PRACTICIAN_CODE" jdbcType="VARCHAR" property="practicianCode" />
+    <result column="NOSOCOMIAL_CODE" jdbcType="VARCHAR" property="nosocomialCode" />
+    <result column="RESPONSIBILITY_CODE" jdbcType="VARCHAR" property="responsibilityCode" />
+    <result column="RESPONSIBILITY_NAME" jdbcType="VARCHAR" property="responsibilityName" />
+    <result column="ASSESS_DATE" jdbcType="TIMESTAMP" property="assessDate" />
+    <result column="ACTIVE_STATUS_CODE" jdbcType="VARCHAR" property="activeStatusCode" />
+    <result column="ACTIVE_STATUS_NAME" jdbcType="VARCHAR" property="activeStatusName" />
+    <result column="ATTEND_DATE" jdbcType="TIMESTAMP" property="attendDate" />
+    <result column="NATIONALITY_CODE" jdbcType="VARCHAR" property="nationalityCode" />
+    <result column="NATIONALITY_NAME" jdbcType="VARCHAR" property="nationalityName" />
+    <result column="MARRIAGE_CODE" jdbcType="VARCHAR" property="marriageCode" />
+    <result column="MARRIAGE_NAME" jdbcType="VARCHAR" property="marriageName" />
+    <result column="EDUCATION_CODE" jdbcType="VARCHAR" property="educationCode" />
+    <result column="EDUCATION_NAME" jdbcType="VARCHAR" property="educationName" />
+    <result column="TEL_NO" jdbcType="VARCHAR" property="telNo" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="STD_DEPT_CODE" jdbcType="VARCHAR" property="stdDeptCode" />
+    <result column="STD_DEPT_NAME" jdbcType="VARCHAR" property="stdDeptName" />
+    <result column="IS_PERMANENT_STAFF" jdbcType="VARCHAR" property="isPermanentStaff" />
+    <result column="PRACTIONER_TYPE_CODE" jdbcType="VARCHAR" property="practionerTypeCode" />
+    <result column="PRACTIONER_TYPE_NAME" jdbcType="VARCHAR" property="practionerTypeName" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OrgStaff">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="PHOTO" jdbcType="BLOB" property="photo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, STAFF_ID, ORG_ID, ORG_NAME, NAME", SPELL, SEX_CODE, SEX_NAME, ID_NO, COUNTRY_CODE,
+    COUNTRY_CN, BIRTHDAY, PRACTICIAN_CODE, NOSOCOMIAL_CODE, RESPONSIBILITY_CODE, RESPONSIBILITY_NAME, 
+    ASSESS_DATE, ACTIVE_STATUS_CODE, ACTIVE_STATUS_NAME, ATTEND_DATE, NATIONALITY_CODE, 
+    NATIONALITY_NAME, MARRIAGE_CODE, MARRIAGE_NAME, EDUCATION_CODE, EDUCATION_NAME, TEL_NO, 
+    ADDRESS, EMAIL, DEPT_CODE, DEPT_NAME, STD_DEPT_CODE, STD_DEPT_NAME, IS_PERMANENT_STAFF, 
+    PRACTIONER_TYPE_CODE, PRACTIONER_TYPE_NAME, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    PHOTO
+  </sql>
+</mapper>

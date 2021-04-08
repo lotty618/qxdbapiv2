@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.BabyDeliveryRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.BabyDeliveryRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="DELIVERY_ID" jdbcType="VARCHAR" property="deliveryId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="DELIVERY_DATE" jdbcType="TIMESTAMP" property="deliveryDate" />
+    <result column="GRAVIDITY" jdbcType="DECIMAL" property="gravidity" />
+    <result column="PARITY" jdbcType="DECIMAL" property="parity" />
+    <result column="MENSES_LAST_DATE" jdbcType="TIMESTAMP" property="mensesLastDate" />
+    <result column="CONCEPTION_FORM_CODE" jdbcType="VARCHAR" property="conceptionFormCode" />
+    <result column="CONCEPTION_FORM_CN" jdbcType="VARCHAR" property="conceptionFormCn" />
+    <result column="EXPECTED_CHILDBIRTH_DATE" jdbcType="TIMESTAMP" property="expectedChildbirthDate" />
+    <result column="PREGNANCY_EXAM_MARK" jdbcType="VARCHAR" property="pregnancyExamMark" />
+    <result column="PREGNANCY_EXAM_ABNORMAL" jdbcType="VARCHAR" property="pregnancyExamAbnormal" />
+    <result column="PRE_PREGNANT_WEIGHT" jdbcType="DECIMAL" property="prePregnantWeight" />
+    <result column="HEIGHT" jdbcType="DECIMAL" property="height" />
+    <result column="ANTENATAL_WEIGHT" jdbcType="DECIMAL" property="antenatalWeight" />
+    <result column="SPEC_PREGNANCY_CASE" jdbcType="VARCHAR" property="specPregnancyCase" />
+    <result column="DISEASE_HISTORY" jdbcType="VARCHAR" property="diseaseHistory" />
+    <result column="OPERATION_HISTORY" jdbcType="VARCHAR" property="operationHistory" />
+    <result column="MATERNAL_HISTORY" jdbcType="VARCHAR" property="maternalHistory" />
+    <result column="SBP" jdbcType="DECIMAL" property="sbp" />
+    <result column="DBP" jdbcType="DECIMAL" property="dbp" />
+    <result column="TEMPERTURE" jdbcType="DECIMAL" property="temperture" />
+    <result column="HEART_RATE" jdbcType="DECIMAL" property="heartRate" />
+    <result column="PULSES" jdbcType="DECIMAL" property="pulses" />
+    <result column="BREATHING_RATE" jdbcType="DECIMAL" property="breathingRate" />
+    <result column="UTERUS_HEIGHT" jdbcType="DECIMAL" property="uterusHeight" />
+    <result column="ABDOMINAL_GIRTH" jdbcType="DECIMAL" property="abdominalGirth" />
+    <result column="FETUS_POSITION_CODE" jdbcType="VARCHAR" property="fetusPositionCode" />
+    <result column="FETUS_POSITION_CN" jdbcType="VARCHAR" property="fetusPositionCn" />
+    <result column="FETAL_HEART_RATE" jdbcType="DECIMAL" property="fetalHeartRate" />
+    <result column="HEAD_DIFFER_SITUATION_EVA" jdbcType="VARCHAR" property="headDifferSituationEva" />
+    <result column="TRANSVERSE_QUTLET" jdbcType="DECIMAL" property="transverseQutlet" />
+    <result column="EXTERNAL_CONJUGATE" jdbcType="DECIMAL" property="externalConjugate" />
+    <result column="BIISCHIAL_DIAMETER" jdbcType="DECIMAL" property="biischialDiameter" />
+    <result column="CONTRACTION_STATE" jdbcType="VARCHAR" property="contractionState" />
+    <result column="CERVICAL_THICKNESS" jdbcType="VARCHAR" property="cervicalThickness" />
+    <result column="PALACE_MOUTH_STATE" jdbcType="VARCHAR" property="palaceMouthState" />
+    <result column="MEMBRANE_CODE" jdbcType="VARCHAR" property="membraneCode" />
+    <result column="MEMBRANE_CN" jdbcType="VARCHAR" property="membraneCn" />
+    <result column="RUPTURE_WAY_CODE" jdbcType="VARCHAR" property="ruptureWayCode" />
+    <result column="RUPTURE_WAY_CN" jdbcType="VARCHAR" property="ruptureWayCn" />
+    <result column="PRE_PART_STATION" jdbcType="VARCHAR" property="prePartStation" />
+    <result column="AMNIOTIC_FLUID_STATE" jdbcType="VARCHAR" property="amnioticFluidState" />
+    <result column="FILLING_BLADDER_MARK" jdbcType="VARCHAR" property="fillingBladderMark" />
+    <result column="INTESTINAL_INFLATION_MARK" jdbcType="VARCHAR" property="intestinalInflationMark" />
+    <result column="EXAM_METHOD_CODE" jdbcType="VARCHAR" property="examMethodCode" />
+    <result column="EXAM_METHOD_CN" jdbcType="VARCHAR" property="examMethodCn" />
+    <result column="TREATMENT_PLAN" jdbcType="VARCHAR" property="treatmentPlan" />
+    <result column="PLAN_DELIVERY_METHOD" jdbcType="VARCHAR" property="planDeliveryMethod" />
+    <result column="PLAN_DELIVERY_METHOD_NAME" jdbcType="VARCHAR" property="planDeliveryMethodName" />
+    <result column="LABOR_RECORD_DATE" jdbcType="TIMESTAMP" property="laborRecordDate" />
+    <result column="LABOR_COURSE" jdbcType="VARCHAR" property="laborCourse" />
+    <result column="LABOR_INSPECTOR" jdbcType="VARCHAR" property="laborInspector" />
+    <result column="WRITOR_SIGNATURE" jdbcType="VARCHAR" property="writorSignature" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DELIVERY_ID, CASE_NO, HOSPITALTALIZATION_TIMES, 
+    "NAME", AGE_YEAR, DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, DELIVERY_DATE,
+    GRAVIDITY, PARITY, MENSES_LAST_DATE, CONCEPTION_FORM_CODE, CONCEPTION_FORM_CN, EXPECTED_CHILDBIRTH_DATE, 
+    PREGNANCY_EXAM_MARK, PREGNANCY_EXAM_ABNORMAL, PRE_PREGNANT_WEIGHT, HEIGHT, ANTENATAL_WEIGHT, 
+    SPEC_PREGNANCY_CASE, DISEASE_HISTORY, OPERATION_HISTORY, MATERNAL_HISTORY, SBP, DBP, 
+    TEMPERTURE, HEART_RATE, PULSES, BREATHING_RATE, UTERUS_HEIGHT, ABDOMINAL_GIRTH, FETUS_POSITION_CODE, 
+    FETUS_POSITION_CN, FETAL_HEART_RATE, HEAD_DIFFER_SITUATION_EVA, TRANSVERSE_QUTLET, 
+    EXTERNAL_CONJUGATE, BIISCHIAL_DIAMETER, CONTRACTION_STATE, CERVICAL_THICKNESS, PALACE_MOUTH_STATE, 
+    MEMBRANE_CODE, MEMBRANE_CN, RUPTURE_WAY_CODE, RUPTURE_WAY_CN, PRE_PART_STATION, AMNIOTIC_FLUID_STATE, 
+    FILLING_BLADDER_MARK, INTESTINAL_INFLATION_MARK, EXAM_METHOD_CODE, EXAM_METHOD_CN, 
+    TREATMENT_PLAN, PLAN_DELIVERY_METHOD, PLAN_DELIVERY_METHOD_NAME, LABOR_RECORD_DATE, 
+    LABOR_COURSE, LABOR_INSPECTOR, WRITOR_SIGNATURE, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

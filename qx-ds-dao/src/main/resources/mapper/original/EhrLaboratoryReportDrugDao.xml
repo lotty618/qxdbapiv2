@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EhrLaboratoryReportDrugDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EhrLaboratoryReportDrug">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <id column="SERIAL_NO" jdbcType="VARCHAR" property="serialNo" />
+    <id column="DRUG_RESULT_ID" jdbcType="VARCHAR" property="drugResultId" />
+    <result column="DRUG_SENSITIVITY_CODE" jdbcType="VARCHAR" property="drugSensitivityCode" />
+    <result column="DRUG_SENSITIVITY_NAME" jdbcType="VARCHAR" property="drugSensitivityName" />
+    <result column="DRUG_RESULT" jdbcType="VARCHAR" property="drugResult" />
+    <result column="PIECE_DRUG" jdbcType="VARCHAR" property="pieceDrug" />
+    <result column="BACSTA_CONCEN" jdbcType="VARCHAR" property="bacstaConcen" />
+    <result column="BACSTA_DIAMETER" jdbcType="VARCHAR" property="bacstaDiameter" />
+    <result column="ANTIBIOTICS_CODE" jdbcType="VARCHAR" property="antibioticsCode" />
+    <result column="ANTIBIOTICS_NAME" jdbcType="VARCHAR" property="antibioticsName" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="BIO_CODE" jdbcType="VARCHAR" property="bioCode" />
+    <result column="BIO_RESULT" jdbcType="VARCHAR" property="bioResult" />
+    <result column="PRI_ORDER" jdbcType="VARCHAR" property="priOrder" />
+    <result column="BIO_QUANTITY" jdbcType="VARCHAR" property="bioQuantity" />
+    <result column="METHOD" jdbcType="VARCHAR" property="method" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, REPORT_FORM_NO, SERIAL_NO, DRUG_RESULT_ID, DRUG_SENSITIVITY_CODE, 
+    DRUG_SENSITIVITY_NAME, DRUG_RESULT, PIECE_DRUG, BACSTA_CONCEN, BACSTA_DIAMETER, ANTIBIOTICS_CODE, 
+    ANTIBIOTICS_NAME, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, BIO_CODE, BIO_RESULT, PRI_ORDER, 
+    BIO_QUANTITY, "METHOD"
+  </sql>
+</mapper>

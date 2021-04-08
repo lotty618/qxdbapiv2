@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrDeathCaseDiscussionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrDeathCaseDiscussion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="DEATH_CASE_DISCUSS_ID" jdbcType="VARCHAR" property="deathCaseDiscussId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="IN_HOSPITAL_TIMES" jdbcType="DECIMAL" property="inHospitalTimes" />
+    <result column="DISCUSSION_DATE" jdbcType="TIMESTAMP" property="discussionDate" />
+    <result column="DISCUSSION_LOCALTION" jdbcType="VARCHAR" property="discussionLocaltion" />
+    <result column="HOST_NAME" jdbcType="VARCHAR" property="hostName" />
+    <result column="DISCUSSION_LIST" jdbcType="VARCHAR" property="discussionList" />
+    <result column="TITLE_CODE" jdbcType="VARCHAR" property="titleCode" />
+    <result column="TITLE_NAME" jdbcType="VARCHAR" property="titleName" />
+    <result column="DIRECT_DEATH_REASON_CODE" jdbcType="VARCHAR" property="directDeathReasonCode" />
+    <result column="DIRECT_DEATH_REASON_NAME" jdbcType="VARCHAR" property="directDeathReasonName" />
+    <result column="DEATH_DIAG_CODE" jdbcType="VARCHAR" property="deathDiagCode" />
+    <result column="DEATH_DIAG_NAME" jdbcType="VARCHAR" property="deathDiagName" />
+    <result column="DEATH_DISCUSS_RECORD" jdbcType="VARCHAR" property="deathDiscussRecord" />
+    <result column="HOST_SUMMARY_OPINTION" jdbcType="VARCHAR" property="hostSummaryOpintion" />
+    <result column="IN_CHARGE_DOCTOR_NAME" jdbcType="VARCHAR" property="inChargeDoctorName" />
+    <result column="CHIEF_DOCTOR_NAME" jdbcType="VARCHAR" property="chiefDoctorName" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrDeathCaseDiscussion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DEATH_CASE_DISCUSS_ID, CASE_NO, IN_HOSPITAL_TIMES, 
+    DISCUSSION_DATE, DISCUSSION_LOCALTION, HOST_NAME, DISCUSSION_LIST, TITLE_CODE, TITLE_NAME, 
+    DIRECT_DEATH_REASON_CODE, DIRECT_DEATH_REASON_NAME, DEATH_DIAG_CODE, DEATH_DIAG_NAME, 
+    DEATH_DISCUSS_RECORD, HOST_SUMMARY_OPINTION, IN_CHARGE_DOCTOR_NAME, CHIEF_DOCTOR_NAME, 
+    SIGNATURE_DATE, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, 
+    EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

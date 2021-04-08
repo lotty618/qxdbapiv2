@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientDiagDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientDiag">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="DIAGNOSIS_ID" jdbcType="VARCHAR" property="diagnosisId" />
+    <result column="DIAG_CODE" jdbcType="VARCHAR" property="diagCode" />
+    <result column="DIAG_NAME" jdbcType="VARCHAR" property="diagName" />
+    <result column="PROPERTY_CODE" jdbcType="VARCHAR" property="propertyCode" />
+    <result column="PROPERTY_CN" jdbcType="VARCHAR" property="propertyCn" />
+    <result column="DIAG_TYPE_CODE" jdbcType="VARCHAR" property="diagTypeCode" />
+    <result column="DIAG_TYPE_CN" jdbcType="VARCHAR" property="diagTypeCn" />
+    <result column="DIAG_EXPLAN" jdbcType="VARCHAR" property="diagExplan" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DIAGNOSIS_ID, DIAG_CODE, DIAG_NAME, PROPERTY_CODE, 
+    PROPERTY_CN, DIAG_TYPE_CODE, DIAG_TYPE_CN, DIAG_EXPLAN, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

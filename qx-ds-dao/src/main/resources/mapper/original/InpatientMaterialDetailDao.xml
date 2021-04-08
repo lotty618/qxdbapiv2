@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientMaterialDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientMaterialDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <id column="MATREIAL_FEE_ID" jdbcType="VARCHAR" property="matreialFeeId" />
+    <result column="PRICE_ITEM_STD_CODE" jdbcType="VARCHAR" property="priceItemStdCode" />
+    <result column="PRICE_ITEM_STD_NAME" jdbcType="VARCHAR" property="priceItemStdName" />
+    <result column="PRICE_ITEM_LOCAL_CODE" jdbcType="VARCHAR" property="priceItemLocalCode" />
+    <result column="PRICE_ITEM_LOCAL_NAME" jdbcType="VARCHAR" property="priceItemLocalName" />
+    <result column="SPECIFICATION" jdbcType="VARCHAR" property="specification" />
+    <result column="PRICE_ITEM_UNIT" jdbcType="VARCHAR" property="priceItemUnit" />
+    <result column="PRICE_ITEM_PRICE" jdbcType="DECIMAL" property="priceItemPrice" />
+    <result column="PRICE_ITEM_QUANTITY" jdbcType="DECIMAL" property="priceItemQuantity" />
+    <result column="FEE_AMOUNT" jdbcType="DECIMAL" property="feeAmount" />
+    <result column="INSURANCE_CHARGES" jdbcType="DECIMAL" property="insuranceCharges" />
+    <result column="SELF_PAYMENT" jdbcType="DECIMAL" property="selfPayment" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_NAME" jdbcType="VARCHAR" property="applyDeptName" />
+    <result column="APPLY_DOCTOR" jdbcType="VARCHAR" property="applyDoctor" />
+    <result column="IS_HIGH_VALUE" jdbcType="VARCHAR" property="isHighValue" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, SET_SER_NUM, MATREIAL_FEE_ID, PRICE_ITEM_STD_CODE, 
+    PRICE_ITEM_STD_NAME, PRICE_ITEM_LOCAL_CODE, PRICE_ITEM_LOCAL_NAME, SPECIFICATION, 
+    PRICE_ITEM_UNIT, PRICE_ITEM_PRICE, PRICE_ITEM_QUANTITY, FEE_AMOUNT, INSURANCE_CHARGES, 
+    SELF_PAYMENT, NOTES, APPLY_DEPT_CODE, APPLY_DEPT_NAME, APPLY_DOCTOR, IS_HIGH_VALUE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

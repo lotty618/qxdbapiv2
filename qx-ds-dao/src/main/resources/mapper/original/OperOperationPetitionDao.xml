@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OperOperationPetitionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OperOperationPetition">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="OPER_PETITION_NO" jdbcType="VARCHAR" property="operPetitionNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="PETITION_DEPT_CODE" jdbcType="VARCHAR" property="petitionDeptCode" />
+    <result column="PETITION_DEPT_NAME" jdbcType="VARCHAR" property="petitionDeptName" />
+    <result column="PETITION_DOC_ID" jdbcType="VARCHAR" property="petitionDocId" />
+    <result column="PETITION_DOC_NAME" jdbcType="VARCHAR" property="petitionDocName" />
+    <result column="PETITION_DATE" jdbcType="TIMESTAMP" property="petitionDate" />
+    <result column="DIR_OPER_PATIENT_TYPE" jdbcType="VARCHAR" property="dirOperPatientType" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_CN" jdbcType="VARCHAR" property="operationCn" />
+    <result column="SURGEON_ID" jdbcType="VARCHAR" property="surgeonId" />
+    <result column="SURGEON_NAME" jdbcType="VARCHAR" property="surgeonName" />
+    <result column="ASSISTANT1_ID" jdbcType="VARCHAR" property="assistant1Id" />
+    <result column="ASSISTANT1_NAME" jdbcType="VARCHAR" property="assistant1Name" />
+    <result column="ASSISTANT2_ID" jdbcType="VARCHAR" property="assistant2Id" />
+    <result column="ASSISTANT2_NAME" jdbcType="VARCHAR" property="assistant2Name" />
+    <result column="ASSISTANT3_ID" jdbcType="VARCHAR" property="assistant3Id" />
+    <result column="ASSISTANT3_NAME" jdbcType="VARCHAR" property="assistant3Name" />
+    <result column="ANESTHESIOLOGIST_ID" jdbcType="VARCHAR" property="anesthesiologistId" />
+    <result column="ANESTHESIOLOGIST_NAME" jdbcType="VARCHAR" property="anesthesiologistName" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="OPERATION_LEVEL_CODE" jdbcType="VARCHAR" property="operationLevelCode" />
+    <result column="OPERATION_LEVEL_NAME" jdbcType="VARCHAR" property="operationLevelName" />
+    <result column="OPERATION_PART_CODE" jdbcType="VARCHAR" property="operationPartCode" />
+    <result column="OPERATION_PART_NAME" jdbcType="VARCHAR" property="operationPartName" />
+    <result column="PRE_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="preDiagnosisCode" />
+    <result column="PRE_DIAGNOSIS_CN" jdbcType="VARCHAR" property="preDiagnosisCn" />
+    <result column="CONTAGION" jdbcType="VARCHAR" property="contagion" />
+    <result column="OPERATION_BLOOD" jdbcType="VARCHAR" property="operationBlood" />
+    <result column="OPERATION_PATHOLOGY" jdbcType="VARCHAR" property="operationPathology" />
+    <result column="UNPLANNED" jdbcType="VARCHAR" property="unplanned" />
+    <result column="ISADDITIONAL" jdbcType="VARCHAR" property="isadditional" />
+    <result column="OPERATION_DEVICE" jdbcType="VARCHAR" property="operationDevice" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="PLAN_B" jdbcType="VARCHAR" property="planB" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, OPER_PETITION_NO, EVENT_TYPE_CN, PETITION_DEPT_CODE, 
+    PETITION_DEPT_NAME, PETITION_DOC_ID, PETITION_DOC_NAME, PETITION_DATE, DIR_OPER_PATIENT_TYPE, 
+    OPERATION_DATE, OPERATION_CODE, OPERATION_CN, SURGEON_ID, SURGEON_NAME, ASSISTANT1_ID, 
+    ASSISTANT1_NAME, ASSISTANT2_ID, ASSISTANT2_NAME, ASSISTANT3_ID, ASSISTANT3_NAME, 
+    ANESTHESIOLOGIST_ID, ANESTHESIOLOGIST_NAME, ANESTHESIA_CODE, ANESTHESIA_CN, OPERATION_LEVEL_CODE, 
+    OPERATION_LEVEL_NAME, OPERATION_PART_CODE, OPERATION_PART_NAME, PRE_DIAGNOSIS_CODE, 
+    PRE_DIAGNOSIS_CN, CONTAGION, OPERATION_BLOOD, OPERATION_PATHOLOGY, UNPLANNED, ISADDITIONAL, 
+    OPERATION_DEVICE, NOTES, PLAN_B, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTCheckOrderDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTCheckOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="COUID" jdbcType="VARCHAR" property="couid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <result column="PERFORMER_DUID" jdbcType="VARCHAR" property="performerDuid" />
+    <result column="PARTICIPANT_DUID" jdbcType="VARCHAR" property="participantDuid" />
+    <result column="RETRIEVE_DATE" jdbcType="TIMESTAMP" property="retrieveDate" />
+    <result column="CATALOG_CODE" jdbcType="VARCHAR" property="catalogCode" />
+    <result column="CATALOG_NAME" jdbcType="VARCHAR" property="catalogName" />
+    <result column="REPORT_TITLE" jdbcType="VARCHAR" property="reportTitle" />
+    <result column="EFFECTIVE_DTIME" jdbcType="TIMESTAMP" property="effectiveDtime" />
+    <result column="AUTHOR_ID" jdbcType="VARCHAR" property="authorId" />
+    <result column="REPORT_CREATE_DATE" jdbcType="TIMESTAMP" property="reportCreateDate" />
+    <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName" />
+    <result column="AUTHENTICATOR_ID" jdbcType="VARCHAR" property="authenticatorId" />
+    <result column="AUTHENTICATOR_NAME" jdbcType="VARCHAR" property="authenticatorName" />
+    <result column="AUTHENTICATOR_DATE" jdbcType="TIMESTAMP" property="authenticatorDate" />
+    <result column="PARTICIPANT_ID" jdbcType="VARCHAR" property="participantId" />
+    <result column="PARTICIPANT_NAME" jdbcType="VARCHAR" property="participantName" />
+    <result column="PARTICIPANT_DATE" jdbcType="TIMESTAMP" property="participantDate" />
+    <result column="PARTICIPANT_DEPT_CODE" jdbcType="VARCHAR" property="participantDeptCode" />
+    <result column="PARTICIPANT_DEPT_NAME" jdbcType="VARCHAR" property="participantDeptName" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="ORDER_PRIORITY" jdbcType="VARCHAR" property="orderPriority" />
+    <result column="SPECIMEN_NO" jdbcType="VARCHAR" property="specimenNo" />
+    <result column="SPECIMEN_CLASS" jdbcType="VARCHAR" property="specimenClass" />
+    <result column="SPECIMEN_DETERMINER_CODE" jdbcType="VARCHAR" property="specimenDeterminerCode" />
+    <result column="SPECIMEN_DETERMINER_NAME" jdbcType="VARCHAR" property="specimenDeterminerName" />
+    <result column="SPECIMEN_RISK_CODE" jdbcType="VARCHAR" property="specimenRiskCode" />
+    <result column="SPECIMEN_RISK_NAME" jdbcType="VARCHAR" property="specimenRiskName" />
+    <result column="SPECIMEN_QUANTITY_CODE" jdbcType="VARCHAR" property="specimenQuantityCode" />
+    <result column="SPECIMEN_QUANTITY_NAME" jdbcType="VARCHAR" property="specimenQuantityName" />
+    <result column="SPECIMEN_REJECTREASON_CD" jdbcType="VARCHAR" property="specimenRejectreasonCd" />
+    <result column="SPECIMEN_REJECTREASON_NM" jdbcType="VARCHAR" property="specimenRejectreasonNm" />
+    <result column="PERFORMER_DEPT_CODE" jdbcType="VARCHAR" property="performerDeptCode" />
+    <result column="PERFORMER_DEPT_NAME" jdbcType="VARCHAR" property="performerDeptName" />
+    <result column="PERFORMER_DOCTOR" jdbcType="VARCHAR" property="performerDoctor" />
+    <result column="LAB_PERFORMER_DATE" jdbcType="TIMESTAMP" property="labPerformerDate" />
+    <result column="SPECIMEN_STATUS" jdbcType="VARCHAR" property="specimenStatus" />
+    <result column="SPECIMEN_SAMPLE_DATE" jdbcType="TIMESTAMP" property="specimenSampleDate" />
+    <result column="SPECIMEN_RECEIVE_DATE" jdbcType="TIMESTAMP" property="specimenReceiveDate" />
+    <result column="LAB_METHOD_NAME" jdbcType="VARCHAR" property="labMethodName" />
+    <result column="SPECIMEN_NAME" jdbcType="VARCHAR" property="specimenName" />
+    <result column="LAB_INSTRUMENT" jdbcType="VARCHAR" property="labInstrument" />
+    <result column="LAB_PURPOSE" jdbcType="VARCHAR" property="labPurpose" />
+    <result column="SPECIMEN_COLLECT_OPERATOR" jdbcType="VARCHAR" property="specimenCollectOperator" />
+    <result column="SPECIMEN_ACCEPT_OPERATOR" jdbcType="VARCHAR" property="specimenAcceptOperator" />
+    <result column="PRINT_DATE" jdbcType="TIMESTAMP" property="printDate" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_BIGDEVICE" jdbcType="DECIMAL" property="isBigdevice" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="PRINT_REPORT_TYPE" jdbcType="VARCHAR" property="printReportType" />
+    <result column="PRINT_REPORT_TYPE_CODE" jdbcType="VARCHAR" property="printReportTypeCode" />
+  </resultMap>
+</mapper>

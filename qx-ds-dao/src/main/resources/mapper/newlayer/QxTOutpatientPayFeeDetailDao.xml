@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientPayFeeDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientPayFeeDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="OPFDUID" jdbcType="VARCHAR" property="opfduid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <result column="OUTPAT_FEE_ID" jdbcType="VARCHAR" property="outpatFeeId" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_NAME" jdbcType="VARCHAR" property="applyDeptName" />
+    <result column="APPLY_DOCTOR" jdbcType="VARCHAR" property="applyDoctor" />
+    <result column="EXEC_DEPT_CODE" jdbcType="VARCHAR" property="execDeptCode" />
+    <result column="EXEC_DEPT_NAME" jdbcType="VARCHAR" property="execDeptName" />
+    <result column="EXEC_MAN" jdbcType="VARCHAR" property="execMan" />
+    <result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+    <result column="BABY_FLAG" jdbcType="DECIMAL" property="babyFlag" />
+    <result column="OUTPAT_SETTLE_WAY_CODE" jdbcType="VARCHAR" property="outpatSettleWayCode" />
+    <result column="OUTPAT_FEE_TYPE_CODE" jdbcType="VARCHAR" property="outpatFeeTypeCode" />
+    <result column="OUTPAT_FEE_AMOUNT" jdbcType="DECIMAL" property="outpatFeeAmount" />
+    <result column="PAY_WAY_CODE" jdbcType="VARCHAR" property="payWayCode" />
+    <result column="PRICE_ITEM_LOCAL_CODE" jdbcType="VARCHAR" property="priceItemLocalCode" />
+    <result column="PRICE_ITEM_LOCAL_NAME" jdbcType="VARCHAR" property="priceItemLocalName" />
+    <result column="PRICE_ITEM_STD_CODE" jdbcType="VARCHAR" property="priceItemStdCode" />
+    <result column="UNIT" jdbcType="VARCHAR" property="unit" />
+    <result column="PRICE" jdbcType="DECIMAL" property="price" />
+    <result column="QUANTITY" jdbcType="DECIMAL" property="quantity" />
+    <result column="SELF_PAYMENT" jdbcType="DECIMAL" property="selfPayment" />
+    <result column="CHARGES" jdbcType="DECIMAL" property="charges" />
+    <result column="HEALTHCARE_CHARGES" jdbcType="DECIMAL" property="healthcareCharges" />
+    <result column="DERATE_CHARGES" jdbcType="DECIMAL" property="derateCharges" />
+    <result column="DEDUCT_FEES_DTIME" jdbcType="TIMESTAMP" property="deductFeesDtime" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, OPFDUID, PUID, PNUID, ORGUID, QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, SET_SER_NUM, 
+    OUTPAT_FEE_ID, APPLY_DEPT_CODE, APPLY_DEPT_NAME, APPLY_DOCTOR, EXEC_DEPT_CODE, EXEC_DEPT_NAME, 
+    EXEC_MAN, "OPERATOR", BABY_FLAG, OUTPAT_SETTLE_WAY_CODE, OUTPAT_FEE_TYPE_CODE, OUTPAT_FEE_AMOUNT,
+    PAY_WAY_CODE, PRICE_ITEM_LOCAL_CODE, PRICE_ITEM_LOCAL_NAME, PRICE_ITEM_STD_CODE, 
+    UNIT, PRICE, QUANTITY, SELF_PAYMENT, CHARGES, HEALTHCARE_CHARGES, DERATE_CHARGES, 
+    DEDUCT_FEES_DTIME, NOTES, LAST_UPD_DATE, EFFECTIVE, IS_INVALID, IS_DEL, CREATE_TIME, 
+    UPDATE_TIME
+  </sql>
+</mapper>

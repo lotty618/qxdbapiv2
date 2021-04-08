@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qx-common/qx-common.iml" filepath="$PROJECT_DIR$/qx-common/qx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qx-ds-api/qx-ds-api.iml" filepath="$PROJECT_DIR$/qx-ds-api/qx-ds-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qx-ds-dao/qx-ds-dao.iml" filepath="$PROJECT_DIR$/qx-ds-dao/qx-ds-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qx-ds-daq/qx-ds-daq.iml" filepath="$PROJECT_DIR$/qx-ds-daq/qx-ds-daq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qx-ds-service/qx-ds-service.iml" filepath="$PROJECT_DIR$/qx-ds-service/qx-ds-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qx-model/qx-model.iml" filepath="$PROJECT_DIR$/qx-model/qx-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qxdbapiv2.iml" filepath="$PROJECT_DIR$/qxdbapiv2.iml" />
+    </modules>
+  </component>
+</project>

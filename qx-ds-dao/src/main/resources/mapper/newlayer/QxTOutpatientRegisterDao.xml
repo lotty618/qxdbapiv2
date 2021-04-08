@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientRegisterDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientRegister">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="OPRUID" jdbcType="VARCHAR" property="opruid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="CARD_NO" jdbcType="VARCHAR" property="cardNo" />
+    <result column="CARD_TYPE_CODE" jdbcType="VARCHAR" property="cardTypeCode" />
+    <result column="REF_CAT" jdbcType="VARCHAR" property="refCat" />
+    <result column="REF_MOD_CODE" jdbcType="VARCHAR" property="refModCode" />
+    <result column="IS_FIRST_VISIT" jdbcType="DECIMAL" property="isFirstVisit" />
+    <result column="IS_OPT_RES" jdbcType="DECIMAL" property="isOptRes" />
+    <result column="IS_BACK_SIGN" jdbcType="DECIMAL" property="isBackSign" />
+    <result column="REG_DTIME" jdbcType="TIMESTAMP" property="regDtime" />
+    <result column="REG_TYPE" jdbcType="VARCHAR" property="regType" />
+    <result column="REG_MET" jdbcType="VARCHAR" property="regMet" />
+    <result column="REG_FEE" jdbcType="DECIMAL" property="regFee" />
+    <result column="MED_EXP" jdbcType="DECIMAL" property="medExp" />
+    <result column="OTH_FEE" jdbcType="DECIMAL" property="othFee" />
+    <result column="VALID_HOURS" jdbcType="VARCHAR" property="validHours" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, OPRUID, PNUID, DUID, PUID, ORGUID, OUTPAT_FORM_NO, DEPT_NAME, CARD_NO, CARD_TYPE_CODE, 
+    REF_CAT, REF_MOD_CODE, IS_FIRST_VISIT, IS_OPT_RES, IS_BACK_SIGN, REG_DTIME, REG_TYPE, 
+    REG_MET, REG_FEE, MED_EXP, OTH_FEE, VALID_HOURS, LAST_UPD_DATE, QID, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME, ORG_ID
+  </sql>
+</mapper>

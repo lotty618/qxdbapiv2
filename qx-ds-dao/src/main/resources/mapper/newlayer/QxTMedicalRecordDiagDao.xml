@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTMedicalRecordDiagDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTMedicalRecordDiag">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="MRDUID" jdbcType="VARCHAR" property="mrduid" />
+    <result column="MRPUID" jdbcType="VARCHAR" property="mrpuid" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="IN_CONDITION_CODE" jdbcType="VARCHAR" property="inConditionCode" />
+    <result column="IN_CONDITION_CN" jdbcType="VARCHAR" property="inConditionCn" />
+    <result column="LAST_DIAGNOSIS_DATE" jdbcType="TIMESTAMP" property="lastDiagnosisDate" />
+    <result column="DIAG_RESULT" jdbcType="VARCHAR" property="diagResult" />
+    <result column="PATHOLOGICAL_NO" jdbcType="VARCHAR" property="pathologicalNo" />
+    <result column="DIAG_TYPE_CODE" jdbcType="VARCHAR" property="diagTypeCode" />
+    <result column="DIAG_TYPE_CN" jdbcType="VARCHAR" property="diagTypeCn" />
+    <result column="DIAG_TYPE_MARK" jdbcType="VARCHAR" property="diagTypeMark" />
+    <result column="DIAG_TYPE_MARK_NAME" jdbcType="VARCHAR" property="diagTypeMarkName" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, MRDUID, MRPUID, DIAGNOSIS_CODE, DIAGNOSIS_NAME, IN_CONDITION_CODE, IN_CONDITION_CN, 
+    LAST_DIAGNOSIS_DATE, DIAG_RESULT, PATHOLOGICAL_NO, DIAG_TYPE_CODE, DIAG_TYPE_CN, 
+    DIAG_TYPE_MARK, DIAG_TYPE_MARK_NAME, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, 
+    INPUT_TIME, MODIFIER, MODIFIED_TIME, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

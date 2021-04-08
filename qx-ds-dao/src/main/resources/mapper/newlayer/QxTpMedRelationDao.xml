@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTpMedRelationDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTpMedRelation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="PMRUID" jdbcType="VARCHAR" property="pmruid" />
+    <result column="PMHUID" jdbcType="VARCHAR" property="pmhuid" />
+    <result column="MEDUID" jdbcType="VARCHAR" property="meduid" />
+    <result column="REVISION" jdbcType="VARCHAR" property="revision" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="DRUG_CODE" jdbcType="VARCHAR" property="drugCode" />
+    <result column="DRUG_ORIGIN" jdbcType="VARCHAR" property="drugOrigin" />
+    <result column="PRICESTOCK" jdbcType="VARCHAR" property="pricestock" />
+    <result column="PRICERETAIL" jdbcType="VARCHAR" property="priceretail" />
+    <result column="PRICEWHOLESALE" jdbcType="VARCHAR" property="pricewholesale" />
+    <result column="MONEYSTOCK" jdbcType="VARCHAR" property="moneystock" />
+    <result column="MONEYRETAIL" jdbcType="VARCHAR" property="moneyretail" />
+    <result column="MONEYWHOLESALE" jdbcType="VARCHAR" property="moneywholesale" />
+    <result column="ISABOLISH" jdbcType="VARCHAR" property="isabolish" />
+    <result column="APPROVALNUM" jdbcType="VARCHAR" property="approvalnum" />
+    <result column="GMPAPPROVE" jdbcType="VARCHAR" property="gmpapprove" />
+    <result column="MAKEPRICETYPE" jdbcType="VARCHAR" property="makepricetype" />
+    <result column="MAKEPRICEFORMULA" jdbcType="VARCHAR" property="makepriceformula" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

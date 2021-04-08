@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTRiskEmrValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTRiskEmrValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="REVUID" jdbcType="VARCHAR" property="revuid" />
+    <result column="RVUID" jdbcType="VARCHAR" property="rvuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="ITEMUID" jdbcType="VARCHAR" property="itemuid" />
+    <result column="EFFECTIVE_DATE" jdbcType="TIMESTAMP" property="effectiveDate" />
+    <result column="EMR_TYPE" jdbcType="DECIMAL" property="emrType" />
+    <result column="EMR_TIME" jdbcType="TIMESTAMP" property="emrTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT" jdbcType="CLOB" property="emrContent" />
+  </resultMap>
+</mapper>

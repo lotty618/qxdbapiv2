@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientDiagDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientDiag">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="OPDUID" jdbcType="VARCHAR" property="opduid" />
+    <result column="OPHUID" jdbcType="VARCHAR" property="ophuid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="INFECT_FLAG" jdbcType="DECIMAL" property="infectFlag" />
+    <result column="INFECT_REPORT_FLAG" jdbcType="DECIMAL" property="infectReportFlag" />
+    <result column="OUTPAT_DIAG_NAME" jdbcType="VARCHAR" property="outpatDiagName" />
+    <result column="OUTPAT_DIAG_CODE" jdbcType="VARCHAR" property="outpatDiagCode" />
+    <result column="DIAG_TYPE_CODE" jdbcType="VARCHAR" property="diagTypeCode" />
+    <result column="DIAG_BASIS_CODE" jdbcType="VARCHAR" property="diagBasisCode" />
+    <result column="CN_MED_DIA_CAT_CODE" jdbcType="VARCHAR" property="cnMedDiaCatCode" />
+    <result column="WEST_DIA_CAT_CODE" jdbcType="VARCHAR" property="westDiaCatCode" />
+    <result column="DIAG_DATE" jdbcType="TIMESTAMP" property="diagDate" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, OPDUID, OPHUID, PNUID, INFECT_FLAG, INFECT_REPORT_FLAG, OUTPAT_DIAG_NAME, OUTPAT_DIAG_CODE, 
+    DIAG_TYPE_CODE, DIAG_BASIS_CODE, CN_MED_DIA_CAT_CODE, WEST_DIA_CAT_CODE, DIAG_DATE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, 
+    QID, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME, ORG_ID, OUTPAT_FORM_NO, PATIENT_ID
+  </sql>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientPayFeeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientPayFee">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <result column="INV_NUM" jdbcType="VARCHAR" property="invNum" />
+    <result column="SET_SOU" jdbcType="DECIMAL" property="setSou" />
+    <result column="CHA_REC" jdbcType="VARCHAR" property="chaRec" />
+    <result column="COST_AMOUNT" jdbcType="DECIMAL" property="costAmount" />
+    <result column="HEALTHCARE_AMOUNT" jdbcType="DECIMAL" property="healthcareAmount" />
+    <result column="OWN_EXP_AMOUNT" jdbcType="DECIMAL" property="ownExpAmount" />
+    <result column="EXA_FEE" jdbcType="DECIMAL" property="exaFee" />
+    <result column="TRE_FEE" jdbcType="DECIMAL" property="treFee" />
+    <result column="SUR_FEE" jdbcType="DECIMAL" property="surFee" />
+    <result column="RADIO_CHA_FEE" jdbcType="DECIMAL" property="radioChaFee" />
+    <result column="LAB_FEE" jdbcType="DECIMAL" property="labFee" />
+    <result column="CHA_FEE" jdbcType="DECIMAL" property="chaFee" />
+    <result column="OTH_FEE" jdbcType="DECIMAL" property="othFee" />
+    <result column="CN_HERB_MED" jdbcType="DECIMAL" property="cnHerbMed" />
+    <result column="CN_MED_COSTS" jdbcType="DECIMAL" property="cnMedCosts" />
+    <result column="CHA_REF_TIME" jdbcType="TIMESTAMP" property="chaRefTime" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, SET_SER_NUM, INV_NUM, SET_SOU, CHA_REC, 
+    COST_AMOUNT, HEALTHCARE_AMOUNT, OWN_EXP_AMOUNT, EXA_FEE, TRE_FEE, SUR_FEE, RADIO_CHA_FEE, 
+    LAB_FEE, CHA_FEE, OTH_FEE, CN_HERB_MED, CN_MED_COSTS, CHA_REF_TIME, LAST_UPD_DATE, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

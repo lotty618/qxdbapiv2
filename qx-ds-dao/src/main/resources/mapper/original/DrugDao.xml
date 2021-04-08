@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.DrugDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.Drug">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="DRUG_CODE" jdbcType="VARCHAR" property="drugCode" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="DRUG_NAME" jdbcType="VARCHAR" property="drugName" />
+    <result column="DRUG_FORM" jdbcType="VARCHAR" property="drugForm" />
+    <result column="DRUG_SPEC" jdbcType="VARCHAR" property="drugSpec" />
+    <result column="DRUG_UNITS" jdbcType="VARCHAR" property="drugUnits" />
+    <result column="INSURANCETYPE" jdbcType="VARCHAR" property="insurancetype" />
+    <result column="DISPENSARY_UNITS" jdbcType="VARCHAR" property="dispensaryUnits" />
+    <result column="ROOM_UNITS" jdbcType="VARCHAR" property="roomUnits" />
+    <result column="ATTRIBUTE" jdbcType="VARCHAR" property="attribute" />
+    <result column="FIRM" jdbcType="VARCHAR" property="firm" />
+    <result column="MIN_UNITS" jdbcType="VARCHAR" property="minUnits" />
+    <result column="MIN_PACK" jdbcType="VARCHAR" property="minPack" />
+    <result column="ROOM_PACK" jdbcType="VARCHAR" property="roomPack" />
+    <result column="PINYIN_CODE" jdbcType="VARCHAR" property="pinyinCode" />
+    <result column="WUBI_CODE" jdbcType="VARCHAR" property="wubiCode" />
+    <result column="ILLSTRATEMED" jdbcType="VARCHAR" property="illstratemed" />
+    <result column="PRICELEVEL" jdbcType="VARCHAR" property="pricelevel" />
+    <result column="EXPIRYDATE" jdbcType="VARCHAR" property="expirydate" />
+    <result column="DRUG_TYPE" jdbcType="VARCHAR" property="drugType" />
+    <result column="DRUG_LEVEL" jdbcType="VARCHAR" property="drugLevel" />
+    <result column="ISPREPARATION" jdbcType="VARCHAR" property="ispreparation" />
+    <result column="ISEMERGENCY" jdbcType="VARCHAR" property="isemergency" />
+    <result column="DOSAGE" jdbcType="VARCHAR" property="dosage" />
+    <result column="DOSAGE_UNIT" jdbcType="VARCHAR" property="dosageUnit" />
+    <result column="ACCOUNTTYPE" jdbcType="VARCHAR" property="accounttype" />
+    <result column="ASCTYPE" jdbcType="VARCHAR" property="asctype" />
+    <result column="PRODUCTIONPLACE" jdbcType="VARCHAR" property="productionplace" />
+    <result column="ISANTIBIOTICS" jdbcType="VARCHAR" property="isantibiotics" />
+    <result column="ANTIBIOTICSLEVEL" jdbcType="VARCHAR" property="antibioticslevel" />
+    <result column="ONCE_DOSAGE" jdbcType="VARCHAR" property="onceDosage" />
+    <result column="ONCE_DOSE" jdbcType="VARCHAR" property="onceDose" />
+    <result column="MAX_DOSE" jdbcType="VARCHAR" property="maxDose" />
+    <result column="ISBASE" jdbcType="VARCHAR" property="isbase" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="ISPX" jdbcType="VARCHAR" property="ispx" />
+    <result column="NAMEUSUAL" jdbcType="VARCHAR" property="nameusual" />
+    <result column="NAMEENGLISH" jdbcType="VARCHAR" property="nameenglish" />
+    <result column="ATCCODE" jdbcType="VARCHAR" property="atccode" />
+    <result column="ISABOLISH" jdbcType="VARCHAR" property="isabolish" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="ANT_CLASS" jdbcType="VARCHAR" property="antClass" />
+    <result column="ANT_CLASS_NAME" jdbcType="VARCHAR" property="antClassName" />
+    <result column="DRUG_CLASS" jdbcType="VARCHAR" property="drugClass" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, DRUG_CODE, ORG_ID, DRUG_NAME, DRUG_FORM, DRUG_SPEC, DRUG_UNITS, INSURANCETYPE, 
+    DISPENSARY_UNITS, ROOM_UNITS, "ATTRIBUTE", FIRM, MIN_UNITS, MIN_PACK, ROOM_PACK,
+    PINYIN_CODE, WUBI_CODE, ILLSTRATEMED, PRICELEVEL, EXPIRYDATE, DRUG_TYPE, DRUG_LEVEL, 
+    ISPREPARATION, ISEMERGENCY, DOSAGE, DOSAGE_UNIT, ACCOUNTTYPE, ASCTYPE, PRODUCTIONPLACE, 
+    ISANTIBIOTICS, ANTIBIOTICSLEVEL, ONCE_DOSAGE, ONCE_DOSE, MAX_DOSE, ISBASE, REMARK, 
+    ISPX, NAMEUSUAL, NAMEENGLISH, ATCCODE, ISABOLISH, STATUS_CODE, STATUS_CN, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, CREATOR, CREATE_TIME, ANT_CLASS, 
+    ANT_CLASS_NAME, DRUG_CLASS
+  </sql>
+</mapper>

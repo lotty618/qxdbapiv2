@@ -1,0 +1,45 @@
+server:
+  port: 8903
+
+spring:
+  application:
+    name: qx-ds-api
+
+  cloud:
+    nacos:
+      discovery:
+        # Nacos 服务发现与注册配置，其中子属性 server-addr 指定 Nacos 服务器主机和端口
+        server-addr: 192.168.210.185:8848
+        # 注册到 nacos 的指定 namespace，默认为 public
+        namespace: public
+
+      config:
+        # Nacos配置中心，默认配置文件为${spring.application.name}.${file-extension}
+        server-addr: 192.168.210.185:8848
+        group: DEFAULT_GROUP
+        file-extension: properties
+
+        # 多个配置文件
+        extension-configs[0]:
+          data-id: qx-ds-dbconfig.properties
+          group: DEFAULT_GROUP
+          refresh: true
+        extension-configs[1]:
+          data-id: qx-ds-webconfig.properties
+          group: DEFAULT_GROUP
+          refresh: true
+
+dubbo:
+  # 用于服务提供方
+  # dubbo 协议
+  protocol:
+    name: dubbo
+    # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+    port: -1
+  scan:
+    # dubbo 服务扫描基准包
+    base-packages: com.quanxi.qxdbapiv2.qxdsapi.service
+
+  # 挂载到 Nacos 注册中心
+  registry:
+    address: nacos://192.168.210.185:8848

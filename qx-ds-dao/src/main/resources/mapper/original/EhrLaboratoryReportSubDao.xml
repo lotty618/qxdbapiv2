@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EhrLaboratoryReportSubDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EhrLaboratoryReportSub">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <id column="SERIAL_NO" jdbcType="VARCHAR" property="serialNo" />
+    <result column="CLASS_CODE" jdbcType="VARCHAR" property="classCode" />
+    <result column="CLASS_NAME" jdbcType="VARCHAR" property="className" />
+    <result column="RESULT_TYPE_CODE" jdbcType="VARCHAR" property="resultTypeCode" />
+    <result column="RESULT_TYPE_NAME" jdbcType="VARCHAR" property="resultTypeName" />
+    <result column="RESULT_VALUE" jdbcType="VARCHAR" property="resultValue" />
+    <result column="RESULT_UNIT" jdbcType="VARCHAR" property="resultUnit" />
+    <result column="NORM_LOWER_LIMIT" jdbcType="VARCHAR" property="normLowerLimit" />
+    <result column="NORM_UPPER_LIMIT" jdbcType="VARCHAR" property="normUpperLimit" />
+    <result column="NORM_VALUE_NOTES" jdbcType="VARCHAR" property="normValueNotes" />
+    <result column="RESULT_INTERPRE" jdbcType="VARCHAR" property="resultInterpre" />
+    <result column="EFFECTIVE_DATE" jdbcType="TIMESTAMP" property="effectiveDate" />
+    <result column="EXAMINE_WAY" jdbcType="VARCHAR" property="examineWay" />
+    <result column="RECOGNITION_MARK" jdbcType="VARCHAR" property="recognitionMark" />
+    <result column="PRINT_DATE" jdbcType="TIMESTAMP" property="printDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="PRI_ORDER" jdbcType="VARCHAR" property="priOrder" />
+    <result column="RESULT_DESC" jdbcType="VARCHAR" property="resultDesc" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="CLASS_ENNAME" jdbcType="VARCHAR" property="classEnname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, REPORT_FORM_NO, SERIAL_NO, CLASS_CODE, CLASS_NAME, RESULT_TYPE_CODE, 
+    RESULT_TYPE_NAME, RESULT_VALUE, RESULT_UNIT, NORM_LOWER_LIMIT, NORM_UPPER_LIMIT, 
+    NORM_VALUE_NOTES, RESULT_INTERPRE, EFFECTIVE_DATE, EXAMINE_WAY, RECOGNITION_MARK, 
+    PRINT_DATE, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, PRI_ORDER, RESULT_DESC, SYSUP_TIME, SYSCR_TIME, CLASS_ENNAME
+  </sql>
+</mapper>

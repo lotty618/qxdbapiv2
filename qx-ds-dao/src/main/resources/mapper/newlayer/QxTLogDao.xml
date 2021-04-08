@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTLogDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="TABLE_NAME" jdbcType="VARCHAR" property="tableName" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="DATA_SIZE" jdbcType="DECIMAL" property="dataSize" />
+    <result column="TYPE" jdbcType="DECIMAL" property="type" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+  </resultMap>
+
+  <select id="selectOneByTableName" resultMap="BaseResultMap">
+    SELECT * FROM (
+      SELECT SID, TABLE_NAME , QID, REMARK, DATA_SIZE, TYPE, STATUS, IS_INVALID, IS_DEL, CREATE_TIME,
+          UPDATE_TIME, ORG_ID
+      FROM QX_T_LOG
+      WHERE TABLE_NAME = #{tableName} AND IS_INVALID = 0 AND IS_DEL = 0 ORDER BY SID DESC
+    ) WHERE ROWNUM = 1
+  </select>
+
+  <insert id="insertLog" parameterType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTLog">
+    INSERT INTO QX_T_LOG(TABLE_NAME , QID, REMARK, DATA_SIZE, TYPE, STATUS, IS_INVALID, IS_DEL, CREATE_TIME,
+        UPDATE_TIME, ORG_ID)
+    VALUES(#{tableName}, #{qid}, #{remark}, #{dataSize}, #{type}, #{status}, #{isInvalid}, #{isDel},
+        TO_DATE(#{createTime}, 'yyyy-MM-dd HH24:mi:ss'), TO_DATE(#{updateTime}, 'yyyy-MM-dd HH24:mi:ss'), #{orgId})
+  </insert>
+</mapper>

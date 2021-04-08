@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInpatientAdmissionDiagDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInpatientAdmissionDiag">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="IADUID" jdbcType="VARCHAR" property="iaduid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="INPATIENT_DIAG_CODE" jdbcType="VARCHAR" property="inpatientDiagCode" />
+    <result column="INPATIENT_DIAG_NAME" jdbcType="VARCHAR" property="inpatientDiagName" />
+    <result column="CONFIRMED_DIAG_DATE" jdbcType="TIMESTAMP" property="confirmedDiagDate" />
+    <result column="PROPERTY_CODE" jdbcType="VARCHAR" property="propertyCode" />
+    <result column="PROPERTY_CN" jdbcType="VARCHAR" property="propertyCn" />
+    <result column="DIAG_TYPE_CODE" jdbcType="VARCHAR" property="diagTypeCode" />
+    <result column="DIAG_TYPE_CN" jdbcType="VARCHAR" property="diagTypeCn" />
+    <result column="DIAG_EXPLAN" jdbcType="VARCHAR" property="diagExplan" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, IADUID, IHUID, PUID, INPATIENT_DIAG_CODE, INPATIENT_DIAG_NAME, CONFIRMED_DIAG_DATE, 
+    PROPERTY_CODE, PROPERTY_CN, DIAG_TYPE_CODE, DIAG_TYPE_CN, DIAG_EXPLAN, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME, ORG_ID, QID
+  </sql>
+</mapper>

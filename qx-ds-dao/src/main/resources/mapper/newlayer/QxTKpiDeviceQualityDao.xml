@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTKpiDeviceQualityDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTKpiDeviceQuality">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="RTYPE" jdbcType="DECIMAL" property="rtype" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="IS_QUALIFIED" jdbcType="DECIMAL" property="isQualified" />
+    <result column="ASSESSMENT" jdbcType="VARCHAR" property="assessment" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="CHECK_TIME" jdbcType="TIMESTAMP" property="checkTime" />
+  </resultMap>
+</mapper>

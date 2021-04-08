@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTCriticalValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTCriticalValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="CVUID" jdbcType="VARCHAR" property="cvuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <result column="ITEMUID" jdbcType="VARCHAR" property="itemuid" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="EFFECTIVE_DATE" jdbcType="TIMESTAMP" property="effectiveDate" />
+    <result column="EXAM_SITE_NAME" jdbcType="VARCHAR" property="examSiteName" />
+    <result column="REPORT_TIME" jdbcType="TIMESTAMP" property="reportTime" />
+    <result column="RECEIVER" jdbcType="VARCHAR" property="receiver" />
+    <result column="ADVICE" jdbcType="VARCHAR" property="advice" />
+    <result column="ADVICE_TIME" jdbcType="TIMESTAMP" property="adviceTime" />
+    <result column="NURSE_MEASURES" jdbcType="VARCHAR" property="nurseMeasures" />
+    <result column="COURSE_RECORD" jdbcType="VARCHAR" property="courseRecord" />
+    <result column="SERIOUSLY_COURSE_RECORD" jdbcType="VARCHAR" property="seriouslyCourseRecord" />
+    <result column="RESCUE_RECORD" jdbcType="VARCHAR" property="rescueRecord" />
+    <result column="RESULT" jdbcType="VARCHAR" property="result" />
+    <result column="ABNORMAL_PROBLEM" jdbcType="VARCHAR" property="abnormalProblem" />
+    <result column="TYPE" jdbcType="DECIMAL" property="type" />
+    <result column="RANGE_MAX" jdbcType="VARCHAR" property="rangeMax" />
+    <result column="RANGE_MIN" jdbcType="VARCHAR" property="rangeMin" />
+    <result column="ITEM_CODE" jdbcType="VARCHAR" property="itemCode" />
+    <result column="RANGE_MAX_UNIT" jdbcType="VARCHAR" property="rangeMaxUnit" />
+    <result column="RANGE_MIN_UNIT" jdbcType="VARCHAR" property="rangeMinUnit" />
+    <result column="ITEM_NAME" jdbcType="VARCHAR" property="itemName" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="DEPT_ID" jdbcType="VARCHAR" property="deptId" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="PATIENT_NAME" jdbcType="VARCHAR" property="patientName" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

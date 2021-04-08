@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EventAnesPostoptInterviewDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EventAnesPostoptInterview">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="ANES_POST_INTERVIEW_ID" jdbcType="VARCHAR" property="anesPostInterviewId" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="WEIGHT" jdbcType="DECIMAL" property="weight" />
+    <result column="ABO_CODE" jdbcType="VARCHAR" property="aboCode" />
+    <result column="ABO_CN" jdbcType="VARCHAR" property="aboCn" />
+    <result column="RH_CODE" jdbcType="VARCHAR" property="rhCode" />
+    <result column="RH_CN" jdbcType="VARCHAR" property="rhCn" />
+    <result column="OP_PRE_DIAGNOSIS" jdbcType="VARCHAR" property="opPreDiagnosis" />
+    <result column="OP_PRE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="opPreDiagnosisName" />
+    <result column="POST_DIAGNOSIS" jdbcType="VARCHAR" property="postDiagnosis" />
+    <result column="POST_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="postDiagnosisName" />
+    <result column="GENERAL_EXAM_RESULT" jdbcType="VARCHAR" property="generalExamResult" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="ANES_RECOVERY_STATE" jdbcType="VARCHAR" property="anesRecoveryState" />
+    <result column="CONSCIOUS_DATE" jdbcType="TIMESTAMP" property="consciousDate" />
+    <result column="EXTUBATION_MARK" jdbcType="VARCHAR" property="extubationMark" />
+    <result column="SPECICAL_STATE" jdbcType="VARCHAR" property="specicalState" />
+    <result column="ANES_INDICATION" jdbcType="VARCHAR" property="anesIndication" />
+    <result column="ANES_DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="anesDoctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, ANES_POST_INTERVIEW_ID, EVENT_TYPE_CN, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, WEIGHT, ABO_CODE, ABO_CN, RH_CODE, RH_CN, OP_PRE_DIAGNOSIS, OP_PRE_DIAGNOSIS_NAME, 
+    POST_DIAGNOSIS, POST_DIAGNOSIS_NAME, GENERAL_EXAM_RESULT, ANESTHESIA_CODE, ANESTHESIA_CN, 
+    ANES_RECOVERY_STATE, CONSCIOUS_DATE, EXTUBATION_MARK, SPECICAL_STATE, ANES_INDICATION, 
+    ANES_DOCTOR_SIGNATURE, SIGNATURE_DATE, OPERATION_CODE, OPERATION_NAME, NOTES, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, 
+    SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

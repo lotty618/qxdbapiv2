@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrRescueRecordInfoDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrRescueRecordInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EDRRUID" jdbcType="VARCHAR" property="edrruid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="DISEASE_DIAG_CODE" jdbcType="VARCHAR" property="diseaseDiagCode" />
+    <result column="DISEASE_DIAG_NAME" jdbcType="VARCHAR" property="diseaseDiagName" />
+    <result column="DISEASE_CHANGE_CONDITION" jdbcType="VARCHAR" property="diseaseChangeCondition" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="OPERATION_PART_NAME" jdbcType="VARCHAR" property="operationPartName" />
+    <result column="INTERVENTION" jdbcType="VARCHAR" property="intervention" />
+    <result column="OPERATION_METHOD" jdbcType="VARCHAR" property="operationMethod" />
+    <result column="OPERATION_COUNT" jdbcType="VARCHAR" property="operationCount" />
+    <result column="RESCUE_START_DATE" jdbcType="TIMESTAMP" property="rescueStartDate" />
+    <result column="RESCUE_END_DATE" jdbcType="TIMESTAMP" property="rescueEndDate" />
+    <result column="ITEM_NAME" jdbcType="VARCHAR" property="itemName" />
+    <result column="RESULT_DESC" jdbcType="VARCHAR" property="resultDesc" />
+    <result column="QUANTITIVE_RESULT" jdbcType="VARCHAR" property="quantitiveResult" />
+    <result column="RESULT_CODE" jdbcType="VARCHAR" property="resultCode" />
+    <result column="RESULT_NAME" jdbcType="VARCHAR" property="resultName" />
+    <result column="OPERATION_NOTE" jdbcType="VARCHAR" property="operationNote" />
+    <result column="PARTICIPATORS" jdbcType="VARCHAR" property="participators" />
+    <result column="TITLE_CODE" jdbcType="VARCHAR" property="titleCode" />
+    <result column="TITLE_NAME" jdbcType="VARCHAR" property="titleName" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EMR_CONTENT_PARSE" jdbcType="VARCHAR" property="emrContentParse" />
+    <result column="EXAMINATION" jdbcType="VARCHAR" property="examination" />
+    <result column="RESCUE_DATE" jdbcType="VARCHAR" property="rescueDate" />
+    <result column="DISCUSSION_LIST" jdbcType="VARCHAR" property="discussionList" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="DISCHARGE_DATE" jdbcType="VARCHAR" property="dischargeDate" />
+    <result column="MAIN_DOCTOR" jdbcType="VARCHAR" property="mainDoctor" />
+    <result column="MAIN_DOCTOR_DATE" jdbcType="VARCHAR" property="mainDoctorDate" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

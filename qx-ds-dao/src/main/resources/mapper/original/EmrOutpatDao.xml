@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrOutpatDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrOutpat">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="EMR_ID" jdbcType="VARCHAR" property="emrId" />
+    <result column="EMR_NAME" jdbcType="VARCHAR" property="emrName" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="DOCTOR_CODE" jdbcType="VARCHAR" property="doctorCode" />
+    <result column="DOCTOR_NAME" jdbcType="VARCHAR" property="doctorName" />
+    <result column="OCCURRED_TIME" jdbcType="TIMESTAMP" property="occurredTime" />
+    <result column="EMR_CONTENT" jdbcType="VARCHAR" property="emrContent" />
+    <result column="CHIEF_COMPLAINTS" jdbcType="VARCHAR" property="chiefComplaints" />
+    <result column="CURRENT_DISEASE" jdbcType="VARCHAR" property="currentDisease" />
+    <result column="DISEASE_HISTORY" jdbcType="VARCHAR" property="diseaseHistory" />
+    <result column="PERSONAL_HISTORY" jdbcType="VARCHAR" property="personalHistory" />
+    <result column="MARRIAGE_HISTORY" jdbcType="VARCHAR" property="marriageHistory" />
+    <result column="MENSES_HISTORY" jdbcType="VARCHAR" property="mensesHistory" />
+    <result column="FAMILY_HISTORY" jdbcType="VARCHAR" property="familyHistory" />
+    <result column="SPEC_SITUATION" jdbcType="VARCHAR" property="specSituation" />
+    <result column="ASSIST_EXAM_RESULT" jdbcType="VARCHAR" property="assistExamResult" />
+    <result column="FIRST_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="firstDiagnosisCode" />
+    <result column="FIRST_DIAGNOSIS_CN" jdbcType="VARCHAR" property="firstDiagnosisCn" />
+    <result column="INFECTIOUS_MARK" jdbcType="VARCHAR" property="infectiousMark" />
+    <result column="INFECTION_HISTORY" jdbcType="VARCHAR" property="infectionHistory" />
+    <result column="VACCINATE_HISTORY" jdbcType="VARCHAR" property="vaccinateHistory" />
+    <result column="OPERATION_HISTORY" jdbcType="VARCHAR" property="operationHistory" />
+    <result column="BLOOD_HISTORY" jdbcType="VARCHAR" property="bloodHistory" />
+    <result column="ALLERGY_HISTORY" jdbcType="VARCHAR" property="allergyHistory" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EMR_CLASS" jdbcType="VARCHAR" property="emrClass" />
+    <result column="EMR_CLASS_NAME" jdbcType="VARCHAR" property="emrClassName" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, EMR_ID, EMR_NAME, DEPT_CODE, DEPT_NAME, 
+    DOCTOR_CODE, DOCTOR_NAME, OCCURRED_TIME, EMR_CONTENT, CHIEF_COMPLAINTS, CURRENT_DISEASE, 
+    DISEASE_HISTORY, PERSONAL_HISTORY, MARRIAGE_HISTORY, MENSES_HISTORY, FAMILY_HISTORY, 
+    SPEC_SITUATION, ASSIST_EXAM_RESULT, FIRST_DIAGNOSIS_CODE, FIRST_DIAGNOSIS_CN, INFECTIOUS_MARK, 
+    INFECTION_HISTORY, VACCINATE_HISTORY, OPERATION_HISTORY, BLOOD_HISTORY, ALLERGY_HISTORY, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    SYSUP_TIME, SYSCR_TIME, EMR_CLASS, EMR_CLASS_NAME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, 
+    EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+</mapper>

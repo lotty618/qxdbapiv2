@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTMedicalRecordPage2Dao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTMedicalRecordPage2">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="MRPUID" jdbcType="VARCHAR" property="mrpuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="DISCHARGE_CLASS_CN" jdbcType="VARCHAR" property="dischargeClassCn" />
+    <result column="REHOSP_AFTER31_MARK" jdbcType="VARCHAR" property="rehospAfter31Mark" />
+    <result column="COMA_DURATION_BEFORE" jdbcType="VARCHAR" property="comaDurationBefore" />
+    <result column="COMA_DURATION_AFTER" jdbcType="VARCHAR" property="comaDurationAfter" />
+    <result column="LIFE_SUPPORT_MACHINE_TIME" jdbcType="VARCHAR" property="lifeSupportMachineTime" />
+    <result column="INTENSIVE_CARE_THERAPY" jdbcType="VARCHAR" property="intensiveCareTherapy" />
+    <result column="FEE_TOTAL" jdbcType="VARCHAR" property="feeTotal" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

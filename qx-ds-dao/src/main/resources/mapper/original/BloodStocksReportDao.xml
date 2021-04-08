@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.BloodStocksReportDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.BloodStocksReport">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="DATE_T" jdbcType="TIMESTAMP" property="dateT" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="ABO_CODE" jdbcType="VARCHAR" property="aboCode" />
+    <result column="ABO_NAME" jdbcType="VARCHAR" property="aboName" />
+    <result column="RH_CODE" jdbcType="VARCHAR" property="rhCode" />
+    <result column="RH_NAME" jdbcType="VARCHAR" property="rhName" />
+    <result column="BLOOD_CLASS_TYPE_CODE" jdbcType="VARCHAR" property="bloodClassTypeCode" />
+    <result column="BLOOD_CLASS_TYPE_NAME" jdbcType="VARCHAR" property="bloodClassTypeName" />
+    <result column="VALUE" jdbcType="DECIMAL" property="value" />
+    <result column="UNIT" jdbcType="VARCHAR" property="unit" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ID, ORG_ID, DATE_T, ORG_NAME, ABO_CODE, ABO_NAME, RH_CODE, RH_NAME, BLOOD_CLASS_TYPE_CODE, 
+    BLOOD_CLASS_TYPE_NAME, "VALUE", UNIT, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR,
+    CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

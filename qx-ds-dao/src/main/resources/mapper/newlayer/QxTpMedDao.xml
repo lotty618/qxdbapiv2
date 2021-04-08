@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTpMedDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTpMed">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="MEDUID" jdbcType="VARCHAR" property="meduid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SPEC" jdbcType="VARCHAR" property="spec" />
+    <result column="SPEC_MED" jdbcType="VARCHAR" property="specMed" />
+    <result column="SPEC_PHARMACY" jdbcType="VARCHAR" property="specPharmacy" />
+    <result column="SPEC_WARD" jdbcType="VARCHAR" property="specWard" />
+    <result column="ATTRIBUTE_MED" jdbcType="VARCHAR" property="attributeMed" />
+    <result column="ISSPECIAL" jdbcType="VARCHAR" property="isspecial" />
+    <result column="UNIT" jdbcType="VARCHAR" property="unit" />
+    <result column="UNIT_SIMPLE" jdbcType="VARCHAR" property="unitSimple" />
+    <result column="UNIT_MIN" jdbcType="VARCHAR" property="unitMin" />
+    <result column="UNIT_PHARMACY" jdbcType="VARCHAR" property="unitPharmacy" />
+    <result column="UNIT_WARD" jdbcType="VARCHAR" property="unitWard" />
+    <result column="PACK_MIN" jdbcType="VARCHAR" property="packMin" />
+    <result column="PACK_PHARMACY" jdbcType="VARCHAR" property="packPharmacy" />
+    <result column="PACK_WARD" jdbcType="VARCHAR" property="packWard" />
+    <result column="PRICE_INJECT" jdbcType="VARCHAR" property="priceInject" />
+    <result column="IS_SKIN_TEST" jdbcType="VARCHAR" property="isSkinTest" />
+    <result column="DOSAGE_LIMIT" jdbcType="VARCHAR" property="dosageLimit" />
+    <result column="DISPENSING" jdbcType="VARCHAR" property="dispensing" />
+    <result column="CODE_PINYIN" jdbcType="VARCHAR" property="codePinyin" />
+    <result column="CODE_WUBI" jdbcType="VARCHAR" property="codeWubi" />
+    <result column="CODE_JIAOXING" jdbcType="VARCHAR" property="codeJiaoxing" />
+    <result column="CODE_OTHER" jdbcType="VARCHAR" property="codeOther" />
+    <result column="MED_NUM" jdbcType="VARCHAR" property="medNum" />
+    <result column="PRICE_LEVEL" jdbcType="VARCHAR" property="priceLevel" />
+    <result column="EXPIRY_DATE" jdbcType="VARCHAR" property="expiryDate" />
+    <result column="DOSE_TYPE" jdbcType="VARCHAR" property="doseType" />
+    <result column="MED_TYPE" jdbcType="VARCHAR" property="medType" />
+    <result column="MED_CODE" jdbcType="VARCHAR" property="medCode" />
+    <result column="MED_LEVEL" jdbcType="VARCHAR" property="medLevel" />
+    <result column="IS_PREPARATIONS" jdbcType="VARCHAR" property="isPreparations" />
+    <result column="IS_EMERGENCY" jdbcType="VARCHAR" property="isEmergency" />
+    <result column="DOS_AGE" jdbcType="VARCHAR" property="dosAge" />
+    <result column="UNIT_DOSAGE" jdbcType="VARCHAR" property="unitDosage" />
+    <result column="ACCOUNT_TYPE" jdbcType="VARCHAR" property="accountType" />
+    <result column="ABC_TYPE" jdbcType="VARCHAR" property="abcType" />
+    <result column="ROUND_NUM" jdbcType="VARCHAR" property="roundNum" />
+    <result column="PRODUCTION_PLACE" jdbcType="VARCHAR" property="productionPlace" />
+    <result column="IS_ANTIBIOTICS" jdbcType="VARCHAR" property="isAntibiotics" />
+    <result column="USED_ONCE" jdbcType="VARCHAR" property="usedOnce" />
+    <result column="IS_BASE" jdbcType="VARCHAR" property="isBase" />
+    <result column="IS_SPORT" jdbcType="VARCHAR" property="isSport" />
+    <result column="IS_REFRIGERATE" jdbcType="VARCHAR" property="isRefrigerate" />
+    <result column="REMARK_PM" jdbcType="VARCHAR" property="remarkPm" />
+    <result column="STORAGE_MED" jdbcType="VARCHAR" property="storageMed" />
+    <result column="INSURANCE_TYPE" jdbcType="VARCHAR" property="insuranceType" />
+    <result column="IS_PRESCRIPTION_MED" jdbcType="VARCHAR" property="isPrescriptionMed" />
+    <result column="NAME_USUAL" jdbcType="VARCHAR" property="nameUsual" />
+    <result column="NAME_ENGLISH" jdbcType="VARCHAR" property="nameEnglish" />
+    <result column="ATC_CODE" jdbcType="VARCHAR" property="atcCode" />
+    <result column="DOSAGE_ONCE" jdbcType="VARCHAR" property="dosageOnce" />
+    <result column="DOSAGE_MAX" jdbcType="VARCHAR" property="dosageMax" />
+    <result column="ANTIBIOTICS_LEVEL" jdbcType="VARCHAR" property="antibioticsLevel" />
+    <result column="SPECIALUSE" jdbcType="VARCHAR" property="specialuse" />
+    <result column="SPECIAL_REMARK" jdbcType="VARCHAR" property="specialRemark" />
+    <result column="IS_ABOLISH" jdbcType="VARCHAR" property="isAbolish" />
+    <result column="FIRM" jdbcType="VARCHAR" property="firm" />
+    <result column="MED_CLASS" jdbcType="VARCHAR" property="medClass" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="IS_SELECTED" jdbcType="DECIMAL" property="isSelected" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ILLUSTRATE_MED" jdbcType="VARCHAR" property="illustrateMed" />
+    <result column="PROPERTY" jdbcType="VARCHAR" property="property" />
+  </resultMap>
+</mapper>

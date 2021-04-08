@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientSympDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientSymp">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="SYMPTOM_ID" jdbcType="VARCHAR" property="symptomId" />
+    <result column="SYMPTOM_NAME" jdbcType="VARCHAR" property="symptomName" />
+    <result column="SYMPTOM_CODE" jdbcType="VARCHAR" property="symptomCode" />
+    <result column="SYMPTOM_DESCRIPTION" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="SYMP_DURATION_MINS" jdbcType="DECIMAL" property="sympDurationMins" />
+    <result column="ONSET_DTIME" jdbcType="TIMESTAMP" property="onsetDtime" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, SYMPTOM_ID, SYMPTOM_NAME, SYMPTOM_CODE, 
+    SYMPTOM_DESCRIPTION, SYMP_DURATION_MINS, ONSET_DTIME, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

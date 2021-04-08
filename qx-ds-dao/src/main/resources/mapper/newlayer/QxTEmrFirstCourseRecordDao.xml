@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrFirstCourseRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrFirstCourseRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EFCRUID" jdbcType="VARCHAR" property="efcruid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="OPERATION_RECORD_DATE" jdbcType="TIMESTAMP" property="operationRecordDate" />
+    <result column="CHIEF_COMPLAINTS" jdbcType="VARCHAR" property="chiefComplaints" />
+    <result column="CASE_CHARACTE" jdbcType="VARCHAR" property="caseCharacte" />
+    <result column="TCM_OBSERVE" jdbcType="VARCHAR" property="tcmObserve" />
+    <result column="DIAG_TREAT_PLAN" jdbcType="VARCHAR" property="diagTreatPlan" />
+    <result column="THERAPEUTIC_PREINCIPLES" jdbcType="VARCHAR" property="therapeuticPreinciples" />
+    <result column="RESIDENT_DOCTOR_NAME" jdbcType="VARCHAR" property="residentDoctorName" />
+    <result column="SUPERIOR_PHYSICIAN_NAME" jdbcType="VARCHAR" property="superiorPhysicianName" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="DIAGNOSIS_QUASI" jdbcType="VARCHAR" property="diagnosisQuasi" />
+    <result column="DIAGNOSIS_DISCEM" jdbcType="VARCHAR" property="diagnosisDiscem" />
+    <result column="DIAGNOSIS_BASIS" jdbcType="VARCHAR" property="diagnosisBasis" />
+    <result column="CHARACTERISTICS_ABNORMAL" jdbcType="VARCHAR" property="characteristicsAbnormal" />
+    <result column="CHARACTERISTICS_NORMAL" jdbcType="VARCHAR" property="characteristicsNormal" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+    <result column="EMR_CONTENT_PARSE" jdbcType="BLOB" property="emrContentParse" />
+  </resultMap>
+</mapper>

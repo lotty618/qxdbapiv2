@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTpMedHabitatDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTpMedHabitat">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="PMHUID" jdbcType="VARCHAR" property="pmhuid" />
+    <result column="PRODPLACE_CODE" jdbcType="VARCHAR" property="prodplaceCode" />
+    <result column="PRODPLACE_NAME" jdbcType="VARCHAR" property="prodplaceName" />
+    <result column="PRODPLACE_CONTRAST" jdbcType="VARCHAR" property="prodplaceContrast" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

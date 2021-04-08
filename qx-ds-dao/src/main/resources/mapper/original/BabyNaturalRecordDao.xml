@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.BabyNaturalRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.BabyNaturalRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="DELIVERY_ID" jdbcType="VARCHAR" property="deliveryId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="GRAVIDITY" jdbcType="DECIMAL" property="gravidity" />
+    <result column="PARITY" jdbcType="DECIMAL" property="parity" />
+    <result column="EXPECTED_CHILDBIRTH_DATE" jdbcType="TIMESTAMP" property="expectedChildbirthDate" />
+    <result column="LABOR_DATE" jdbcType="TIMESTAMP" property="laborDate" />
+    <result column="RUPTURE_MEMBRANES" jdbcType="TIMESTAMP" property="ruptureMembranes" />
+    <result column="PRE_AMNIOTIC_FLUID_STATE" jdbcType="VARCHAR" property="preAmnioticFluidState" />
+    <result column="PRE_AMNIOTIC_FLUID" jdbcType="DECIMAL" property="preAmnioticFluid" />
+    <result column="UTERINE_START_DATE" jdbcType="TIMESTAMP" property="uterineStartDate" />
+    <result column="FIRST_LABOR_STAGE" jdbcType="DECIMAL" property="firstLaborStage" />
+    <result column="UTERUS_OPENS_DATE" jdbcType="TIMESTAMP" property="uterusOpensDate" />
+    <result column="SECOND_LABOR_STAGE" jdbcType="DECIMAL" property="secondLaborStage" />
+    <result column="FETAL_DISENGAGEMENT_DATE" jdbcType="TIMESTAMP" property="fetalDisengagementDate" />
+    <result column="THIRD_LABOR_STAGE" jdbcType="DECIMAL" property="thirdLaborStage" />
+    <result column="PLACENTAL_EXPULSION_DATE" jdbcType="TIMESTAMP" property="placentalExpulsionDate" />
+    <result column="TOTAL_LABOR_STAGE" jdbcType="DECIMAL" property="totalLaborStage" />
+    <result column="FETUS_POSITION" jdbcType="VARCHAR" property="fetusPosition" />
+    <result column="DELIVER_MARK" jdbcType="VARCHAR" property="deliverMark" />
+    <result column="PLACENTA_STATUS" jdbcType="VARCHAR" property="placentaStatus" />
+    <result column="INTACT_FETAL_MEMBRANES" jdbcType="VARCHAR" property="intactFetalMembranes" />
+    <result column="AMNIOTIC_FLUID_STATE" jdbcType="VARCHAR" property="amnioticFluidState" />
+    <result column="AMNIOTIC_FLUID" jdbcType="DECIMAL" property="amnioticFluid" />
+    <result column="FUNICLE_LENGTH" jdbcType="DECIMAL" property="funicleLength" />
+    <result column="ROUND_NECK" jdbcType="DECIMAL" property="roundNeck" />
+    <result column="FUNICLE_ABNORMAL" jdbcType="VARCHAR" property="funicleAbnormal" />
+    <result column="MEDICATION_NAME" jdbcType="VARCHAR" property="medicationName" />
+    <result column="PREMUNITON" jdbcType="VARCHAR" property="premuniton" />
+    <result column="EPISIOTOMY_MARK" jdbcType="VARCHAR" property="episiotomyMark" />
+    <result column="EPISIOTOMY_POSITION" jdbcType="VARCHAR" property="episiotomyPosition" />
+    <result column="PERINEUM_STITCHES_NUM" jdbcType="DECIMAL" property="perineumStitchesNum" />
+    <result column="EPISIOTOMY_DEGREE_CODE" jdbcType="VARCHAR" property="episiotomyDegreeCode" />
+    <result column="EPISIOTOMY_DEGREE_NAME" jdbcType="VARCHAR" property="episiotomyDegreeName" />
+    <result column="PERINEUM_HEMATOMA_MARK" jdbcType="VARCHAR" property="perineumHematomaMark" />
+    <result column="PERINEUM_HEMATOMA_SIZE" jdbcType="VARCHAR" property="perineumHematomaSize" />
+    <result column="PERINEUM_HEMATOMA_HANDLE" jdbcType="VARCHAR" property="perineumHematomaHandle" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_NAME" jdbcType="VARCHAR" property="anesthesiaName" />
+    <result column="NARCOTIC_DRUG_NAME" jdbcType="VARCHAR" property="narcoticDrugName" />
+    <result column="VAGINA_LACERATION_MARK" jdbcType="VARCHAR" property="vaginaLacerationMark" />
+    <result column="VAGINA_HEMATOMA_MARK" jdbcType="VARCHAR" property="vaginaHematomaMark" />
+    <result column="CERVIX_LACERATION_MARK" jdbcType="VARCHAR" property="cervixLacerationMark" />
+    <result column="CERVIX_STITCHES_NUM" jdbcType="DECIMAL" property="cervixStitchesNum" />
+    <result column="POSTPARTUM_DRUG_NAME" jdbcType="VARCHAR" property="postpartumDrugName" />
+    <result column="DELIVER_PROCESS_DESC" jdbcType="VARCHAR" property="deliverProcessDesc" />
+    <result column="ACCOUCHE_SIGNATURE" jdbcType="VARCHAR" property="accoucheSignature" />
+    <result column="UTERINE_CONTRACTION" jdbcType="VARCHAR" property="uterineContraction" />
+    <result column="UTERUS_CONTRACTION" jdbcType="VARCHAR" property="uterusContraction" />
+    <result column="LOCHIA_CONTRACTION" jdbcType="VARCHAR" property="lochiaContraction" />
+    <result column="PERINEUM_CONTRACTION" jdbcType="VARCHAR" property="perineumContraction" />
+    <result column="REPAIR_POERATION" jdbcType="VARCHAR" property="repairPoeration" />
+    <result column="DELIVER_SIGNATURE" jdbcType="VARCHAR" property="deliverSignature" />
+    <result column="ASSISTANT_SIGNATURE" jdbcType="VARCHAR" property="assistantSignature" />
+    <result column="BABY_CARE_SIGNATURE" jdbcType="VARCHAR" property="babyCareSignature" />
+    <result column="INSTRUCTOR_SIGNATURE" jdbcType="VARCHAR" property="instructorSignature" />
+    <result column="SAVE_CORD_BLOOD_MARK" jdbcType="VARCHAR" property="saveCordBloodMark" />
+    <result column="POSTPARTUM_DIAGNOSIS" jdbcType="VARCHAR" property="postpartumDiagnosis" />
+    <result column="POSTPARTUM_OBSERV_DATE" jdbcType="TIMESTAMP" property="postpartumObservDate" />
+    <result column="POSTPARTUM_EXAM" jdbcType="DECIMAL" property="postpartumExam" />
+    <result column="POSTPARTUM_SBP" jdbcType="DECIMAL" property="postpartumSbp" />
+    <result column="POSTPARTUM_DBP" jdbcType="DECIMAL" property="postpartumDbp" />
+    <result column="POSTPARTUM_PULSES" jdbcType="DECIMAL" property="postpartumPulses" />
+    <result column="POSTPARTUM_HEART_RATE" jdbcType="DECIMAL" property="postpartumHeartRate" />
+    <result column="POSTPARTUM_LOSSBLOOD_AMOUNT" jdbcType="DECIMAL" property="postpartumLossbloodAmount" />
+    <result column="POSTPARTUM_UTERINE_CONTR" jdbcType="VARCHAR" property="postpartumUterineContr" />
+    <result column="POSTPARTUM_UTERUS_HEIGHT" jdbcType="DECIMAL" property="postpartumUterusHeight" />
+    <result column="ANUS_EXAM" jdbcType="VARCHAR" property="anusExam" />
+    <result column="PRODUCTION_TUMOR_SIZE" jdbcType="DECIMAL" property="productionTumorSize" />
+    <result column="PRODUCTION_TUMOR_POSITION" jdbcType="VARCHAR" property="productionTumorPosition" />
+    <result column="WRITOR_SIGNATURE" jdbcType="VARCHAR" property="writorSignature" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DELIVERY_ID, CASE_NO, HOSPITALTALIZATION_TIMES, 
+    "NAME", AGE_YEAR, DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, GRAVIDITY, PARITY,
+    EXPECTED_CHILDBIRTH_DATE, LABOR_DATE, RUPTURE_MEMBRANES, PRE_AMNIOTIC_FLUID_STATE, 
+    PRE_AMNIOTIC_FLUID, UTERINE_START_DATE, FIRST_LABOR_STAGE, UTERUS_OPENS_DATE, SECOND_LABOR_STAGE, 
+    FETAL_DISENGAGEMENT_DATE, THIRD_LABOR_STAGE, PLACENTAL_EXPULSION_DATE, TOTAL_LABOR_STAGE, 
+    FETUS_POSITION, DELIVER_MARK, PLACENTA_STATUS, INTACT_FETAL_MEMBRANES, AMNIOTIC_FLUID_STATE, 
+    AMNIOTIC_FLUID, FUNICLE_LENGTH, ROUND_NECK, FUNICLE_ABNORMAL, MEDICATION_NAME, PREMUNITON, 
+    EPISIOTOMY_MARK, EPISIOTOMY_POSITION, PERINEUM_STITCHES_NUM, EPISIOTOMY_DEGREE_CODE, 
+    EPISIOTOMY_DEGREE_NAME, PERINEUM_HEMATOMA_MARK, PERINEUM_HEMATOMA_SIZE, PERINEUM_HEMATOMA_HANDLE, 
+    ANESTHESIA_CODE, ANESTHESIA_NAME, NARCOTIC_DRUG_NAME, VAGINA_LACERATION_MARK, VAGINA_HEMATOMA_MARK, 
+    CERVIX_LACERATION_MARK, CERVIX_STITCHES_NUM, POSTPARTUM_DRUG_NAME, DELIVER_PROCESS_DESC, 
+    ACCOUCHE_SIGNATURE, UTERINE_CONTRACTION, UTERUS_CONTRACTION, LOCHIA_CONTRACTION, 
+    PERINEUM_CONTRACTION, REPAIR_POERATION, DELIVER_SIGNATURE, ASSISTANT_SIGNATURE, BABY_CARE_SIGNATURE, 
+    INSTRUCTOR_SIGNATURE, SAVE_CORD_BLOOD_MARK, POSTPARTUM_DIAGNOSIS, POSTPARTUM_OBSERV_DATE, 
+    POSTPARTUM_EXAM, POSTPARTUM_SBP, POSTPARTUM_DBP, POSTPARTUM_PULSES, POSTPARTUM_HEART_RATE, 
+    POSTPARTUM_LOSSBLOOD_AMOUNT, POSTPARTUM_UTERINE_CONTR, POSTPARTUM_UTERUS_HEIGHT, 
+    ANUS_EXAM, PRODUCTION_TUMOR_SIZE, PRODUCTION_TUMOR_POSITION, WRITOR_SIGNATURE, NOTES, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InMedicalRecordOperationDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InMedicalRecordOperation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <id column="OPER_FORM_NO" jdbcType="VARCHAR" property="operFormNo" />
+    <result column="CASE_TYPE_CODE" jdbcType="VARCHAR" property="caseTypeCode" />
+    <result column="CASE_TYPE_CN" jdbcType="VARCHAR" property="caseTypeCn" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_CN" jdbcType="VARCHAR" property="operationCn" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="OPERATION_LEVEL_CODE" jdbcType="VARCHAR" property="operationLevelCode" />
+    <result column="OPERATION_LEVEL_CN" jdbcType="VARCHAR" property="operationLevelCn" />
+    <result column="SURGEON_NAME" jdbcType="VARCHAR" property="surgeonName" />
+    <result column="ASSISTANT1_NAME" jdbcType="VARCHAR" property="assistant1Name" />
+    <result column="ASSISTANT2_NAME" jdbcType="VARCHAR" property="assistant2Name" />
+    <result column="INCISION_TYPE_CODE" jdbcType="VARCHAR" property="incisionTypeCode" />
+    <result column="INCISION_TYPE_CN" jdbcType="VARCHAR" property="incisionTypeCn" />
+    <result column="INCISION_HEALING_CODE" jdbcType="VARCHAR" property="incisionHealingCode" />
+    <result column="INCISION_HEALING_CN" jdbcType="VARCHAR" property="incisionHealingCn" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="ANESTHESIOLOGIST_NAME" jdbcType="VARCHAR" property="anesthesiologistName" />
+    <result column="BODY_PART_CODE" jdbcType="VARCHAR" property="bodyPartCode" />
+    <result column="BODY_PART_NAME" jdbcType="VARCHAR" property="bodyPartName" />
+    <result column="OPER_DURATION" jdbcType="DECIMAL" property="operDuration" />
+    <result column="ANESTHESIA_LEVEL_CODE" jdbcType="VARCHAR" property="anesthesiaLevelCode" />
+    <result column="ANESTHESIA_LEVEL_CN" jdbcType="VARCHAR" property="anesthesiaLevelCn" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, REPORT_FORM_NO, OPER_FORM_NO, CASE_TYPE_CODE, 
+    CASE_TYPE_CN, OPERATION_CODE, OPERATION_CN, OPERATION_DATE, OPERATION_LEVEL_CODE, 
+    OPERATION_LEVEL_CN, SURGEON_NAME, ASSISTANT1_NAME, ASSISTANT2_NAME, INCISION_TYPE_CODE, 
+    INCISION_TYPE_CN, INCISION_HEALING_CODE, INCISION_HEALING_CN, ANESTHESIA_CODE, ANESTHESIA_CN, 
+    ANESTHESIOLOGIST_NAME, BODY_PART_CODE, BODY_PART_NAME, OPER_DURATION, ANESTHESIA_LEVEL_CODE, 
+    ANESTHESIA_LEVEL_CN, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

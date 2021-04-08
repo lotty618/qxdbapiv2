@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InfoconsentTransfusionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InfoconsentTransfusion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="INFORMED_CONSENT_NO" jdbcType="VARCHAR" property="informedConsentNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="TRANSFUSE_HISTORY_CODE" jdbcType="VARCHAR" property="transfuseHistoryCode" />
+    <result column="TRANSFUSE_HISTORY_NAME" jdbcType="VARCHAR" property="transfuseHistoryName" />
+    <result column="TRANSFUSE_INDICATION" jdbcType="VARCHAR" property="transfuseIndication" />
+    <result column="TRANSFUSION_CODE" jdbcType="VARCHAR" property="transfusionCode" />
+    <result column="TRANSFUSION_NAME" jdbcType="VARCHAR" property="transfusionName" />
+    <result column="TRANS_PRE_ITEM_RESULT" jdbcType="VARCHAR" property="transPreItemResult" />
+    <result column="TRANSFUSION_WAY" jdbcType="VARCHAR" property="transfusionWay" />
+    <result column="PLAN_TRANSFUSE_DATE" jdbcType="TIMESTAMP" property="planTransfuseDate" />
+    <result column="TRANSFUSION_RISK" jdbcType="VARCHAR" property="transfusionRisk" />
+    <result column="ORG_COMMENT" jdbcType="VARCHAR" property="orgComment" />
+    <result column="PAT_LEGAL_COMMENT" jdbcType="VARCHAR" property="patLegalComment" />
+    <result column="PATIENT_SIGNATURE" jdbcType="VARCHAR" property="patientSignature" />
+    <result column="LEGAL_SIGNATURE" jdbcType="VARCHAR" property="legalSignature" />
+    <result column="PAT_LEGAL_RELATION_CODE" jdbcType="VARCHAR" property="patLegalRelationCode" />
+    <result column="PAT_LEGAL_RELATION_NAME" jdbcType="VARCHAR" property="patLegalRelationName" />
+    <result column="PATIENT_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="patientSignatureDate" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="DOCTOR_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="doctorSignatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InfoconsentTransfusion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, INFORMED_CONSENT_NO, EVENT_TYPE_CN, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, DIAGNOSIS_CODE, DIAGNOSIS_NAME, TRANSFUSE_HISTORY_CODE, TRANSFUSE_HISTORY_NAME, 
+    TRANSFUSE_INDICATION, TRANSFUSION_CODE, TRANSFUSION_NAME, TRANS_PRE_ITEM_RESULT, 
+    TRANSFUSION_WAY, PLAN_TRANSFUSE_DATE, TRANSFUSION_RISK, ORG_COMMENT, PAT_LEGAL_COMMENT, 
+    PATIENT_SIGNATURE, LEGAL_SIGNATURE, PAT_LEGAL_RELATION_CODE, PAT_LEGAL_RELATION_NAME, 
+    PATIENT_SIGNATURE_DATE, DOCTOR_SIGNATURE, DOCTOR_SIGNATURE_DATE, NOTES, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, 
+    SYSUP_TIME, SYSCR_TIME, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

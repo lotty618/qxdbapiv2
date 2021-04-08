@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrAdmissionPhysicalExamDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrAdmissionPhysicalExam">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="VARCHAR" property="hospitaltalizationTimes" />
+    <result column="TEMPERATURE" jdbcType="DECIMAL" property="temperature" />
+    <result column="PULSES" jdbcType="DECIMAL" property="pulses" />
+    <result column="RESPIRATION" jdbcType="DECIMAL" property="respiration" />
+    <result column="SBP" jdbcType="DECIMAL" property="sbp" />
+    <result column="DBP" jdbcType="DECIMAL" property="dbp" />
+    <result column="COMMON_STATUS" jdbcType="VARCHAR" property="commonStatus" />
+    <result column="SKIN" jdbcType="VARCHAR" property="skin" />
+    <result column="LYMPH" jdbcType="VARCHAR" property="lymph" />
+    <result column="HEAD" jdbcType="VARCHAR" property="head" />
+    <result column="NECK" jdbcType="VARCHAR" property="neck" />
+    <result column="CHEST" jdbcType="VARCHAR" property="chest" />
+    <result column="LUNG" jdbcType="VARCHAR" property="lung" />
+    <result column="HEART" jdbcType="VARCHAR" property="heart" />
+    <result column="PERIPHERAL_VESSELS" jdbcType="VARCHAR" property="peripheralVessels" />
+    <result column="ABDOMEN" jdbcType="VARCHAR" property="abdomen" />
+    <result column="GENITALIA" jdbcType="VARCHAR" property="genitalia" />
+    <result column="ANUS" jdbcType="VARCHAR" property="anus" />
+    <result column="ACANTHA" jdbcType="VARCHAR" property="acantha" />
+    <result column="NEURAL" jdbcType="VARCHAR" property="neural" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrAdmissionPhysicalExam">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, CASE_NO, HOSPITALTALIZATION_TIMES, TEMPERATURE, 
+    PULSES, RESPIRATION, SBP, DBP, COMMON_STATUS, SKIN, LYMPH, HEAD, NECK, CHEST, LUNG, 
+    HEART, PERIPHERAL_VESSELS, ABDOMEN, GENITALIA, ANUS, ACANTHA, NEURAL, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, SYSUP_TIME, 
+    SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

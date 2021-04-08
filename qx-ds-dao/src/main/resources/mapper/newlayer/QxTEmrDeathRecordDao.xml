@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrDeathRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrDeathRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EDERUID" jdbcType="VARCHAR" property="ederuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="MARRIAGE" jdbcType="VARCHAR" property="marriage" />
+    <result column="ETHNIC_NAME" jdbcType="VARCHAR" property="ethnicName" />
+    <result column="WORK_UNIT" jdbcType="VARCHAR" property="workUnit" />
+    <result column="WORK" jdbcType="VARCHAR" property="work" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="IN_DATE" jdbcType="VARCHAR" property="inDate" />
+    <result column="DISCHARGE_DATE" jdbcType="VARCHAR" property="dischargeDate" />
+    <result column="INHOS_DAY" jdbcType="VARCHAR" property="inhosDay" />
+    <result column="IN_CONDITION_DESC" jdbcType="VARCHAR" property="inConditionDesc" />
+    <result column="IN_DISEASE_DIAG_NAME" jdbcType="VARCHAR" property="inDiseaseDiagName" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="DEATH_CAUSE" jdbcType="VARCHAR" property="deathCause" />
+    <result column="DEATH_DAIG" jdbcType="VARCHAR" property="deathDaig" />
+    <result column="MIAN_DOCTOR" jdbcType="VARCHAR" property="mianDoctor" />
+    <result column="MIAN_DOCTOR_DATE" jdbcType="VARCHAR" property="mianDoctorDate" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

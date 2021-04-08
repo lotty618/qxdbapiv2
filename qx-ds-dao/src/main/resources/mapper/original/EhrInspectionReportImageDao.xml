@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EhrInspectionReportImageDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EhrInspectionReportImage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="REPORT_FORM_NO" jdbcType="VARCHAR" property="reportFormNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="IMAGE_ID" jdbcType="VARCHAR" property="imageId" />
+    <result column="IMAGE_SAVE_PATH" jdbcType="VARCHAR" property="imageSavePath" />
+    <result column="IMAGE" jdbcType="VARCHAR" property="image" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="REMOTEUSER" jdbcType="VARCHAR" property="remoteuser" />
+    <result column="REMOTEPWD" jdbcType="VARCHAR" property="remotepwd" />
+    <result column="PATH_TYPE" jdbcType="VARCHAR" property="pathType" />
+    <result column="PATH_PORT" jdbcType="VARCHAR" property="pathPort" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="REPORT_DISPLAY" jdbcType="VARCHAR" property="reportDisplay" />
+    <result column="DISPLAY_DESC" jdbcType="VARCHAR" property="displayDesc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, REPORT_FORM_NO, EVENT_TYPE_CN, IMAGE_ID, 
+    IMAGE_SAVE_PATH, IMAGE, MODIFIED_TIME, EFFECTIVE, REMOTEUSER, REMOTEPWD, PATH_TYPE, 
+    PATH_PORT, SYSUP_TIME, SYSCR_TIME, REPORT_DISPLAY, DISPLAY_DESC
+  </sql>
+</mapper>

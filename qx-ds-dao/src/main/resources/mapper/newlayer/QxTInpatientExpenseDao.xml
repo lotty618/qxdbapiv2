@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInpatientExpenseDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInpatientExpense">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="IEXUID" jdbcType="VARCHAR" property="iexuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <result column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <result column="INVOICE_NO" jdbcType="VARCHAR" property="invoiceNo" />
+    <result column="INPATIENT_FEE_AMOUNT" jdbcType="VARCHAR" property="inpatientFeeAmount" />
+    <result column="INSURANCE_CHARGES" jdbcType="DECIMAL" property="insuranceCharges" />
+    <result column="SELF_PAYMENT" jdbcType="DECIMAL" property="selfPayment" />
+    <result column="CHARGES" jdbcType="DECIMAL" property="charges" />
+    <result column="DERATE_CHARGES" jdbcType="DECIMAL" property="derateCharges" />
+    <result column="PAY_WAY_CODE" jdbcType="VARCHAR" property="payWayCode" />
+    <result column="PAY_WAY_CN" jdbcType="VARCHAR" property="payWayCn" />
+    <result column="INPATIENT_SETTLE_WAY_CODE" jdbcType="VARCHAR" property="inpatientSettleWayCode" />
+    <result column="INPATIENT_SETTLE_WAY_CN" jdbcType="VARCHAR" property="inpatientSettleWayCn" />
+    <result column="CINSUR_PERCENT" jdbcType="DECIMAL" property="cinsurPercent" />
+    <result column="WEST_MEDICINE_FEE" jdbcType="DECIMAL" property="westMedicineFee" />
+    <result column="PROPRIETARY_CH_FEE" jdbcType="DECIMAL" property="proprietaryChFee" />
+    <result column="CH_HERBAL_MEDICINE" jdbcType="DECIMAL" property="chHerbalMedicine" />
+    <result column="EXAM_FEE" jdbcType="DECIMAL" property="examFee" />
+    <result column="TREATMENT_FEE" jdbcType="DECIMAL" property="treatmentFee" />
+    <result column="OPERATION_FEE" jdbcType="DECIMAL" property="operationFee" />
+    <result column="RADIATION_FEE" jdbcType="DECIMAL" property="radiationFee" />
+    <result column="TEST_FEE" jdbcType="DECIMAL" property="testFee" />
+    <result column="INDAGATION_FEE" jdbcType="DECIMAL" property="indagationFee" />
+    <result column="MATERIAL_FEE" jdbcType="DECIMAL" property="materialFee" />
+    <result column="OTHER_FEE" jdbcType="DECIMAL" property="otherFee" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, IEXUID, IHUID, PUID, QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, SET_SER_NUM, 
+    INVOICE_NO, INPATIENT_FEE_AMOUNT, INSURANCE_CHARGES, SELF_PAYMENT, CHARGES, DERATE_CHARGES, 
+    PAY_WAY_CODE, PAY_WAY_CN, INPATIENT_SETTLE_WAY_CODE, INPATIENT_SETTLE_WAY_CN, CINSUR_PERCENT, 
+    WEST_MEDICINE_FEE, PROPRIETARY_CH_FEE, CH_HERBAL_MEDICINE, EXAM_FEE, TREATMENT_FEE, 
+    OPERATION_FEE, RADIATION_FEE, TEST_FEE, INDAGATION_FEE, MATERIAL_FEE, OTHER_FEE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, 
+    EFFECTIVE, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

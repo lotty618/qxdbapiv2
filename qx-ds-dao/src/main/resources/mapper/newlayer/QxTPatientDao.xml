@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTPatientDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatient">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="NATIONALITY_NAME" jdbcType="VARCHAR" property="nationalityName" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="TEL_NO" jdbcType="VARCHAR" property="telNo" />
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="genderCode" />
+    <result column="GENDER_NAME" jdbcType="VARCHAR" property="genderName" />
+    <result column="ETHNIC_CODE" jdbcType="VARCHAR" property="ethnicCode" />
+    <result column="ETHNIC_NAME" jdbcType="VARCHAR" property="ethnicName" />
+    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="ID_CARD_TYPE" jdbcType="VARCHAR" property="idCardType" />
+    <result column="ID_CARD_TYPE_NAME" jdbcType="VARCHAR" property="idCardTypeName" />
+    <result column="ID_CARD_NO" jdbcType="VARCHAR" property="idCardNo" />
+    <result column="EMPLOYER_ORG" jdbcType="VARCHAR" property="employerOrg" />
+    <result column="WORK_DATE" jdbcType="TIMESTAMP" property="workDate" />
+    <result column="EMPLOYER_ORG_TEL" jdbcType="VARCHAR" property="employerOrgTel" />
+    <result column="CONTACT_NAME" jdbcType="VARCHAR" property="contactName" />
+    <result column="CONTACT_RELATION_CODE" jdbcType="VARCHAR" property="contactRelationCode" />
+    <result column="CONTACT_RELATION_NAME" jdbcType="VARCHAR" property="contactRelationName" />
+    <result column="CONTACT_TEL" jdbcType="VARCHAR" property="contactTel" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="EDU_CODE" jdbcType="VARCHAR" property="eduCode" />
+    <result column="EDU_NAME" jdbcType="VARCHAR" property="eduName" />
+    <result column="OCCUPATION_CODE" jdbcType="VARCHAR" property="occupationCode" />
+    <result column="OCCUPATION_NAME" jdbcType="VARCHAR" property="occupationName" />
+    <result column="MARITAL_STATUS_CODE" jdbcType="VARCHAR" property="maritalStatusCode" />
+    <result column="MARITAL_STATUS_NAME" jdbcType="VARCHAR" property="maritalStatusName" />
+    <result column="IS_RESIDENCE_ADD" jdbcType="DECIMAL" property="isResidenceAdd" />
+    <result column="CARD_TYPE_CODE" jdbcType="VARCHAR" property="cardTypeCode" />
+    <result column="CARD_TYPE_NAME" jdbcType="VARCHAR" property="cardTypeName" />
+    <result column="HEALTHCARE_TYPE_CODE" jdbcType="VARCHAR" property="healthcareTypeCode" />
+    <result column="HEALTHCARE_TYPE_NAME" jdbcType="VARCHAR" property="healthcareTypeName" />
+    <result column="HEALTHCARE_NO" jdbcType="VARCHAR" property="healthcareNo" />
+    <result column="SOCIAL_SECURITY_NO" jdbcType="VARCHAR" property="socialSecurityNo" />
+    <result column="HOSPITAL_ACC_NO" jdbcType="VARCHAR" property="hospitalAccNo" />
+    <result column="CARD_NO" jdbcType="VARCHAR" property="cardNo" />
+    <result column="HEALTH_DOC_NO" jdbcType="VARCHAR" property="healthDocNo" />
+    <result column="EHR_MANAGE_ORG_NAME" jdbcType="VARCHAR" property="ehrManageOrgName" />
+    <result column="EHR_MANAGE_ORG_ID" jdbcType="VARCHAR" property="ehrManageOrgId" />
+    <result column="BLOODTYPE_ABO" jdbcType="VARCHAR" property="bloodtypeAbo" />
+    <result column="BLOODTYPE_ABO_NAME" jdbcType="VARCHAR" property="bloodtypeAboName" />
+    <result column="BLOODTYPE_RH" jdbcType="VARCHAR" property="bloodtypeRh" />
+    <result column="BLOODTYPE_RH_NAME" jdbcType="VARCHAR" property="bloodtypeRhName" />
+    <result column="HAS_DRUG_ALLERGY" jdbcType="DECIMAL" property="hasDrugAllergy" />
+    <result column="HAS_OP_HISTORY" jdbcType="DECIMAL" property="hasOpHistory" />
+    <result column="HAS_TRAUMA_HISTORY" jdbcType="DECIMAL" property="hasTraumaHistory" />
+    <result column="HAS_BLOOD_TRANSF" jdbcType="DECIMAL" property="hasBloodTransf" />
+    <result column="CARD_EXP_DATE" jdbcType="TIMESTAMP" property="cardExpDate" />
+    <result column="HAS_ASTHMA" jdbcType="DECIMAL" property="hasAsthma" />
+    <result column="HAS_HEART_DISEASE" jdbcType="DECIMAL" property="hasHeartDisease" />
+    <result column="HAS_CARDIOVASCULAR" jdbcType="DECIMAL" property="hasCardiovascular" />
+    <result column="HAS_EPILEPSY" jdbcType="DECIMAL" property="hasEpilepsy" />
+    <result column="HAS_COAGULOPATHY" jdbcType="DECIMAL" property="hasCoagulopathy" />
+    <result column="HAS_DIABETES" jdbcType="DECIMAL" property="hasDiabetes" />
+    <result column="HAS_GLAUCOMA" jdbcType="DECIMAL" property="hasGlaucoma" />
+    <result column="HAS_DIALYSIS" jdbcType="DECIMAL" property="hasDialysis" />
+    <result column="HAS_ORGAN_TRANSF" jdbcType="DECIMAL" property="hasOrganTransf" />
+    <result column="HAS_ORGAN_DEFECT" jdbcType="DECIMAL" property="hasOrganDefect" />
+    <result column="HAS_REMOVAL_PRO" jdbcType="DECIMAL" property="hasRemovalPro" />
+    <result column="HAS_CARDIAC_PAC" jdbcType="DECIMAL" property="hasCardiacPac" />
+    <result column="HAS_ORTHER_MEDICAL_ALERT" jdbcType="VARCHAR" property="hasOrtherMedicalAlert" />
+    <result column="HAS_PSYCHIATRIC" jdbcType="DECIMAL" property="hasPsychiatric" />
+    <result column="VACC_HISTORY_CODE" jdbcType="VARCHAR" property="vaccHistoryCode" />
+    <result column="VACC_HISTORY_NAME" jdbcType="VARCHAR" property="vaccHistoryName" />
+    <result column="EVENT_NAME" jdbcType="VARCHAR" property="eventName" />
+    <result column="EVENT_DATE" jdbcType="TIMESTAMP" property="eventDate" />
+    <result column="EVENT_PLACE" jdbcType="VARCHAR" property="eventPlace" />
+    <result column="CREATE_OPERATOR" jdbcType="VARCHAR" property="createOperator" />
+    <result column="EHR_CREATE_DATE" jdbcType="TIMESTAMP" property="ehrCreateDate" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="NAME_PY" jdbcType="VARCHAR" property="namePy" />
+    <result column="NAME_PINYIN" jdbcType="VARCHAR" property="namePinyin" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ILLNESS_HISTORY" jdbcType="VARCHAR" property="illnessHistory" />
+  </resultMap>
+
+  <resultMap id="PatientResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxPatientWithInhosAndClinic"
+    extends="BaseResultMap">
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="sex" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, PUID, ORGUID, PATIENT_ID, ORG_ID, NATIONALITY_NAME, "NAME", TEL_NO, GENDER_CODE,
+    GENDER_NAME, ETHNIC_CODE, ETHNIC_NAME, BIRTHDAY, ID_CARD_TYPE, ID_CARD_TYPE_NAME, 
+    ID_CARD_NO, EMPLOYER_ORG, WORK_DATE, EMPLOYER_ORG_TEL, CONTACT_NAME, CONTACT_RELATION_CODE, 
+    CONTACT_RELATION_NAME, CONTACT_TEL, EMAIL, EDU_CODE, EDU_NAME, OCCUPATION_CODE, OCCUPATION_NAME, 
+    MARITAL_STATUS_CODE, MARITAL_STATUS_NAME, IS_RESIDENCE_ADD, CARD_TYPE_CODE, CARD_TYPE_NAME, 
+    HEALTHCARE_TYPE_CODE, HEALTHCARE_TYPE_NAME, HEALTHCARE_NO, SOCIAL_SECURITY_NO, HOSPITAL_ACC_NO, 
+    CARD_NO, HEALTH_DOC_NO, EHR_MANAGE_ORG_NAME, EHR_MANAGE_ORG_ID, BLOODTYPE_ABO, BLOODTYPE_ABO_NAME, 
+    BLOODTYPE_RH, BLOODTYPE_RH_NAME, HAS_DRUG_ALLERGY, HAS_OP_HISTORY, HAS_TRAUMA_HISTORY, 
+    HAS_BLOOD_TRANSF, CARD_EXP_DATE, HAS_ASTHMA, HAS_HEART_DISEASE, HAS_CARDIOVASCULAR, 
+    HAS_EPILEPSY, HAS_COAGULOPATHY, HAS_DIABETES, HAS_GLAUCOMA, HAS_DIALYSIS, HAS_ORGAN_TRANSF, 
+    HAS_ORGAN_DEFECT, HAS_REMOVAL_PRO, HAS_CARDIAC_PAC, HAS_ORTHER_MEDICAL_ALERT, HAS_PSYCHIATRIC, 
+    VACC_HISTORY_CODE, VACC_HISTORY_NAME, EVENT_NAME, EVENT_DATE, EVENT_PLACE, CREATE_OPERATOR, 
+    EHR_CREATE_DATE, LAST_UPD_DATE, NAME_PY, NAME_PINYIN, QID, IS_INVALID, IS_DEL, CREATE_TIME, 
+    UPDATE_TIME, ILLNESS_HISTORY
+  </sql>
+
+  <select id="getPatientInfo" resultMap="PatientResultMap" parameterType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatient">
+    SELECT
+        <include refid="Base_Column_List" />
+    FROM QX_T_PATIENT
+    WHERE PUID = #{puid}
+  </select>
+
+  <insert id="insertPatient1" parameterType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatient">
+    INSERT INTO QX_T_PATIENT(SID, PUID, ORGUID, PATIENT_ID,
+        QID, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME)
+    VALUES(#{sid,jdbcType=DECIMAL}, #{puid,jdbcType=VARCHAR}, #{orguid,jdbcType=VARCHAR}, #{patientId,jdbcType=VARCHAR},
+        #{qid,jdbcType=VARCHAR}, #{isInvalid,jdbcType=DECIMAL}, #{isDel,jdbcType=DECIMAL}, TO_DATE(#{createTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), TO_DATE(#{updateTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'))
+  </insert>
+
+  <insert id="insertPatient" parameterType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatient">
+    INSERT INTO QX_T_PATIENT(
+        PUID, ORGUID, PATIENT_ID, ORG_ID, NATIONALITY_NAME, "NAME", TEL_NO, GENDER_CODE,
+        GENDER_NAME, ETHNIC_CODE, ETHNIC_NAME, BIRTHDAY, ID_CARD_TYPE, ID_CARD_TYPE_NAME,
+        ID_CARD_NO, EMPLOYER_ORG, WORK_DATE, EMPLOYER_ORG_TEL, CONTACT_NAME, CONTACT_RELATION_CODE,
+        CONTACT_RELATION_NAME, CONTACT_TEL, EMAIL, EDU_CODE, EDU_NAME, OCCUPATION_CODE, OCCUPATION_NAME,
+        MARITAL_STATUS_CODE, MARITAL_STATUS_NAME, IS_RESIDENCE_ADD, CARD_TYPE_CODE, CARD_TYPE_NAME,
+        HEALTHCARE_TYPE_CODE, HEALTHCARE_TYPE_NAME, HEALTHCARE_NO, SOCIAL_SECURITY_NO, HOSPITAL_ACC_NO,
+        CARD_NO, HEALTH_DOC_NO, EHR_MANAGE_ORG_NAME, EHR_MANAGE_ORG_ID, BLOODTYPE_ABO, BLOODTYPE_ABO_NAME,
+        BLOODTYPE_RH, BLOODTYPE_RH_NAME, HAS_DRUG_ALLERGY, HAS_OP_HISTORY, HAS_TRAUMA_HISTORY,
+        HAS_BLOOD_TRANSF, CARD_EXP_DATE, HAS_ASTHMA, HAS_HEART_DISEASE, HAS_CARDIOVASCULAR,
+        HAS_EPILEPSY, HAS_COAGULOPATHY, HAS_DIABETES, HAS_GLAUCOMA, HAS_DIALYSIS, HAS_ORGAN_TRANSF,
+        HAS_ORGAN_DEFECT, HAS_REMOVAL_PRO, HAS_CARDIAC_PAC, HAS_ORTHER_MEDICAL_ALERT, HAS_PSYCHIATRIC,
+        VACC_HISTORY_CODE, VACC_HISTORY_NAME, EVENT_NAME, EVENT_DATE, EVENT_PLACE, CREATE_OPERATOR,
+        EHR_CREATE_DATE, LAST_UPD_DATE, NAME_PY, NAME_PINYIN, QID, IS_INVALID, IS_DEL, CREATE_TIME,
+        UPDATE_TIME, ILLNESS_HISTORY
+    ) VALUES(
+        #{puid,jdbcType=VARCHAR}, #{orguid,jdbcType=VARCHAR}, #{patientId,jdbcType=VARCHAR},
+        #{orgId,jdbcType=VARCHAR}, #{nationalityName,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{telNo,jdbcType=VARCHAR},
+        #{genderCode,jdbcType=VARCHAR}, #{genderName,jdbcType=VARCHAR}, #{ethnicCode,jdbcType=VARCHAR}, #{ethnicName,jdbcType=VARCHAR},
+        TO_DATE(#{birthday,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{idCardType,jdbcType=VARCHAR}, #{idCardTypeName,jdbcType=VARCHAR}, #{idCardNo,jdbcType=VARCHAR},
+        #{employerOrg,jdbcType=VARCHAR}, TO_DATE(#{workDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{employerOrgTel,jdbcType=VARCHAR}, #{contactName,jdbcType=VARCHAR},
+        #{contactRelationCode,jdbcType=VARCHAR}, #{contactRelationName,jdbcType=VARCHAR}, #{contactTel,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR},
+        #{eduCode,jdbcType=VARCHAR}, #{eduName,jdbcType=VARCHAR}, #{occupationCode,jdbcType=VARCHAR}, #{occupationName,jdbcType=VARCHAR},
+        #{maritalStatusCode,jdbcType=VARCHAR}, #{maritalStatusName,jdbcType=VARCHAR}, #{isResidenceAdd,jdbcType=DECIMAL}, #{cardTypeCode,jdbcType=VARCHAR},
+        #{cardTypeName,jdbcType=VARCHAR}, #{healthcareTypeCode,jdbcType=VARCHAR}, #{healthcareTypeName,jdbcType=VARCHAR}, #{healthcareNo,jdbcType=VARCHAR},
+        #{socialSecurityNo,jdbcType=VARCHAR}, #{hospitalAccNo,jdbcType=VARCHAR}, #{cardNo,jdbcType=VARCHAR}, #{healthDocNo,jdbcType=VARCHAR},
+        #{ehrManageOrgName,jdbcType=VARCHAR}, #{ehrManageOrgId,jdbcType=VARCHAR}, #{bloodtypeAbo,jdbcType=VARCHAR}, #{bloodtypeAboName,jdbcType=VARCHAR},
+        #{bloodtypeRh,jdbcType=VARCHAR}, #{bloodtypeRhName,jdbcType=VARCHAR}, #{hasDrugAllergy,jdbcType=DECIMAL}, #{hasOpHistory,jdbcType=DECIMAL},
+        #{hasTraumaHistory,jdbcType=DECIMAL}, #{hasBloodTransf,jdbcType=DECIMAL}, TO_DATE(#{cardExpDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{hasAsthma,jdbcType=DECIMAL},
+        #{hasHeartDisease,jdbcType=DECIMAL}, #{hasCardiovascular,jdbcType=DECIMAL}, #{hasEpilepsy,jdbcType=DECIMAL}, #{hasCoagulopathy,jdbcType=DECIMAL},
+        #{hasDiabetes,jdbcType=DECIMAL}, #{hasGlaucoma,jdbcType=DECIMAL}, #{hasDialysis,jdbcType=DECIMAL}, #{hasOrganTransf,jdbcType=DECIMAL},
+        #{hasOrganDefect,jdbcType=DECIMAL}, #{hasRemovalPro,jdbcType=DECIMAL}, #{hasCardiacPac,jdbcType=DECIMAL}, #{hasOrtherMedicalAlert,jdbcType=VARCHAR},
+        #{hasPsychiatric,jdbcType=DECIMAL}, #{vaccHistoryCode,jdbcType=VARCHAR}, #{vaccHistoryName,jdbcType=VARCHAR}, #{eventName,jdbcType=VARCHAR},
+        TO_DATE(#{eventDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{eventPlace,jdbcType=VARCHAR}, #{createOperator,jdbcType=VARCHAR}, TO_DATE(#{ehrCreateDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+        TO_DATE(#{lastUpdDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{namePy,jdbcType=VARCHAR}, #{namePinyin,jdbcType=VARCHAR}, #{qid,jdbcType=VARCHAR},
+        #{isInvalid,jdbcType=DECIMAL}, #{isDel,jdbcType=DECIMAL}, TO_DATE(#{createTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), TO_DATE(#{updateTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+        #{illnessHistory,jdbcType=VARCHAR}
+    )
+  </insert>
+
+
+  <insert id="batchInsertPatient" parameterType="java.util.List">
+<!--    <selectKey resultType="long" keyProperty="sid" order="BEFORE">-->
+<!--      SELECT QX_T_PATIENT.NEXTVAL FROM dual-->
+<!--    </selectKey>-->
+    INSERT INTO QX_T_PATIENT(
+      PUID, ORGUID, PATIENT_ID, ORG_ID, NATIONALITY_NAME, "NAME", TEL_NO, GENDER_CODE,
+      GENDER_NAME, ETHNIC_CODE, ETHNIC_NAME, BIRTHDAY, ID_CARD_TYPE, ID_CARD_TYPE_NAME,
+      ID_CARD_NO, EMPLOYER_ORG, WORK_DATE, EMPLOYER_ORG_TEL, CONTACT_NAME, CONTACT_RELATION_CODE,
+      CONTACT_RELATION_NAME, CONTACT_TEL, EMAIL, EDU_CODE, EDU_NAME, OCCUPATION_CODE, OCCUPATION_NAME,
+      MARITAL_STATUS_CODE, MARITAL_STATUS_NAME, IS_RESIDENCE_ADD, CARD_TYPE_CODE, CARD_TYPE_NAME,
+      HEALTHCARE_TYPE_CODE, HEALTHCARE_TYPE_NAME, HEALTHCARE_NO, SOCIAL_SECURITY_NO, HOSPITAL_ACC_NO,
+      CARD_NO, HEALTH_DOC_NO, EHR_MANAGE_ORG_NAME, EHR_MANAGE_ORG_ID, BLOODTYPE_ABO, BLOODTYPE_ABO_NAME,
+      BLOODTYPE_RH, BLOODTYPE_RH_NAME, HAS_DRUG_ALLERGY, HAS_OP_HISTORY, HAS_TRAUMA_HISTORY,
+      HAS_BLOOD_TRANSF, CARD_EXP_DATE, HAS_ASTHMA, HAS_HEART_DISEASE, HAS_CARDIOVASCULAR,
+      HAS_EPILEPSY, HAS_COAGULOPATHY, HAS_DIABETES, HAS_GLAUCOMA, HAS_DIALYSIS, HAS_ORGAN_TRANSF,
+      HAS_ORGAN_DEFECT, HAS_REMOVAL_PRO, HAS_CARDIAC_PAC, HAS_ORTHER_MEDICAL_ALERT, HAS_PSYCHIATRIC,
+      VACC_HISTORY_CODE, VACC_HISTORY_NAME, EVENT_NAME, EVENT_DATE, EVENT_PLACE, CREATE_OPERATOR,
+      EHR_CREATE_DATE, LAST_UPD_DATE, NAME_PY, NAME_PINYIN, QID, IS_INVALID, IS_DEL, CREATE_TIME,
+      UPDATE_TIME, ILLNESS_HISTORY
+    ) SELECT t.* FROM(
+    <foreach collection="list" item="item" index="index" separator="union all">
+        SELECT #{item.puid,jdbcType=VARCHAR}, #{item.orguid,jdbcType=VARCHAR}, #{item.patientId,jdbcType=VARCHAR},
+          #{item.orgId,jdbcType=VARCHAR}, #{item.nationalityName,jdbcType=VARCHAR}, #{item.name,jdbcType=VARCHAR}, #{item.telNo,jdbcType=VARCHAR},
+          #{item.genderCode,jdbcType=VARCHAR}, #{item.genderName,jdbcType=VARCHAR}, #{item.ethnicCode,jdbcType=VARCHAR}, #{item.ethnicName,jdbcType=VARCHAR},
+          TO_DATE(#{item.birthday,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.idCardType,jdbcType=VARCHAR}, #{item.idCardTypeName,jdbcType=VARCHAR}, #{item.idCardNo,jdbcType=VARCHAR},
+          #{item.employerOrg,jdbcType=VARCHAR}, TO_DATE(#{item.workDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.employerOrgTel,jdbcType=VARCHAR}, #{item.contactName,jdbcType=VARCHAR},
+          #{item.contactRelationCode,jdbcType=VARCHAR}, #{item.contactRelationName,jdbcType=VARCHAR}, #{item.contactTel,jdbcType=VARCHAR}, #{item.email,jdbcType=VARCHAR},
+          #{item.eduCode,jdbcType=VARCHAR}, #{item.eduName,jdbcType=VARCHAR}, #{item.occupationCode,jdbcType=VARCHAR}, #{item.occupationName,jdbcType=VARCHAR},
+          #{item.maritalStatusCode,jdbcType=VARCHAR}, #{item.maritalStatusName,jdbcType=VARCHAR}, #{item.isResidenceAdd,jdbcType=DECIMAL}, #{item.cardTypeCode,jdbcType=VARCHAR},
+          #{item.cardTypeName,jdbcType=VARCHAR}, #{item.healthcareTypeCode,jdbcType=VARCHAR}, #{item.healthcareTypeName,jdbcType=VARCHAR}, #{item.healthcareNo,jdbcType=VARCHAR},
+          #{item.socialSecurityNo,jdbcType=VARCHAR}, #{item.hospitalAccNo,jdbcType=VARCHAR}, #{item.cardNo,jdbcType=VARCHAR}, #{item.healthDocNo,jdbcType=VARCHAR},
+          #{item.ehrManageOrgName,jdbcType=VARCHAR}, #{item.ehrManageOrgId,jdbcType=VARCHAR}, #{item.bloodtypeAbo,jdbcType=VARCHAR}, #{item.bloodtypeAboName,jdbcType=VARCHAR},
+          #{item.bloodtypeRh,jdbcType=VARCHAR}, #{item.bloodtypeRhName,jdbcType=VARCHAR}, #{item.hasDrugAllergy,jdbcType=DECIMAL}, #{item.hasOpHistory,jdbcType=DECIMAL},
+          #{item.hasTraumaHistory,jdbcType=DECIMAL}, #{item.hasBloodTransf,jdbcType=DECIMAL}, TO_DATE(#{item.cardExpDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.hasAsthma,jdbcType=DECIMAL},
+          #{item.hasHeartDisease,jdbcType=DECIMAL}, #{item.hasCardiovascular,jdbcType=DECIMAL}, #{item.hasEpilepsy,jdbcType=DECIMAL}, #{item.hasCoagulopathy,jdbcType=DECIMAL},
+          #{item.hasDiabetes,jdbcType=DECIMAL}, #{item.hasGlaucoma,jdbcType=DECIMAL}, #{item.hasDialysis,jdbcType=DECIMAL}, #{item.hasOrganTransf,jdbcType=DECIMAL},
+          #{item.hasOrganDefect,jdbcType=DECIMAL}, #{item.hasRemovalPro,jdbcType=DECIMAL}, #{item.hasCardiacPac,jdbcType=DECIMAL}, #{item.hasOrtherMedicalAlert,jdbcType=VARCHAR},
+          #{item.hasPsychiatric,jdbcType=DECIMAL}, #{item.vaccHistoryCode,jdbcType=VARCHAR}, #{item.vaccHistoryName,jdbcType=VARCHAR}, #{item.eventName,jdbcType=VARCHAR},
+          TO_DATE(#{item.eventDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.eventPlace,jdbcType=VARCHAR}, #{item.createOperator,jdbcType=VARCHAR}, TO_DATE(#{item.ehrCreateDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+          TO_DATE(#{item.lastUpdDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.namePy,jdbcType=VARCHAR}, #{item.namePinyin,jdbcType=VARCHAR}, #{item.qid,jdbcType=VARCHAR},
+          #{item.isInvalid,jdbcType=DECIMAL}, #{item.isDel,jdbcType=DECIMAL}, TO_DATE(#{item.createTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), TO_DATE(#{item.updateTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+          #{item.illnessHistory,jdbcType=VARCHAR}
+        FROM dual
+    </foreach>
+    ) t
+  </insert>
+
+  <insert id="batchInsertPatient1" parameterType="java.util.List">
+    BEGIN
+    <foreach collection="list" item="item" index="index" separator="">
+      INSERT INTO QX_T_PATIENT(
+      <include refid="Base_Column_List" />
+      ) VALUES
+      (
+      #{item.sid,jdbcType=DECIMAL}, #{item.puid,jdbcType=VARCHAR}, #{item.orguid,jdbcType=VARCHAR}, #{item.patientId,jdbcType=VARCHAR},
+      #{item.orgId,jdbcType=VARCHAR}, #{item.nationalityName,jdbcType=VARCHAR}, #{item.name,jdbcType=VARCHAR}, #{item.telNo,jdbcType=VARCHAR},
+      #{item.genderCode,jdbcType=VARCHAR}, #{item.genderName,jdbcType=VARCHAR}, #{item.ethnicCode,jdbcType=VARCHAR}, #{item.ethnicName,jdbcType=VARCHAR},
+      TO_DATE(#{item.birthday,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.idCardType,jdbcType=VARCHAR}, #{item.idCardTypeName,jdbcType=VARCHAR}, #{item.idCardNo,jdbcType=VARCHAR},
+      #{item.employerOrg,jdbcType=VARCHAR}, TO_DATE(#{item.workDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.employerOrgTel,jdbcType=VARCHAR}, #{item.contactName,jdbcType=VARCHAR},
+      #{item.contactRelationCode,jdbcType=VARCHAR}, #{item.contactRelationName,jdbcType=VARCHAR}, #{item.contactTel,jdbcType=VARCHAR}, #{item.email,jdbcType=VARCHAR},
+      #{item.eduCode,jdbcType=VARCHAR}, #{item.eduName,jdbcType=VARCHAR}, #{item.occupationCode,jdbcType=VARCHAR}, #{item.occupationName,jdbcType=VARCHAR},
+      #{item.maritalStatusCode,jdbcType=VARCHAR}, #{item.maritalStatusName,jdbcType=VARCHAR}, #{item.isResidenceAdd,jdbcType=DECIMAL}, #{item.cardTypeCode,jdbcType=VARCHAR},
+      #{item.cardTypeName,jdbcType=VARCHAR}, #{item.healthcareTypeCode,jdbcType=VARCHAR}, #{item.healthcareTypeName,jdbcType=VARCHAR}, #{item.healthcareNo,jdbcType=VARCHAR},
+      #{item.socialSecurityNo,jdbcType=VARCHAR}, #{item.hospitalAccNo,jdbcType=VARCHAR}, #{item.cardNo,jdbcType=VARCHAR}, #{item.healthDocNo,jdbcType=VARCHAR},
+      #{item.ehrManageOrgName,jdbcType=VARCHAR}, #{item.ehrManageOrgId,jdbcType=VARCHAR}, #{item.bloodtypeAbo,jdbcType=VARCHAR}, #{item.bloodtypeAboName,jdbcType=VARCHAR},
+      #{item.bloodtypeRh,jdbcType=VARCHAR}, #{item.bloodtypeRhName,jdbcType=VARCHAR}, #{item.hasDrugAllergy,jdbcType=DECIMAL}, #{item.hasOpHistory,jdbcType=DECIMAL},
+      #{item.hasTraumaHistory,jdbcType=DECIMAL}, #{item.hasBloodTransf,jdbcType=DECIMAL}, TO_DATE(#{item.cardExpDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.hasAsthma,jdbcType=DECIMAL},
+      #{item.hasHeartDisease,jdbcType=DECIMAL}, #{item.hasCardiovascular,jdbcType=DECIMAL}, #{item.hasEpilepsy,jdbcType=DECIMAL}, #{item.hasCoagulopathy,jdbcType=DECIMAL},
+      #{item.hasDiabetes,jdbcType=DECIMAL}, #{item.hasGlaucoma,jdbcType=DECIMAL}, #{item.hasDialysis,jdbcType=DECIMAL}, #{item.hasOrganTransf,jdbcType=DECIMAL},
+      #{item.hasOrganDefect,jdbcType=DECIMAL}, #{item.hasRemovalPro,jdbcType=DECIMAL}, #{item.hasCardiacPac,jdbcType=DECIMAL}, #{item.hasOrtherMedicalAlert,jdbcType=VARCHAR},
+      #{item.hasPsychiatric,jdbcType=DECIMAL}, #{item.vaccHistoryCode,jdbcType=VARCHAR}, #{item.vaccHistoryName,jdbcType=VARCHAR}, #{item.eventName,jdbcType=VARCHAR},
+      TO_DATE(#{item.eventDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.eventPlace,jdbcType=VARCHAR}, #{item.createOperator,jdbcType=VARCHAR}, TO_DATE(#{item.ehrCreateDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      TO_DATE(#{item.lastUpdDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), #{item.namePy,jdbcType=VARCHAR}, #{item.namePinyin,jdbcType=VARCHAR}, #{item.qid,jdbcType=VARCHAR},
+      #{item.isInvalid,jdbcType=DECIMAL}, #{item.isDel,jdbcType=DECIMAL}, TO_DATE(#{item.createTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'), TO_DATE(#{item.updateTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      #{item.illnessHistory,jdbcType=VARCHAR});
+    </foreach>
+    COMMIT;
+    END;
+  </insert>
+
+  <update id="updatePatientBySelective" parameterType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatient">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    update QX_T_PATIENT
+    <set>
+      <if test="sid != null">
+        SID = #{sid,jdbcType=DECIMAL},
+      </if>
+      <if test="puid != null">
+        PUID = #{puid,jdbcType=VARCHAR},
+      </if>
+      <if test="orguid != null">
+        ORGUID = #{orguid,jdbcType=VARCHAR},
+      </if>
+      <if test="patientId != null">
+        PATIENT_ID = #{patientId,jdbcType=VARCHAR},
+      </if>
+      <if test="orgId != null">
+        ORG_ID = #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="nationalityName != null">
+        NATIONALITY_NAME = #{nationalityName,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        "NAME" = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="telNo != null">
+        TEL_NO = #{telNo,jdbcType=VARCHAR},
+      </if>
+      <if test="genderCode != null">
+        GENDER_CODE = #{genderCode,jdbcType=VARCHAR},
+      </if>
+      <if test="genderName != null">
+        GENDER_NAME = #{genderName,jdbcType=VARCHAR},
+      </if>
+      <if test="ethnicCode != null">
+        ETHNIC_CODE = #{ethnicCode,jdbcType=VARCHAR},
+      </if>
+      <if test="ethnicName != null">
+        ETHNIC_NAME = #{ethnicName,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        BIRTHDAY = TO_DATE(#{birthday,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="idCardType != null">
+        ID_CARD_TYPE = #{idCardType,jdbcType=VARCHAR},
+      </if>
+      <if test="idCardTypeName != null">
+        ID_CARD_TYPE_NAME = #{idCardTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="idCardNo != null">
+        ID_CARD_NO = #{idCardNo,jdbcType=VARCHAR},
+      </if>
+      <if test="employerOrg != null">
+        EMPLOYER_ORG = #{employerOrg,jdbcType=VARCHAR},
+      </if>
+      <if test="workDate != null">
+        WORK_DATE = TO_DATE(#{workDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="employerOrgTel != null">
+        EMPLOYER_ORG_TEL = #{employerOrgTel,jdbcType=VARCHAR},
+      </if>
+      <if test="contactName != null">
+        CONTACT_NAME = #{contactName,jdbcType=VARCHAR},
+      </if>
+      <if test="contactRelationCode != null">
+        CONTACT_RELATION_CODE = #{contactRelationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="contactRelationName != null">
+        CONTACT_RELATION_NAME = #{contactRelationName,jdbcType=VARCHAR},
+      </if>
+      <if test="contactTel != null">
+        CONTACT_TEL = #{contactTel,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="eduCode != null">
+        EDU_CODE = #{eduCode,jdbcType=VARCHAR},
+      </if>
+      <if test="eduName != null">
+        EDU_NAME = #{eduName,jdbcType=VARCHAR},
+      </if>
+      <if test="occupationCode != null">
+        OCCUPATION_CODE = #{occupationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="occupationName != null">
+        OCCUPATION_NAME = #{occupationName,jdbcType=VARCHAR},
+      </if>
+      <if test="maritalStatusCode != null">
+        MARITAL_STATUS_CODE = #{maritalStatusCode,jdbcType=VARCHAR},
+      </if>
+      <if test="maritalStatusName != null">
+        MARITAL_STATUS_NAME = #{maritalStatusName,jdbcType=VARCHAR},
+      </if>
+      <if test="isResidenceAdd != null">
+        IS_RESIDENCE_ADD = #{isResidenceAdd,jdbcType=DECIMAL},
+      </if>
+      <if test="cardTypeCode != null">
+        CARD_TYPE_CODE = #{cardTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="cardTypeName != null">
+        CARD_TYPE_NAME = #{cardTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="healthcareTypeCode != null">
+        HEALTHCARE_TYPE_CODE = #{healthcareTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="healthcareTypeName != null">
+        HEALTHCARE_TYPE_NAME = #{healthcareTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="healthcareNo != null">
+        HEALTHCARE_NO = #{healthcareNo,jdbcType=VARCHAR},
+      </if>
+      <if test="socialSecurityNo != null">
+        SOCIAL_SECURITY_NO = #{socialSecurityNo,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAccNo != null">
+        HOSPITAL_ACC_NO = #{hospitalAccNo,jdbcType=VARCHAR},
+      </if>
+      <if test="cardNo != null">
+        CARD_NO = #{cardNo,jdbcType=VARCHAR},
+      </if>
+      <if test="healthDocNo != null">
+        HEALTH_DOC_NO = #{healthDocNo,jdbcType=VARCHAR},
+      </if>
+      <if test="ehrManageOrgName != null">
+        EHR_MANAGE_ORG_NAME = #{ehrManageOrgName,jdbcType=VARCHAR},
+      </if>
+      <if test="ehrManageOrgId != null">
+        EHR_MANAGE_ORG_ID = #{ehrManageOrgId,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodtypeAbo != null">
+        BLOODTYPE_ABO = #{bloodtypeAbo,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodtypeAboName != null">
+        BLOODTYPE_ABO_NAME = #{bloodtypeAboName,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodtypeRh != null">
+        BLOODTYPE_RH = #{bloodtypeRh,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodtypeRhName != null">
+        BLOODTYPE_RH_NAME = #{bloodtypeRhName,jdbcType=VARCHAR},
+      </if>
+      <if test="hasDrugAllergy != null">
+        HAS_DRUG_ALLERGY = #{hasDrugAllergy,jdbcType=DECIMAL},
+      </if>
+      <if test="hasOpHistory != null">
+        HAS_OP_HISTORY = #{hasOpHistory,jdbcType=DECIMAL},
+      </if>
+      <if test="hasTraumaHistory != null">
+        HAS_TRAUMA_HISTORY = #{hasTraumaHistory,jdbcType=DECIMAL},
+      </if>
+      <if test="hasBloodTransf != null">
+        HAS_BLOOD_TRANSF = #{hasBloodTransf,jdbcType=DECIMAL},
+      </if>
+      <if test="cardExpDate != null">
+        CARD_EXP_DATE = TO_DATE(#{cardExpDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="hasAsthma != null">
+        HAS_ASTHMA = #{hasAsthma,jdbcType=DECIMAL},
+      </if>
+      <if test="hasHeartDisease != null">
+        HAS_HEART_DISEASE = #{hasHeartDisease,jdbcType=DECIMAL},
+      </if>
+      <if test="hasCardiovascular != null">
+        HAS_CARDIOVASCULAR = #{hasCardiovascular,jdbcType=DECIMAL},
+      </if>
+      <if test="hasEpilepsy != null">
+        HAS_EPILEPSY = #{hasEpilepsy,jdbcType=DECIMAL},
+      </if>
+      <if test="hasCoagulopathy != null">
+        HAS_COAGULOPATHY = #{hasCoagulopathy,jdbcType=DECIMAL},
+      </if>
+      <if test="hasDiabetes != null">
+        HAS_DIABETES = #{hasDiabetes,jdbcType=DECIMAL},
+      </if>
+      <if test="hasGlaucoma != null">
+        HAS_GLAUCOMA = #{hasGlaucoma,jdbcType=DECIMAL},
+      </if>
+      <if test="hasDialysis != null">
+        HAS_DIALYSIS = #{hasDialysis,jdbcType=DECIMAL},
+      </if>
+      <if test="hasOrganTransf != null">
+        HAS_ORGAN_TRANSF = #{hasOrganTransf,jdbcType=DECIMAL},
+      </if>
+      <if test="hasOrganDefect != null">
+        HAS_ORGAN_DEFECT = #{hasOrganDefect,jdbcType=DECIMAL},
+      </if>
+      <if test="hasRemovalPro != null">
+        HAS_REMOVAL_PRO = #{hasRemovalPro,jdbcType=DECIMAL},
+      </if>
+      <if test="hasCardiacPac != null">
+        HAS_CARDIAC_PAC = #{hasCardiacPac,jdbcType=DECIMAL},
+      </if>
+      <if test="hasOrtherMedicalAlert != null">
+        HAS_ORTHER_MEDICAL_ALERT = #{hasOrtherMedicalAlert,jdbcType=VARCHAR},
+      </if>
+      <if test="hasPsychiatric != null">
+        HAS_PSYCHIATRIC = #{hasPsychiatric,jdbcType=DECIMAL},
+      </if>
+      <if test="vaccHistoryCode != null">
+        VACC_HISTORY_CODE = #{vaccHistoryCode,jdbcType=VARCHAR},
+      </if>
+      <if test="vaccHistoryName != null">
+        VACC_HISTORY_NAME = #{vaccHistoryName,jdbcType=VARCHAR},
+      </if>
+      <if test="eventName != null">
+        EVENT_NAME = #{eventName,jdbcType=VARCHAR},
+      </if>
+      <if test="eventDate != null">
+        EVENT_DATE = TO_DATE(#{eventDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="eventPlace != null">
+        EVENT_PLACE = #{eventPlace,jdbcType=VARCHAR},
+      </if>
+      <if test="createOperator != null">
+        CREATE_OPERATOR = #{createOperator,jdbcType=VARCHAR},
+      </if>
+      <if test="ehrCreateDate != null">
+        EHR_CREATE_DATE = TO_DATE(#{ehrCreateDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="lastUpdDate != null">
+        LAST_UPD_DATE = TO_DATE(#{lastUpdDate,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="namePy != null">
+        NAME_PY = #{namePy,jdbcType=VARCHAR},
+      </if>
+      <if test="namePinyin != null">
+        NAME_PINYIN = #{namePinyin,jdbcType=VARCHAR},
+      </if>
+      <if test="qid != null">
+        QID = #{qid,jdbcType=VARCHAR},
+      </if>
+      <if test="isInvalid != null">
+        IS_INVALID = #{isInvalid,jdbcType=DECIMAL},
+      </if>
+      <if test="isDel != null">
+        IS_DEL = #{isDel,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME = TO_DATE(#{createTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="updateTime != null">
+        UPDATE_TIME = TO_DATE(#{updateTime,jdbcType=TIMESTAMP}, 'yyyy-MM-dd HH24:mi:ss'),
+      </if>
+      <if test="illnessHistory != null">
+        ILLNESS_HISTORY = #{illnessHistory,jdbcType=VARCHAR},
+      </if>
+    </set>
+    WHERE PUID = #{puid}
+  </update>
+</mapper>

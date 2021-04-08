@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrPostoptCourseRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrPostoptCourseRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="OP_POST_COURSE_ID" jdbcType="VARCHAR" property="opPostCourseId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="IN_HOSPITAL_TIMES" jdbcType="DECIMAL" property="inHospitalTimes" />
+    <result column="OPERATION_RECORD_DATE" jdbcType="TIMESTAMP" property="operationRecordDate" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="OPERATION_PART_CODE" jdbcType="VARCHAR" property="operationPartCode" />
+    <result column="OPERATION_PART_NAME" jdbcType="VARCHAR" property="operationPartName" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="ANES_WAY_CODE" jdbcType="VARCHAR" property="anesWayCode" />
+    <result column="ANES_WAY_NAME" jdbcType="VARCHAR" property="anesWayName" />
+    <result column="OPERATION_DESC" jdbcType="VARCHAR" property="operationDesc" />
+    <result column="OP_POST_DIAG_CODE" jdbcType="VARCHAR" property="opPostDiagCode" />
+    <result column="OP_POST_DIAG_NAME" jdbcType="VARCHAR" property="opPostDiagName" />
+    <result column="DIAGNOSIS_BASIS" jdbcType="VARCHAR" property="diagnosisBasis" />
+    <result column="OPERATON_NOTE" jdbcType="VARCHAR" property="operatonNote" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrPostoptCourseRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, OP_POST_COURSE_ID, CASE_NO, IN_HOSPITAL_TIMES, 
+    OPERATION_RECORD_DATE, OPERATION_CODE, OPERATION_NAME, OPERATION_PART_CODE, OPERATION_PART_NAME, 
+    OPERATION_DATE, ANES_WAY_CODE, ANES_WAY_NAME, OPERATION_DESC, OP_POST_DIAG_CODE, 
+    OP_POST_DIAG_NAME, DIAGNOSIS_BASIS, OPERATON_NOTE, DOCTOR_SIGNATURE, SIGNATURE_DATE, 
+    NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    SYSUP_TIME, SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

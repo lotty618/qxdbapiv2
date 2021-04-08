@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTRiskValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTRiskValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="RVUID" jdbcType="VARCHAR" property="rvuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="RISKIMPTIME" jdbcType="TIMESTAMP" property="riskimptime" />
+    <result column="RISKDAY" jdbcType="VARCHAR" property="riskday" />
+    <result column="RISKTYPE" jdbcType="VARCHAR" property="risktype" />
+    <result column="RISKTIME" jdbcType="TIMESTAMP" property="risktime" />
+    <result column="ISRISKCOMMENT" jdbcType="DECIMAL" property="isriskcomment" />
+    <result column="ABNORMAL" jdbcType="VARCHAR" property="abnormal" />
+    <result column="IS_ABNORMAL" jdbcType="VARCHAR" property="isAbnormal" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="isoutvalue" jdbcType="VARCHAR" property="isoutvalue" />
+    <result column="outfrom" jdbcType="VARCHAR" property="outfrom" />
+    <result column="RISKCOMMENTTIME" jdbcType="TIMESTAMP" property="riskcommenttime" />
+  </resultMap>
+</mapper>

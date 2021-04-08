@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTNisCriticalNursingDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTNisCriticalNursing">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="CRITICAL_NURSING_ID" jdbcType="VARCHAR" property="criticalNursingId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="NURSIING_GRADE_CODE" jdbcType="VARCHAR" property="nursiingGradeCode" />
+    <result column="NURSIING_GRADE_NAME" jdbcType="VARCHAR" property="nursiingGradeName" />
+    <result column="NURSING_TYPE_CODE" jdbcType="VARCHAR" property="nursingTypeCode" />
+    <result column="NURSING_TYPE_NAME" jdbcType="VARCHAR" property="nursingTypeName" />
+    <result column="ALLERGY_HISTORY" jdbcType="VARCHAR" property="allergyHistory" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="WEIGHT" jdbcType="DECIMAL" property="weight" />
+    <result column="TEMPERATURE" jdbcType="DECIMAL" property="temperature" />
+    <result column="HEART_RATE" jdbcType="DECIMAL" property="heartRate" />
+    <result column="BREATHING_RATE" jdbcType="DECIMAL" property="breathingRate" />
+    <result column="PULSES" jdbcType="DECIMAL" property="pulses" />
+    <result column="SBP" jdbcType="DECIMAL" property="sbp" />
+    <result column="DBP" jdbcType="DECIMAL" property="dbp" />
+    <result column="GLU" jdbcType="DECIMAL" property="glu" />
+    <result column="DIET_QUALITY_CODE" jdbcType="VARCHAR" property="dietQualityCode" />
+    <result column="DIET_QUALITY_NAME" jdbcType="VARCHAR" property="dietQualityName" />
+    <result column="NURING_OBS_ITEM_NAME" jdbcType="VARCHAR" property="nuringObsItemName" />
+    <result column="NURING_OBS_RESULT" jdbcType="VARCHAR" property="nuringObsResult" />
+    <result column="NURING_PRO_NAME" jdbcType="VARCHAR" property="nuringProName" />
+    <result column="NURING_PRO_RESULT" jdbcType="VARCHAR" property="nuringProResult" />
+    <result column="VENTILATOR_MONITOR_ITEM" jdbcType="VARCHAR" property="ventilatorMonitorItem" />
+    <result column="NURSE_SIGNATURE" jdbcType="VARCHAR" property="nurseSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, CRITICAL_NURSING_ID, CASE_NO, HOSPITALTALIZATION_TIMES, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, NURSIING_GRADE_CODE, NURSIING_GRADE_NAME, NURSING_TYPE_CODE, NURSING_TYPE_NAME, 
+    ALLERGY_HISTORY, DIAGNOSIS_CODE, DIAGNOSIS_NAME, WEIGHT, TEMPERATURE, HEART_RATE, 
+    BREATHING_RATE, PULSES, SBP, DBP, GLU, DIET_QUALITY_CODE, DIET_QUALITY_NAME, NURING_OBS_ITEM_NAME, 
+    NURING_OBS_RESULT, NURING_PRO_NAME, NURING_PRO_RESULT, VENTILATOR_MONITOR_ITEM, NURSE_SIGNATURE, 
+    SIGNATURE_DATE, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, IHUID
+  </sql>
+</mapper>

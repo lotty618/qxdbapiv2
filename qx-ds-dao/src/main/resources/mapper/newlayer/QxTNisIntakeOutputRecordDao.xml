@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTNisIntakeOutputRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTNisIntakeOutputRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="INTAKE_OUTPUT_ID" jdbcType="VARCHAR" property="intakeOutputId" />
+    <id column="REPORT_ID" jdbcType="VARCHAR" property="reportId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="IN_HOSPITAL_TIMES" jdbcType="DECIMAL" property="inHospitalTimes" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="WEIGHT" jdbcType="VARCHAR" property="weight" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="NURSING_GRADE_CODE" jdbcType="VARCHAR" property="nursingGradeCode" />
+    <result column="NURSING_GRADE_NAME" jdbcType="VARCHAR" property="nursingGradeName" />
+    <result column="NURSING_TYPE_CODE" jdbcType="VARCHAR" property="nursingTypeCode" />
+    <result column="NURSING_TYPE_NAME" jdbcType="VARCHAR" property="nursingTypeName" />
+    <result column="NURSING_OBS_ITEM_NAME" jdbcType="VARCHAR" property="nursingObsItemName" />
+    <result column="NURSING_OBS_RESULT" jdbcType="VARCHAR" property="nursingObsResult" />
+    <result column="NURSING_PRO_ITEM_NAME" jdbcType="VARCHAR" property="nursingProItemName" />
+    <result column="NURSING_PRO_NAME" jdbcType="VARCHAR" property="nursingProName" />
+    <result column="NURSING_PRO_RESULT" jdbcType="VARCHAR" property="nursingProResult" />
+    <result column="WRITE_DATE" jdbcType="TIMESTAMP" property="writeDate" />
+    <result column="DRUGS_USAGE" jdbcType="VARCHAR" property="drugsUsage" />
+    <result column="TCM_MEDICINE_TYPE_CODE" jdbcType="VARCHAR" property="tcmMedicineTypeCode" />
+    <result column="TCM_MEDICINE_TYPE_NAME" jdbcType="VARCHAR" property="tcmMedicineTypeName" />
+    <result column="DRUG_USING_FREQ_CODE" jdbcType="VARCHAR" property="drugUsingFreqCode" />
+    <result column="DRUG_USING_FREQ_NAME" jdbcType="VARCHAR" property="drugUsingFreqName" />
+    <result column="DRUG_DOSE_UNINT" jdbcType="VARCHAR" property="drugDoseUnint" />
+    <result column="DRUG_PER_DOSE" jdbcType="DECIMAL" property="drugPerDose" />
+    <result column="DRUG_TOTAL_DOSE" jdbcType="DECIMAL" property="drugTotalDose" />
+    <result column="DRUG_ROUTE_CODE" jdbcType="VARCHAR" property="drugRouteCode" />
+    <result column="DRUG_ROUTE_NAME" jdbcType="VARCHAR" property="drugRouteName" />
+    <result column="DRUG_FORM_CODE" jdbcType="VARCHAR" property="drugFormCode" />
+    <result column="DRUG_FORM_NAME" jdbcType="VARCHAR" property="drugFormName" />
+    <result column="MEDICINE_NAME" jdbcType="VARCHAR" property="medicineName" />
+    <result column="VOMIT_MARK" jdbcType="VARCHAR" property="vomitMark" />
+    <result column="DYSURESIA_MARK" jdbcType="VARCHAR" property="dysuresiaMark" />
+    <result column="NURSE_SIGNATURE" jdbcType="VARCHAR" property="nurseSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="NURSING_OBS_ITEM_CODE" jdbcType="VARCHAR" property="nursingObsItemCode" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, INTAKE_OUTPUT_ID, REPORT_ID, CASE_NO, 
+    IN_HOSPITAL_TIMES, DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE,
+    SEX_CN, AGE_YEAR, AGE_MONTH, WEIGHT, DIAGNOSIS_CODE, DIAGNOSIS_NAME, NURSING_GRADE_CODE, 
+    NURSING_GRADE_NAME, NURSING_TYPE_CODE, NURSING_TYPE_NAME, NURSING_OBS_ITEM_NAME, 
+    NURSING_OBS_RESULT, NURSING_PRO_ITEM_NAME, NURSING_PRO_NAME, NURSING_PRO_RESULT, 
+    WRITE_DATE, DRUGS_USAGE, TCM_MEDICINE_TYPE_CODE, TCM_MEDICINE_TYPE_NAME, DRUG_USING_FREQ_CODE, 
+    DRUG_USING_FREQ_NAME, DRUG_DOSE_UNINT, DRUG_PER_DOSE, DRUG_TOTAL_DOSE, DRUG_ROUTE_CODE, 
+    DRUG_ROUTE_NAME, DRUG_FORM_CODE, DRUG_FORM_NAME, MEDICINE_NAME, VOMIT_MARK, DYSURESIA_MARK, 
+    NURSE_SIGNATURE, SIGNATURE_DATE, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, NURSING_OBS_ITEM_CODE, 
+    IHUID
+  </sql>
+</mapper>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrAdmissonRecord24hDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrAdmissonRecord24h">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="ADMISSION_DATE" jdbcType="TIMESTAMP" property="admissionDate" />
+    <result column="DISCHARGE_DATE" jdbcType="TIMESTAMP" property="dischargeDate" />
+    <result column="REPRESENTOR_RELATION_CODE" jdbcType="VARCHAR" property="representorRelationCode" />
+    <result column="REPRESENTOR_RELATION_CN" jdbcType="VARCHAR" property="representorRelationCn" />
+    <result column="REPRESENTOR_NAME" jdbcType="VARCHAR" property="representorName" />
+    <result column="RELIABLE_STATEMENT_MARK" jdbcType="VARCHAR" property="reliableStatementMark" />
+    <result column="CHIEF_COMPLAINTS" jdbcType="VARCHAR" property="chiefComplaints" />
+    <result column="CURRENT_DISEASE" jdbcType="VARCHAR" property="currentDisease" />
+    <result column="IN_CONDITION_DESE" jdbcType="VARCHAR" property="inConditionDese" />
+    <result column="SYMPTOM_NAME" jdbcType="VARCHAR" property="symptomName" />
+    <result column="SYMPTOM_DESC" jdbcType="VARCHAR" property="symptomDesc" />
+    <result column="TCM_OBSERVE" jdbcType="VARCHAR" property="tcmObserve" />
+    <result column="THERAPEUTIC_PRINCIPLES" jdbcType="VARCHAR" property="therapeuticPrinciples" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="IN_DIAGOSIS_CODE" jdbcType="VARCHAR" property="inDiagosisCode" />
+    <result column="IN_DIAGOSIS_NAME" jdbcType="VARCHAR" property="inDiagosisName" />
+    <result column="TCM_IN_DIAGOSIS_CODE" jdbcType="VARCHAR" property="tcmInDiagosisCode" />
+    <result column="TMC_IN_DIAGOSIS_NAME" jdbcType="VARCHAR" property="tmcInDiagosisName" />
+    <result column="OUT_CONDITION" jdbcType="VARCHAR" property="outCondition" />
+    <result column="OUT_DIAGOSIS_CODE" jdbcType="VARCHAR" property="outDiagosisCode" />
+    <result column="OUT_DIAGOSIS_NAME" jdbcType="VARCHAR" property="outDiagosisName" />
+    <result column="TCM_OUT_DIAGOSIS_CODE" jdbcType="VARCHAR" property="tcmOutDiagosisCode" />
+    <result column="TMC_OUT_DIAGOSIS_NAME" jdbcType="VARCHAR" property="tmcOutDiagosisName" />
+    <result column="OUT_ORDER" jdbcType="VARCHAR" property="outOrder" />
+    <result column="ORDER_DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="orderDoctorSignature" />
+    <result column="ORDER_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="orderSignatureDate" />
+    <result column="ACCEPT_PHYSICIAN_ID" jdbcType="VARCHAR" property="acceptPhysicianId" />
+    <result column="ACCEPT_PHYSICIAN_NAME" jdbcType="VARCHAR" property="acceptPhysicianName" />
+    <result column="ACCEPT_PHYSICIAN_DATE" jdbcType="TIMESTAMP" property="acceptPhysicianDate" />
+    <result column="RESIDENT_DOCTOR_ID" jdbcType="VARCHAR" property="residentDoctorId" />
+    <result column="RESIDENT_DOCTOR_NAME" jdbcType="VARCHAR" property="residentDoctorName" />
+    <result column="RESIDENT_DOCTOR_DATE" jdbcType="TIMESTAMP" property="residentDoctorDate" />
+    <result column="IN_CHARGE_DOCTOR_ID" jdbcType="VARCHAR" property="inChargeDoctorId" />
+    <result column="IN_CHARGE_DOCTOR_NAME" jdbcType="VARCHAR" property="inChargeDoctorName" />
+    <result column="IN_CHARGE_DOCTOR_DATE" jdbcType="TIMESTAMP" property="inChargeDoctorDate" />
+    <result column="CHIEF_DOCTOR_ID" jdbcType="VARCHAR" property="chiefDoctorId" />
+    <result column="CHIEF_DOCTOR_NAME" jdbcType="VARCHAR" property="chiefDoctorName" />
+    <result column="CHIEF_DOCTOR_DATE" jdbcType="TIMESTAMP" property="chiefDoctorDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrAdmissonRecord24h">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+    <result column="EMR_CONTENT_CLOB" jdbcType="CLOB" property="emrContentClob" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, CASE_NO, HOSPITALTALIZATION_TIMES, ADMISSION_DATE, 
+    DISCHARGE_DATE, REPRESENTOR_RELATION_CODE, REPRESENTOR_RELATION_CN, REPRESENTOR_NAME, 
+    RELIABLE_STATEMENT_MARK, CHIEF_COMPLAINTS, CURRENT_DISEASE, IN_CONDITION_DESE, SYMPTOM_NAME, 
+    SYMPTOM_DESC, TCM_OBSERVE, THERAPEUTIC_PRINCIPLES, TREAT_RESCUE_COURSE, IN_DIAGOSIS_CODE, 
+    IN_DIAGOSIS_NAME, TCM_IN_DIAGOSIS_CODE, TMC_IN_DIAGOSIS_NAME, OUT_CONDITION, OUT_DIAGOSIS_CODE, 
+    OUT_DIAGOSIS_NAME, TCM_OUT_DIAGOSIS_CODE, TMC_OUT_DIAGOSIS_NAME, OUT_ORDER, ORDER_DOCTOR_SIGNATURE, 
+    ORDER_SIGNATURE_DATE, ACCEPT_PHYSICIAN_ID, ACCEPT_PHYSICIAN_NAME, ACCEPT_PHYSICIAN_DATE, 
+    RESIDENT_DOCTOR_ID, RESIDENT_DOCTOR_NAME, RESIDENT_DOCTOR_DATE, IN_CHARGE_DOCTOR_ID, 
+    IN_CHARGE_DOCTOR_NAME, IN_CHARGE_DOCTOR_DATE, CHIEF_DOCTOR_ID, CHIEF_DOCTOR_NAME, 
+    CHIEF_DOCTOR_DATE, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, 
+    EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT, EMR_CONTENT_CLOB
+  </sql>
+</mapper>

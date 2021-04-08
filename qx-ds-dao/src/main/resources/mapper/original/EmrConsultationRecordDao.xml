@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrConsultationRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrConsultationRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="CONSULT_RECORD_NO" jdbcType="VARCHAR" property="consultRecordNo" />
+    <result column="DISEASE_DIAG_CODE" jdbcType="VARCHAR" property="diseaseDiagCode" />
+    <result column="DISEASE_DIAG_NAME" jdbcType="VARCHAR" property="diseaseDiagName" />
+    <result column="CONSULTATION_PURPOSE" jdbcType="VARCHAR" property="consultationPurpose" />
+    <result column="CASE_HISTORY_SUMMARY" jdbcType="VARCHAR" property="caseHistorySummary" />
+    <result column="ASSIST_EXAM_RESULT" jdbcType="VARCHAR" property="assistExamResult" />
+    <result column="TREATDIAG_PROCESS_NAME" jdbcType="VARCHAR" property="treatdiagProcessName" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="CONSULT_REASON" jdbcType="VARCHAR" property="consultReason" />
+    <result column="CONSULTATION_TYPE" jdbcType="VARCHAR" property="consultationType" />
+    <result column="CONSULT_APPLY_DEPT_CODE" jdbcType="VARCHAR" property="consultApplyDeptCode" />
+    <result column="CONSULT_APPLY_DEPT_CN" jdbcType="VARCHAR" property="consultApplyDeptCn" />
+    <result column="CONSULT_APPLY_HOSPITAL" jdbcType="VARCHAR" property="consultApplyHospital" />
+    <result column="CONSULT_APPLY_DOCTOR" jdbcType="VARCHAR" property="consultApplyDoctor" />
+    <result column="CONSULT_ADVICE" jdbcType="VARCHAR" property="consultAdvice" />
+    <result column="CONSULT_DOCTOR_NAME" jdbcType="VARCHAR" property="consultDoctorName" />
+    <result column="CONSULTATION_DEPT_CODE" jdbcType="VARCHAR" property="consultationDeptCode" />
+    <result column="CONSULTATION_DEPT_CN" jdbcType="VARCHAR" property="consultationDeptCn" />
+    <result column="CONSULT_ORG_CODE" jdbcType="VARCHAR" property="consultOrgCode" />
+    <result column="CONSULT_ORG_NAME" jdbcType="VARCHAR" property="consultOrgName" />
+    <result column="CONSULT_DATE" jdbcType="TIMESTAMP" property="consultDate" />
+    <result column="TCM_OBSERVE" jdbcType="VARCHAR" property="tcmObserve" />
+    <result column="THERAPEUTIC_PRINCIPLES" jdbcType="VARCHAR" property="therapeuticPrinciples" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrConsultationRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, CONSULT_RECORD_NO, DISEASE_DIAG_CODE, 
+    DISEASE_DIAG_NAME, CONSULTATION_PURPOSE, CASE_HISTORY_SUMMARY, ASSIST_EXAM_RESULT, 
+    TREATDIAG_PROCESS_NAME, TREAT_RESCUE_COURSE, CONSULT_REASON, CONSULTATION_TYPE, CONSULT_APPLY_DEPT_CODE, 
+    CONSULT_APPLY_DEPT_CN, CONSULT_APPLY_HOSPITAL, CONSULT_APPLY_DOCTOR, CONSULT_ADVICE, 
+    CONSULT_DOCTOR_NAME, CONSULTATION_DEPT_CODE, CONSULTATION_DEPT_CN, CONSULT_ORG_CODE, 
+    CONSULT_ORG_NAME, CONSULT_DATE, TCM_OBSERVE, THERAPEUTIC_PRINCIPLES, STATUS_CODE, 
+    STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, SYSUP_TIME, 
+    SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

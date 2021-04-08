@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxzskTKpiQualityDicDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxzskTKpiQualityDic">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="kpitype" jdbcType="VARCHAR" property="kpitype" />
+    <result column="ralateId" jdbcType="VARCHAR" property="ralateid" />
+    <result column="kpiid" jdbcType="VARCHAR" property="kpiid" />
+    <result column="symbol" jdbcType="VARCHAR" property="symbol" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="calculator" jdbcType="VARCHAR" property="calculator" />
+    <result column="timecycletype" jdbcType="DECIMAL" property="timecycletype" />
+    <result column="timecycle" jdbcType="VARCHAR" property="timecycle" />
+    <result column="calculatorcode" jdbcType="DECIMAL" property="calculatorcode" />
+    <result column="calculatorremark" jdbcType="VARCHAR" property="calculatorremark" />
+    <result column="sql_content" jdbcType="VARCHAR" property="sqlContent" />
+  </resultMap>
+</mapper>

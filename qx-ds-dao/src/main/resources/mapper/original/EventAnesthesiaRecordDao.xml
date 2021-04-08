@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EventAnesthesiaRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EventAnesthesiaRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="ANESTHESIA_ID" jdbcType="VARCHAR" property="anesthesiaId" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="E_ORDER_NO" jdbcType="VARCHAR" property="eOrderNo" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="OP_ROOM_NO" jdbcType="VARCHAR" property="opRoomNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="WEIGHT" jdbcType="DECIMAL" property="weight" />
+    <result column="ABO_CODE" jdbcType="VARCHAR" property="aboCode" />
+    <result column="ABO_CN" jdbcType="VARCHAR" property="aboCn" />
+    <result column="RH_CODE" jdbcType="VARCHAR" property="rhCode" />
+    <result column="RH_CN" jdbcType="VARCHAR" property="rhCn" />
+    <result column="OP_PRE_DIAGNOSIS" jdbcType="VARCHAR" property="opPreDiagnosis" />
+    <result column="OP_PRE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="opPreDiagnosisName" />
+    <result column="OP_POST_DIAGNOSIS" jdbcType="VARCHAR" property="opPostDiagnosis" />
+    <result column="OP_POST_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="opPostDiagnosisName" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="OP_POSITION_CODE" jdbcType="VARCHAR" property="opPositionCode" />
+    <result column="OP_POSITION_CN" jdbcType="VARCHAR" property="opPositionCn" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="TRACHEA_CANNULA_CLASS" jdbcType="VARCHAR" property="tracheaCannulaClass" />
+    <result column="ANES_DRUG_NAME" jdbcType="VARCHAR" property="anesDrugName" />
+    <result column="ANES_POSITION_DESC" jdbcType="VARCHAR" property="anesPositionDesc" />
+    <result column="BREATHE_TYPE_CODE" jdbcType="VARCHAR" property="breatheTypeCode" />
+    <result column="BREATHE_TYPE_CN" jdbcType="VARCHAR" property="breatheTypeCn" />
+    <result column="ANES_DESC" jdbcType="VARCHAR" property="anesDesc" />
+    <result column="ROUTE_MONITOR_ITEM_NAME" jdbcType="VARCHAR" property="routeMonitorItemName" />
+    <result column="ROUTE_MONITOR_ITEM_RESULT" jdbcType="VARCHAR" property="routeMonitorItemResult" />
+    <result column="SPEC_MONITOR_ITEM_NAME" jdbcType="VARCHAR" property="specMonitorItemName" />
+    <result column="SPEC_MONITOR_ITEM_RESULT" jdbcType="VARCHAR" property="specMonitorItemResult" />
+    <result column="ANES_COMP_CODE" jdbcType="VARCHAR" property="anesCompCode" />
+    <result column="ANES_COMP_CN" jdbcType="VARCHAR" property="anesCompCn" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="PUNCTURE_PROCESS" jdbcType="VARCHAR" property="punctureProcess" />
+    <result column="SBP" jdbcType="DECIMAL" property="sbp" />
+    <result column="DBP" jdbcType="DECIMAL" property="dbp" />
+    <result column="TEMPERTURE" jdbcType="DECIMAL" property="temperture" />
+    <result column="HEART_RATE" jdbcType="DECIMAL" property="heartRate" />
+    <result column="PULSES" jdbcType="DECIMAL" property="pulses" />
+    <result column="BREATHING_RATE" jdbcType="DECIMAL" property="breathingRate" />
+    <result column="ASA_LEVEL_CODE" jdbcType="VARCHAR" property="asaLevelCode" />
+    <result column="ASA_LEVEL_CN" jdbcType="VARCHAR" property="asaLevelCn" />
+    <result column="ANES_EFFECT" jdbcType="VARCHAR" property="anesEffect" />
+    <result column="ANES_PRE_DRUG" jdbcType="VARCHAR" property="anesPreDrug" />
+    <result column="OPREATION_START_DATE" jdbcType="TIMESTAMP" property="opreationStartDate" />
+    <result column="ANES_START_DATE" jdbcType="TIMESTAMP" property="anesStartDate" />
+    <result column="OPREATION_END_DATE" jdbcType="TIMESTAMP" property="opreationEndDate" />
+    <result column="OUT_OPREATING_ROOM_DATE" jdbcType="TIMESTAMP" property="outOpreatingRoomDate" />
+    <result column="OPREATOR_NAME" jdbcType="VARCHAR" property="opreatorName" />
+    <result column="MEDICINE_NAME" jdbcType="VARCHAR" property="medicineName" />
+    <result column="DRUGS_USAGE" jdbcType="VARCHAR" property="drugsUsage" />
+    <result column="DRUG_USING_FREQ_CODE" jdbcType="VARCHAR" property="drugUsingFreqCode" />
+    <result column="DRUG_USING_FREQ_CN" jdbcType="VARCHAR" property="drugUsingFreqCn" />
+    <result column="DRUG_DOSE_UNIT" jdbcType="VARCHAR" property="drugDoseUnit" />
+    <result column="DRUG_PRE_DOSE" jdbcType="DECIMAL" property="drugPreDose" />
+    <result column="DRUG_TOTAL_DOSE" jdbcType="DECIMAL" property="drugTotalDose" />
+    <result column="DRUG_ROUTE_CODE" jdbcType="VARCHAR" property="drugRouteCode" />
+    <result column="DRUG_ROUTE_CN" jdbcType="VARCHAR" property="drugRouteCn" />
+    <result column="BLOOD_TRANSF_DATE" jdbcType="TIMESTAMP" property="bloodTransfDate" />
+    <result column="TRANSFUSION_CODE" jdbcType="VARCHAR" property="transfusionCode" />
+    <result column="TRANSFUSION_CN" jdbcType="VARCHAR" property="transfusionCn" />
+    <result column="BLOOD" jdbcType="DECIMAL" property="blood" />
+    <result column="TRANSFUSION_UNIT" jdbcType="VARCHAR" property="transfusionUnit" />
+    <result column="TRANSFUSE_REACTION_MARK" jdbcType="VARCHAR" property="transfuseReactionMark" />
+    <result column="OP_INFUSION_ITEM" jdbcType="VARCHAR" property="opInfusionItem" />
+    <result column="LOSSBLOOD_AMOUNT" jdbcType="DECIMAL" property="lossbloodAmount" />
+    <result column="PATIENT_TO_PLACE_CODE" jdbcType="VARCHAR" property="patientToPlaceCode" />
+    <result column="PATIENT_TO_PLACE_CN" jdbcType="VARCHAR" property="patientToPlaceCn" />
+    <result column="ANES_DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="anesDoctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, ANESTHESIA_ID, EVENT_TYPE_CN, E_ORDER_NO, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, OP_ROOM_NO, "NAME", SEX_CODE, SEX_CN,
+    AGE_YEAR, AGE_MONTH, WEIGHT, ABO_CODE, ABO_CN, RH_CODE, RH_CN, OP_PRE_DIAGNOSIS, 
+    OP_PRE_DIAGNOSIS_NAME, OP_POST_DIAGNOSIS, OP_POST_DIAGNOSIS_NAME, OPERATION_CODE, 
+    OPERATION_NAME, OP_POSITION_CODE, OP_POSITION_CN, ANESTHESIA_CODE, ANESTHESIA_CN, 
+    TRACHEA_CANNULA_CLASS, ANES_DRUG_NAME, ANES_POSITION_DESC, BREATHE_TYPE_CODE, BREATHE_TYPE_CN, 
+    ANES_DESC, ROUTE_MONITOR_ITEM_NAME, ROUTE_MONITOR_ITEM_RESULT, SPEC_MONITOR_ITEM_NAME, 
+    SPEC_MONITOR_ITEM_RESULT, ANES_COMP_CODE, ANES_COMP_CN, TREAT_RESCUE_COURSE, PUNCTURE_PROCESS, 
+    SBP, DBP, TEMPERTURE, HEART_RATE, PULSES, BREATHING_RATE, ASA_LEVEL_CODE, ASA_LEVEL_CN, 
+    ANES_EFFECT, ANES_PRE_DRUG, OPREATION_START_DATE, ANES_START_DATE, OPREATION_END_DATE, 
+    OUT_OPREATING_ROOM_DATE, OPREATOR_NAME, MEDICINE_NAME, DRUGS_USAGE, DRUG_USING_FREQ_CODE, 
+    DRUG_USING_FREQ_CN, DRUG_DOSE_UNIT, DRUG_PRE_DOSE, DRUG_TOTAL_DOSE, DRUG_ROUTE_CODE, 
+    DRUG_ROUTE_CN, BLOOD_TRANSF_DATE, TRANSFUSION_CODE, TRANSFUSION_CN, BLOOD, TRANSFUSION_UNIT, 
+    TRANSFUSE_REACTION_MARK, OP_INFUSION_ITEM, LOSSBLOOD_AMOUNT, PATIENT_TO_PLACE_CODE, 
+    PATIENT_TO_PLACE_CN, ANES_DOCTOR_SIGNATURE, SIGNATURE_DATE, NOTES, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

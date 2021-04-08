@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.QxHistoryTaskLogDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.QxHistoryTaskLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="DECIMAL" property="id" />
+    <result column="TASK_ID" jdbcType="VARCHAR" property="taskId" />
+    <result column="PRI_ORDER" jdbcType="VARCHAR" property="priOrder" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="TASK_CODE" jdbcType="VARCHAR" property="taskCode" />
+    <result column="TASK_NAME" jdbcType="VARCHAR" property="taskName" />
+    <result column="TASK_TYPE" jdbcType="VARCHAR" property="taskType" />
+    <result column="BEGIN_DATE" jdbcType="TIMESTAMP" property="beginDate" />
+    <result column="END_DATE" jdbcType="TIMESTAMP" property="endDate" />
+    <result column="DAQ_STATUS" jdbcType="VARCHAR" property="daqStatus" />
+    <result column="PLAN_NUM" jdbcType="DECIMAL" property="planNum" />
+    <result column="NEW_NUM" jdbcType="DECIMAL" property="newNum" />
+    <result column="CHANGED_NUM" jdbcType="DECIMAL" property="changedNum" />
+    <result column="DELETE_NUM" jdbcType="DECIMAL" property="deleteNum" />
+    <result column="SAME_NUM" jdbcType="DECIMAL" property="sameNum" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="LASTUP_DATE" jdbcType="TIMESTAMP" property="lastupDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, TASK_ID, PRI_ORDER, ORG_ID, TASK_CODE, TASK_NAME, TASK_TYPE, BEGIN_DATE, END_DATE, 
+    DAQ_STATUS, PLAN_NUM, NEW_NUM, CHANGED_NUM, DELETE_NUM, SAME_NUM, CREATE_DATE, LASTUP_DATE
+  </sql>
+</mapper>

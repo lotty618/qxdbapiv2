@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientDrugDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientDrugDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="SET_SER_NUM" jdbcType="VARCHAR" property="setSerNum" />
+    <id column="INPATIENT_DRUG_ID" jdbcType="VARCHAR" property="inpatientDrugId" />
+    <result column="DRUG_FORM_CODE" jdbcType="VARCHAR" property="drugFormCode" />
+    <result column="DRUG_FORM_CN" jdbcType="VARCHAR" property="drugFormCn" />
+    <result column="DRUG_STANDARD_CODE" jdbcType="VARCHAR" property="drugStandardCode" />
+    <result column="DRUG_STANDARD_NAME" jdbcType="VARCHAR" property="drugStandardName" />
+    <result column="DRUG_LOCAL_CODE" jdbcType="VARCHAR" property="drugLocalCode" />
+    <result column="DRUG_LOCAL_NAME" jdbcType="VARCHAR" property="drugLocalName" />
+    <result column="CN_MEDICINE_TYPE_CODE" jdbcType="VARCHAR" property="cnMedicineTypeCode" />
+    <result column="CN_MEDICINE_TYPE_CN" jdbcType="VARCHAR" property="cnMedicineTypeCn" />
+    <result column="DRUG_SPEC" jdbcType="VARCHAR" property="drugSpec" />
+    <result column="DRUG_ROUTE_CODE" jdbcType="VARCHAR" property="drugRouteCode" />
+    <result column="DRUG_ROUTE_CN" jdbcType="VARCHAR" property="drugRouteCn" />
+    <result column="DRUG_USING_FREQ_CODE" jdbcType="VARCHAR" property="drugUsingFreqCode" />
+    <result column="DRUG_USING_FREQ_CN" jdbcType="VARCHAR" property="drugUsingFreqCn" />
+    <result column="DRUG_DOSE_UNIT" jdbcType="VARCHAR" property="drugDoseUnit" />
+    <result column="DRUG_PER_DOSE" jdbcType="DECIMAL" property="drugPerDose" />
+    <result column="DRUG_USING_DAYS" jdbcType="DECIMAL" property="drugUsingDays" />
+    <result column="DRUG_STOP_DATE" jdbcType="TIMESTAMP" property="drugStopDate" />
+    <result column="DRUG_TOTAL_UNIT" jdbcType="VARCHAR" property="drugTotalUnit" />
+    <result column="DRUG_TOTAL_DOSE" jdbcType="DECIMAL" property="drugTotalDose" />
+    <result column="DRUG_GROUP_NO" jdbcType="VARCHAR" property="drugGroupNo" />
+    <result column="PRESCRIPTION_DATE" jdbcType="TIMESTAMP" property="prescriptionDate" />
+    <result column="DISPENSING_DATE" jdbcType="TIMESTAMP" property="dispensingDate" />
+    <result column="PRICE_ITEM_PRICE" jdbcType="DECIMAL" property="priceItemPrice" />
+    <result column="PRICE_ITEM_QUANTITY" jdbcType="DECIMAL" property="priceItemQuantity" />
+    <result column="FEE_AMOUNT" jdbcType="DECIMAL" property="feeAmount" />
+    <result column="INSURANCE_CHARGES" jdbcType="DECIMAL" property="insuranceCharges" />
+    <result column="SELF_PAYMENT" jdbcType="DECIMAL" property="selfPayment" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="DDD_VALUE" jdbcType="DECIMAL" property="dddValue" />
+    <result column="ANTIBACTERIAL_FLAG" jdbcType="VARCHAR" property="antibacterialFlag" />
+    <result column="DRUG_ADVERSE_REACTION" jdbcType="VARCHAR" property="drugAdverseReaction" />
+    <result column="SKIN_TEST_DISCRIMINATION" jdbcType="VARCHAR" property="skinTestDiscrimination" />
+    <result column="HAS_CONTIGENCY" jdbcType="DECIMAL" property="hasContigency" />
+    <result column="PLACE_OF_ORI" jdbcType="VARCHAR" property="placeOfOri" />
+    <result column="ANT_GRADE" jdbcType="VARCHAR" property="antGrade" />
+    <result column="HAS_SPI_DRUG" jdbcType="VARCHAR" property="hasSpiDrug" />
+    <result column="HAS_ANE_DRUG" jdbcType="VARCHAR" property="hasAneDrug" />
+    <result column="HAS_BASIC_DRUG" jdbcType="VARCHAR" property="hasBasicDrug" />
+    <result column="HAS_DRUG_INF" jdbcType="VARCHAR" property="hasDrugInf" />
+    <result column="PROV_HEALTHCARE_CODE" jdbcType="VARCHAR" property="provHealthcareCode" />
+    <result column="CITY_HEALTHCARE_CODE" jdbcType="VARCHAR" property="cityHealthcareCode" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, SET_SER_NUM, INPATIENT_DRUG_ID, DRUG_FORM_CODE, 
+    DRUG_FORM_CN, DRUG_STANDARD_CODE, DRUG_STANDARD_NAME, DRUG_LOCAL_CODE, DRUG_LOCAL_NAME, 
+    CN_MEDICINE_TYPE_CODE, CN_MEDICINE_TYPE_CN, DRUG_SPEC, DRUG_ROUTE_CODE, DRUG_ROUTE_CN, 
+    DRUG_USING_FREQ_CODE, DRUG_USING_FREQ_CN, DRUG_DOSE_UNIT, DRUG_PER_DOSE, DRUG_USING_DAYS, 
+    DRUG_STOP_DATE, DRUG_TOTAL_UNIT, DRUG_TOTAL_DOSE, DRUG_GROUP_NO, PRESCRIPTION_DATE, 
+    DISPENSING_DATE, PRICE_ITEM_PRICE, PRICE_ITEM_QUANTITY, FEE_AMOUNT, INSURANCE_CHARGES, 
+    SELF_PAYMENT, NOTES, DDD_VALUE, ANTIBACTERIAL_FLAG, DRUG_ADVERSE_REACTION, SKIN_TEST_DISCRIMINATION, 
+    HAS_CONTIGENCY, PLACE_OF_ORI, ANT_GRADE, HAS_SPI_DRUG, HAS_ANE_DRUG, HAS_BASIC_DRUG, 
+    HAS_DRUG_INF, PROV_HEALTHCARE_CODE, CITY_HEALTHCARE_CODE, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME, ORDER_ID
+  </sql>
+</mapper>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTMedicalRecordHomeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTMedicalRecordHome">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="MRHUID" jdbcType="VARCHAR" property="mrhuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="INHOS_TIMES" jdbcType="VARCHAR" property="inhosTimes" />
+    <result column="MEDICAL_NO" jdbcType="VARCHAR" property="medicalNo" />
+    <result column="ADMISSION_DATE" jdbcType="TIMESTAMP" property="admissionDate" />
+    <result column="ADMISSION_DEPT" jdbcType="VARCHAR" property="admissionDept" />
+    <result column="DISCHARGE_DATE" jdbcType="TIMESTAMP" property="dischargeDate" />
+    <result column="DISCHARGE_DEPT" jdbcType="VARCHAR" property="dischargeDept" />
+    <result column="MAIN_DOCTOR" jdbcType="VARCHAR" property="mainDoctor" />
+    <result column="INHOS_DOCTOR" jdbcType="VARCHAR" property="inhosDoctor" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="CARD_NO" jdbcType="VARCHAR" property="cardNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="GENDER" jdbcType="VARCHAR" property="gender" />
+    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="COUNTRY" jdbcType="VARCHAR" property="country" />
+    <result column="ETHNIC" jdbcType="VARCHAR" property="ethnic" />
+    <result column="ID_NO" jdbcType="VARCHAR" property="idNo" />
+    <result column="OCCUPATION" jdbcType="VARCHAR" property="occupation" />
+    <result column="MARITAL_STATUS" jdbcType="VARCHAR" property="maritalStatus" />
+    <result column="EMPLOYER_ORG" jdbcType="VARCHAR" property="employerOrg" />
+    <result column="EMPLOYER_ORG_TEL" jdbcType="VARCHAR" property="employerOrgTel" />
+    <result column="CONTACT" jdbcType="VARCHAR" property="contact" />
+    <result column="CONTACT_RELATION" jdbcType="VARCHAR" property="contactRelation" />
+    <result column="CONTACT_TEL" jdbcType="VARCHAR" property="contactTel" />
+    <result column="ABO_BLOOD" jdbcType="VARCHAR" property="aboBlood" />
+    <result column="RH_BLOOD" jdbcType="VARCHAR" property="rhBlood" />
+    <result column="INHOS_PATH" jdbcType="VARCHAR" property="inhosPath" />
+    <result column="DIAG_NAME" jdbcType="VARCHAR" property="diagName" />
+    <result column="DIAG_CODE" jdbcType="VARCHAR" property="diagCode" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="OPERATION_LEVEL" jdbcType="VARCHAR" property="operationLevel" />
+    <result column="OPERATION_CN" jdbcType="VARCHAR" property="operationCn" />
+    <result column="SURGEON_NAME" jdbcType="VARCHAR" property="surgeonName" />
+    <result column="SURGICAL_ASSISTANT1" jdbcType="VARCHAR" property="surgicalAssistant1" />
+    <result column="SURGICAL_ASSISTANT2" jdbcType="VARCHAR" property="surgicalAssistant2" />
+    <result column="INCISION_HEALING" jdbcType="VARCHAR" property="incisionHealing" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="ANESTHESIOLOGIST" jdbcType="VARCHAR" property="anesthesiologist" />
+    <result column="DISCHARGE_CLASS" jdbcType="VARCHAR" property="dischargeClass" />
+    <result column="INHOS_TOTAL_FEE" jdbcType="VARCHAR" property="inhosTotalFee" />
+    <result column="SELF_PAYMENT" jdbcType="VARCHAR" property="selfPayment" />
+    <result column="OTHER_FEE" jdbcType="VARCHAR" property="otherFee" />
+    <result column="OPERATION_FEE" jdbcType="VARCHAR" property="operationFee" />
+    <result column="CPD_FEE" jdbcType="VARCHAR" property="cpdFee" />
+    <result column="CHM_FEE" jdbcType="VARCHAR" property="chmFee" />
+    <result column="PAY_WAY" jdbcType="VARCHAR" property="payWay" />
+    <result column="WM_FEE" jdbcType="VARCHAR" property="wmFee" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, MRHUID, IHUID, PUID, ORG_ID, INHOS_TIMES, MEDICAL_NO, ADMISSION_DATE, ADMISSION_DEPT, 
+    DISCHARGE_DATE, DISCHARGE_DEPT, MAIN_DOCTOR, INHOS_DOCTOR, ORG_NAME, CARD_NO, "NAME",
+    GENDER, BIRTHDAY, AGE, COUNTRY, ETHNIC, ID_NO, OCCUPATION, MARITAL_STATUS, EMPLOYER_ORG, 
+    EMPLOYER_ORG_TEL, CONTACT, CONTACT_RELATION, CONTACT_TEL, ABO_BLOOD, RH_BLOOD, INHOS_PATH, 
+    DIAG_NAME, DIAG_CODE, OPERATION_DATE, OPERATION_LEVEL, OPERATION_CN, SURGEON_NAME, 
+    SURGICAL_ASSISTANT1, SURGICAL_ASSISTANT2, INCISION_HEALING, ANESTHESIA_CN, ANESTHESIOLOGIST, 
+    DISCHARGE_CLASS, INHOS_TOTAL_FEE, SELF_PAYMENT, OTHER_FEE, OPERATION_FEE, CPD_FEE, 
+    CHM_FEE, PAY_WAY, WM_FEE, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

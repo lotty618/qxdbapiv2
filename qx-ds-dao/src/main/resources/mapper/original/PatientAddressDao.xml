@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.PatientAddressDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.PatientAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="ADDRESS_TYPE_CODE" jdbcType="VARCHAR" property="addressTypeCode" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <result column="PROV" jdbcType="VARCHAR" property="prov" />
+    <result column="CITY" jdbcType="VARCHAR" property="city" />
+    <result column="COUNTY" jdbcType="VARCHAR" property="county" />
+    <result column="TOWN_SHIP" jdbcType="VARCHAR" property="townShip" />
+    <result column="STREET" jdbcType="VARCHAR" property="street" />
+    <result column="HOUSE_NUMBER" jdbcType="VARCHAR" property="houseNumber" />
+    <result column="POSETCODE" jdbcType="VARCHAR" property="posetcode" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, ADDRESS_TYPE_CODE, EVENT_TYPE, PROV, CITY, COUNTY, TOWN_SHIP, 
+    STREET, HOUSE_NUMBER, POSETCODE, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, 
+    EVENT_TYPE_CN
+  </sql>
+</mapper>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InfoconsentAnesthesiaDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InfoconsentAnesthesia">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="INFORMED_CONSENT_NO" jdbcType="VARCHAR" property="informedConsentNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="PRE_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="preDiagnosisCode" />
+    <result column="PRE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="preDiagnosisName" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="OPERATION_DATE" jdbcType="TIMESTAMP" property="operationDate" />
+    <result column="PLAN_ANES_WAY_CODE" jdbcType="VARCHAR" property="planAnesWayCode" />
+    <result column="PLAN_ANES_WAY_NAME" jdbcType="VARCHAR" property="planAnesWayName" />
+    <result column="PAT_BASIC_DISEASE" jdbcType="VARCHAR" property="patBasicDisease" />
+    <result column="BASIC_DISEASE_ANES_EFFECT" jdbcType="VARCHAR" property="basicDiseaseAnesEffect" />
+    <result column="PLAN_OP_MONITOR_METHOD" jdbcType="VARCHAR" property="planOpMonitorMethod" />
+    <result column="ANES_POST_ACCIDENT_RISK" jdbcType="VARCHAR" property="anesPostAccidentRisk" />
+    <result column="ANES_PUMP_MARK" jdbcType="VARCHAR" property="anesPumpMark" />
+    <result column="ANES_SAFETY_INSUR_MARK" jdbcType="VARCHAR" property="anesSafetyInsurMark" />
+    <result column="ORG_COMMENT" jdbcType="VARCHAR" property="orgComment" />
+    <result column="PAT_LEGAL_COMMENT" jdbcType="VARCHAR" property="patLegalComment" />
+    <result column="PATIENT_SIGNATURE" jdbcType="VARCHAR" property="patientSignature" />
+    <result column="LEGAL_SIGNATURE" jdbcType="VARCHAR" property="legalSignature" />
+    <result column="PAT_LEGAL_RELATION_CODE" jdbcType="VARCHAR" property="patLegalRelationCode" />
+    <result column="PAT_LEGAL_RELATION_NAME" jdbcType="VARCHAR" property="patLegalRelationName" />
+    <result column="PATIENT_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="patientSignatureDate" />
+    <result column="ANESTHESIOLOGIST_NAME" jdbcType="VARCHAR" property="anesthesiologistName" />
+    <result column="DOCTOR_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="doctorSignatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InfoconsentAnesthesia">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, INFORMED_CONSENT_NO, EVENT_TYPE_CN, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, PRE_DIAGNOSIS_CODE, PRE_DIAGNOSIS_NAME, OPERATION_CODE, OPERATION_NAME, 
+    OPERATION_DATE, PLAN_ANES_WAY_CODE, PLAN_ANES_WAY_NAME, PAT_BASIC_DISEASE, BASIC_DISEASE_ANES_EFFECT, 
+    PLAN_OP_MONITOR_METHOD, ANES_POST_ACCIDENT_RISK, ANES_PUMP_MARK, ANES_SAFETY_INSUR_MARK, 
+    ORG_COMMENT, PAT_LEGAL_COMMENT, PATIENT_SIGNATURE, LEGAL_SIGNATURE, PAT_LEGAL_RELATION_CODE, 
+    PAT_LEGAL_RELATION_NAME, PATIENT_SIGNATURE_DATE, ANESTHESIOLOGIST_NAME, DOCTOR_SIGNATURE_DATE, 
+    NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.NisGeneralNursingDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.NisGeneralNursing">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="GENERAL_NURSING_ID" jdbcType="VARCHAR" property="generalNursingId" />
+    <id column="REPORT_ID" jdbcType="VARCHAR" property="reportId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="NURSIING_GRADE_CODE" jdbcType="VARCHAR" property="nursiingGradeCode" />
+    <result column="NURSIING_GRADE_NAME" jdbcType="VARCHAR" property="nursiingGradeName" />
+    <result column="NURSING_TYPE_CODE" jdbcType="VARCHAR" property="nursingTypeCode" />
+    <result column="NURSING_TYPE_NAME" jdbcType="VARCHAR" property="nursingTypeName" />
+    <result column="ALLERGY_HISTORY" jdbcType="VARCHAR" property="allergyHistory" />
+    <result column="WEIGHT" jdbcType="VARCHAR" property="weight" />
+    <result column="TEMPERATURE" jdbcType="VARCHAR" property="temperature" />
+    <result column="BREATHING_RATE" jdbcType="VARCHAR" property="breathingRate" />
+    <result column="PULSES" jdbcType="VARCHAR" property="pulses" />
+    <result column="SBP" jdbcType="VARCHAR" property="sbp" />
+    <result column="DBP" jdbcType="VARCHAR" property="dbp" />
+    <result column="OXYGEN_SATURATION" jdbcType="VARCHAR" property="oxygenSaturation" />
+    <result column="POFDA_MARK" jdbcType="VARCHAR" property="pofdaMark" />
+    <result column="DIET_QUALITY_CODE" jdbcType="VARCHAR" property="dietQualityCode" />
+    <result column="DIET_QUALITY_NAME" jdbcType="VARCHAR" property="dietQualityName" />
+    <result column="CATHETER_NURSING_DESC" jdbcType="VARCHAR" property="catheterNursingDesc" />
+    <result column="TRACHEA_NURING_CODE" jdbcType="VARCHAR" property="tracheaNuringCode" />
+    <result column="TRACHEA_NURING_NAME" jdbcType="VARCHAR" property="tracheaNuringName" />
+    <result column="POSITION_NURSING" jdbcType="VARCHAR" property="positionNursing" />
+    <result column="SKIN_NURING" jdbcType="VARCHAR" property="skinNuring" />
+    <result column="NUTRITION_NURSING" jdbcType="VARCHAR" property="nutritionNursing" />
+    <result column="DIET_GUIDE_CODE" jdbcType="VARCHAR" property="dietGuideCode" />
+    <result column="DIET_GUIDE_NAME" jdbcType="VARCHAR" property="dietGuideName" />
+    <result column="MENTAL_NURING_CODE" jdbcType="VARCHAR" property="mentalNuringCode" />
+    <result column="MENTAL_NURING_NAME" jdbcType="VARCHAR" property="mentalNuringName" />
+    <result column="SAFETY_NURING_CODE" jdbcType="VARCHAR" property="safetyNuringCode" />
+    <result column="SAFETY_NURIN_NAME" jdbcType="VARCHAR" property="safetyNurinName" />
+    <result column="BRIEF_DISEASE" jdbcType="VARCHAR" property="briefDisease" />
+    <result column="NURING_OBS_ITEM_NAME" jdbcType="VARCHAR" property="nuringObsItemName" />
+    <result column="NURING_OBS_RESULT" jdbcType="VARCHAR" property="nuringObsResult" />
+    <result column="NURING_PRO_ITEM_NAME" jdbcType="VARCHAR" property="nuringProItemName" />
+    <result column="NURING_PRO_NAME" jdbcType="VARCHAR" property="nuringProName" />
+    <result column="NURING_PRO_RESULT" jdbcType="VARCHAR" property="nuringProResult" />
+    <result column="SEND_OP_SAFE_CHK_MARK" jdbcType="VARCHAR" property="sendOpSafeChkMark" />
+    <result column="BACK_OP_SAFE_CHK_MARK" jdbcType="VARCHAR" property="backOpSafeChkMark" />
+    <result column="SEND_OP_RISK_EVA_MARK" jdbcType="VARCHAR" property="sendOpRiskEvaMark" />
+    <result column="BACK_OP_RISK_EVA_MARK" jdbcType="VARCHAR" property="backOpRiskEvaMark" />
+    <result column="ISOLATED_MARK" jdbcType="VARCHAR" property="isolatedMark" />
+    <result column="ISOLATED_CLASS_CODE" jdbcType="VARCHAR" property="isolatedClassCode" />
+    <result column="ISOLATED_CLASS_NAME" jdbcType="VARCHAR" property="isolatedClassName" />
+    <result column="NURSE_SIGNATURE" jdbcType="VARCHAR" property="nurseSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, GENERAL_NURSING_ID, REPORT_ID, CASE_NO, 
+    HOSPITALTALIZATION_TIMES, DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME",
+    SEX_CODE, SEX_CN, AGE_YEAR, AGE_MONTH, DIAGNOSIS_CODE, DIAGNOSIS_NAME, NURSIING_GRADE_CODE, 
+    NURSIING_GRADE_NAME, NURSING_TYPE_CODE, NURSING_TYPE_NAME, ALLERGY_HISTORY, WEIGHT, 
+    TEMPERATURE, BREATHING_RATE, PULSES, SBP, DBP, OXYGEN_SATURATION, POFDA_MARK, DIET_QUALITY_CODE, 
+    DIET_QUALITY_NAME, CATHETER_NURSING_DESC, TRACHEA_NURING_CODE, TRACHEA_NURING_NAME, 
+    POSITION_NURSING, SKIN_NURING, NUTRITION_NURSING, DIET_GUIDE_CODE, DIET_GUIDE_NAME, 
+    MENTAL_NURING_CODE, MENTAL_NURING_NAME, SAFETY_NURING_CODE, SAFETY_NURIN_NAME, BRIEF_DISEASE, 
+    NURING_OBS_ITEM_NAME, NURING_OBS_RESULT, NURING_PRO_ITEM_NAME, NURING_PRO_NAME, NURING_PRO_RESULT, 
+    SEND_OP_SAFE_CHK_MARK, BACK_OP_SAFE_CHK_MARK, SEND_OP_RISK_EVA_MARK, BACK_OP_RISK_EVA_MARK, 
+    ISOLATED_MARK, ISOLATED_CLASS_CODE, ISOLATED_CLASS_NAME, NURSE_SIGNATURE, SIGNATURE_DATE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

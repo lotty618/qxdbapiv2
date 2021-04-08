@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTSevereValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTSevereValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="SVUID" jdbcType="VARCHAR" property="svuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="EFFECTIVE_DATE" jdbcType="TIMESTAMP" property="effectiveDate" />
+    <result column="DAUID" jdbcType="VARCHAR" property="dauid" />
+    <result column="ORDER_NAME" jdbcType="VARCHAR" property="orderName" />
+    <result column="ABNORMAL" jdbcType="VARCHAR" property="abnormal" />
+    <result column="IS_ABNORMAL" jdbcType="VARCHAR" property="isAbnormal" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="OUTVALUE_IS" jdbcType="VARCHAR" property="outvalueIs" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, SVUID, IHUID, EFFECTIVE_DATE, DAUID, ORDER_NAME, ABNORMAL, IS_ABNORMAL, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME, OUTVALUE_IS
+  </sql>
+</mapper>

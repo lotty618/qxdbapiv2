@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientReferralDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientReferral">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="CHANGE_NO" jdbcType="VARCHAR" property="changeNo" />
+    <result column="REFER_FROM_ORG_NAME" jdbcType="VARCHAR" property="referFromOrgName" />
+    <result column="REFER_FROM_ORG_ID" jdbcType="VARCHAR" property="referFromOrgId" />
+    <result column="REFER_FROM_DEPT_NAME" jdbcType="VARCHAR" property="referFromDeptName" />
+    <result column="REFER_TO_ORG_NAME" jdbcType="VARCHAR" property="referToOrgName" />
+    <result column="REFER_TO_ORG_ID" jdbcType="VARCHAR" property="referToOrgId" />
+    <result column="REFER_TO_DEPT_NAME" jdbcType="VARCHAR" property="referToDeptName" />
+    <result column="REFERRAL_RECORDS" jdbcType="VARCHAR" property="referralRecords" />
+    <result column="REFERRAL_REASON" jdbcType="VARCHAR" property="referralReason" />
+    <result column="REFERRAL_DATE" jdbcType="TIMESTAMP" property="referralDate" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, CHANGE_NO, REFER_FROM_ORG_NAME, REFER_FROM_ORG_ID, 
+    REFER_FROM_DEPT_NAME, REFER_TO_ORG_NAME, REFER_TO_ORG_ID, REFER_TO_DEPT_NAME, REFERRAL_RECORDS, 
+    REFERRAL_REASON, REFERRAL_DATE, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

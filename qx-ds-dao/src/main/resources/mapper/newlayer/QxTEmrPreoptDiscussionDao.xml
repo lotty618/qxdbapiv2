@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrPreoptDiscussionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrPreoptDiscussion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EPDUID" jdbcType="VARCHAR" property="epduid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="DISCUSSION_DATE" jdbcType="TIMESTAMP" property="discussionDate" />
+    <result column="DISCUSSION_LOCALTION" jdbcType="VARCHAR" property="discussionLocaltion" />
+    <result column="HOST_NAME" jdbcType="VARCHAR" property="hostName" />
+    <result column="DISCUSSION_LIST" jdbcType="VARCHAR" property="discussionList" />
+    <result column="TITLE_CODE" jdbcType="VARCHAR" property="titleCode" />
+    <result column="TITLE_NAME" jdbcType="VARCHAR" property="titleName" />
+    <result column="IN_DATE" jdbcType="TIMESTAMP" property="inDate" />
+    <result column="PRE_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="preDiagnosisCode" />
+    <result column="PRE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="preDiagnosisName" />
+    <result column="PLAN_OPERATION_CODE" jdbcType="VARCHAR" property="planOperationCode" />
+    <result column="PLAN_OPERATION_NAME" jdbcType="VARCHAR" property="planOperationName" />
+    <result column="PLAN_OPERATION_PART_NAME" jdbcType="VARCHAR" property="planOperationPartName" />
+    <result column="PLAN_OPERATION_DATE" jdbcType="TIMESTAMP" property="planOperationDate" />
+    <result column="PLAN_ANES_WAY_CODE" jdbcType="VARCHAR" property="planAnesWayCode" />
+    <result column="PLAN_ANES_WAY_NAME" jdbcType="VARCHAR" property="planAnesWayName" />
+    <result column="OPERATION_KEY" jdbcType="VARCHAR" property="operationKey" />
+    <result column="OP_PRE_PREPARATION" jdbcType="VARCHAR" property="opPrePreparation" />
+    <result column="OPERATION_INDICATION" jdbcType="VARCHAR" property="operationIndication" />
+    <result column="OPERATION_PLAN" jdbcType="VARCHAR" property="operationPlan" />
+    <result column="OPERATION_NOTE" jdbcType="VARCHAR" property="operationNote" />
+    <result column="DISCUSS_IDEA" jdbcType="VARCHAR" property="discussIdea" />
+    <result column="DISCUSS_CONCLUSION" jdbcType="VARCHAR" property="discussConclusion" />
+    <result column="OPERATOR_SIGNATURE" jdbcType="VARCHAR" property="operatorSignature" />
+    <result column="ANESTHETIC_DOCTOR" jdbcType="VARCHAR" property="anestheticDoctor" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="EMR_CONTENT_PARSE" jdbcType="VARCHAR" property="emrContentParse" />
+    <result column="CHARACTERISTICS_ABNORMAL" jdbcType="VARCHAR" property="characteristicsAbnormal" />
+    <result column="CHARACTERISTICS_NORMAL" jdbcType="VARCHAR" property="characteristicsNormal" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="DISCUSS_CONTENT" jdbcType="VARCHAR" property="discussContent" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

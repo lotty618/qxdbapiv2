@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qx-common" />
+        <module name="qx-model" />
+        <module name="qx-ds-api" />
+        <module name="qx-ds-service" />
+        <module name="qx-ds-daq" />
+        <module name="qx-ds-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qx-common" target="1.8" />
+      <module name="qx-ds-api" target="1.8" />
+      <module name="qx-ds-dao" target="1.8" />
+      <module name="qx-ds-daq" target="1.8" />
+      <module name="qx-ds-das" target="1.8" />
+      <module name="qx-ds-service" target="1.8" />
+      <module name="qx-model" target="1.8" />
+      <module name="qxdbapiv2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="qx-common" options="-parameters" />
+      <module name="qx-ds-api" options="-parameters" />
+      <module name="qx-ds-dao" options="-parameters" />
+      <module name="qx-ds-daq" options="-parameters" />
+      <module name="qx-ds-das" options="-parameters" />
+      <module name="qx-ds-service" options="-parameters" />
+      <module name="qx-model" options="-parameters" />
+    </option>
+  </component>
+</project>

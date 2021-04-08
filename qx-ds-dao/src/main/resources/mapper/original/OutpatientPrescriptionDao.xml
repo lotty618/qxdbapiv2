@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientPrescriptionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientPrescription">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="PRESCRIPTION_NO" jdbcType="VARCHAR" property="prescriptionNo" />
+    <result column="PRES_CLASS_TYPE_CODE" jdbcType="VARCHAR" property="presClassTypeCode" />
+    <result column="PRES_CLASS_TYPE_NAME" jdbcType="VARCHAR" property="presClassTypeName" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="genderCode" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="TCM_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="tcmDiagnosisCode" />
+    <result column="TCM_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="tcmDiagnosisName" />
+    <result column="THERAPEUTIC_PRINCIPLES" jdbcType="VARCHAR" property="therapeuticPrinciples" />
+    <result column="PRES_DESCRIBE" jdbcType="VARCHAR" property="presDescribe" />
+    <result column="TCM_DECOC_PIECE_METHOD" jdbcType="VARCHAR" property="tcmDecocPieceMethod" />
+    <result column="TCM_USE_METHOD" jdbcType="VARCHAR" property="tcmUseMethod" />
+    <result column="COST" jdbcType="DECIMAL" property="cost" />
+    <result column="TERM_COUNT" jdbcType="DECIMAL" property="termCount" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_CN" jdbcType="VARCHAR" property="applyDeptCn" />
+    <result column="APPLY_TIME" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="APPLY_OPERATOR" jdbcType="VARCHAR" property="applyOperator" />
+    <result column="PERFORM_OPERATOR" jdbcType="VARCHAR" property="performOperator" />
+    <result column="PERFORM_DEPT_CODE" jdbcType="VARCHAR" property="performDeptCode" />
+    <result column="PERFORM_DEPT_NAME" jdbcType="VARCHAR" property="performDeptName" />
+    <result column="PERFORM_DATE" jdbcType="TIMESTAMP" property="performDate" />
+    <result column="AUDIT_OPERATOR" jdbcType="VARCHAR" property="auditOperator" />
+    <result column="AUDIT_DATE" jdbcType="TIMESTAMP" property="auditDate" />
+    <result column="DISTRIUTE_OPERATOR" jdbcType="VARCHAR" property="distriuteOperator" />
+    <result column="CHECK_OPERATOR" jdbcType="VARCHAR" property="checkOperator" />
+    <result column="DISPENSE_OPERATOR" jdbcType="VARCHAR" property="dispenseOperator" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, PRESCRIPTION_NO, PRES_CLASS_TYPE_CODE, PRES_CLASS_TYPE_NAME, 
+    "NAME", GENDER_CODE, AGE_YEAR, AGE_MONTH, DIAGNOSIS_CODE, DIAGNOSIS_NAME, TCM_DIAGNOSIS_CODE,
+    TCM_DIAGNOSIS_NAME, THERAPEUTIC_PRINCIPLES, PRES_DESCRIBE, TCM_DECOC_PIECE_METHOD, 
+    TCM_USE_METHOD, COST, TERM_COUNT, APPLY_DEPT_CODE, APPLY_DEPT_CN, APPLY_TIME, APPLY_OPERATOR, 
+    PERFORM_OPERATOR, PERFORM_DEPT_CODE, PERFORM_DEPT_NAME, PERFORM_DATE, AUDIT_OPERATOR, 
+    AUDIT_DATE, DISTRIUTE_OPERATOR, CHECK_OPERATOR, DISPENSE_OPERATOR, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

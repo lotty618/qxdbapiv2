@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientInfoDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="OUTPAT_TYPE_CODE" jdbcType="VARCHAR" property="outpatTypeCode" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="DOCTOR_NAME" jdbcType="VARCHAR" property="doctorName" />
+    <result column="DOCTOR_CODE" jdbcType="VARCHAR" property="doctorCode" />
+    <result column="DOCTOR_TITLE_CODE" jdbcType="VARCHAR" property="doctorTitleCode" />
+    <result column="HEALTH_SERVICE_DEMAND" jdbcType="VARCHAR" property="healthServiceDemand" />
+    <result column="HEALTH_PROBLEM_EVAL" jdbcType="VARCHAR" property="healthProblemEval" />
+    <result column="TREATMENT_PLAN" jdbcType="VARCHAR" property="treatmentPlan" />
+    <result column="OTHER_MEDICAL_TREATMENT" jdbcType="VARCHAR" property="otherMedicalTreatment" />
+    <result column="SBP" jdbcType="VARCHAR" property="sbp" />
+    <result column="DBP" jdbcType="VARCHAR" property="dbp" />
+    <result column="SEC_TYPE_CODE" jdbcType="VARCHAR" property="secTypeCode" />
+    <result column="SEC_NO" jdbcType="VARCHAR" property="secNo" />
+    <result column="NATIONALITY" jdbcType="VARCHAR" property="nationality" />
+    <result column="IS_LOCAL" jdbcType="VARCHAR" property="isLocal" />
+    <result column="CONSULT_QUESTION" jdbcType="VARCHAR" property="consultQuestion" />
+    <result column="OCCURRED_TIME" jdbcType="TIMESTAMP" property="occurredTime" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, OUTPAT_TYPE_CODE, DEPT_CODE, DEPT_NAME, 
+    DOCTOR_NAME, DOCTOR_CODE, DOCTOR_TITLE_CODE, HEALTH_SERVICE_DEMAND, HEALTH_PROBLEM_EVAL, 
+    TREATMENT_PLAN, OTHER_MEDICAL_TREATMENT, SBP, DBP, SEC_TYPE_CODE, SEC_NO, NATIONALITY, 
+    IS_LOCAL, CONSULT_QUESTION, OCCURRED_TIME, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

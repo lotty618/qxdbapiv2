@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTPatientAddressDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatientAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="PAUID" jdbcType="VARCHAR" property="pauid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="ADDRESS_TYPE_CODE" jdbcType="VARCHAR" property="addressTypeCode" />
+    <result column="PROV" jdbcType="VARCHAR" property="prov" />
+    <result column="CITY" jdbcType="VARCHAR" property="city" />
+    <result column="COUNTY" jdbcType="VARCHAR" property="county" />
+    <result column="TOWN_SHIP" jdbcType="VARCHAR" property="townShip" />
+    <result column="STREET" jdbcType="VARCHAR" property="street" />
+    <result column="HOUSE_NUMBER" jdbcType="VARCHAR" property="houseNumber" />
+    <result column="POSETCODE" jdbcType="VARCHAR" property="posetcode" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, PAUID, PUID, QID, PATIENT_ID, ORG_ID, ORGUID, ADDRESS_TYPE_CODE, PROV, CITY, 
+    COUNTY, TOWN_SHIP, STREET, HOUSE_NUMBER, POSETCODE, LAST_UPD_DATE, EFFECTIVE, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

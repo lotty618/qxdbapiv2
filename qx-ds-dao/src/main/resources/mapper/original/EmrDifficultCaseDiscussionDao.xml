@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrDifficultCaseDiscussionDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrDifficultCaseDiscussion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="DIFFICULT_CASE_ID" jdbcType="VARCHAR" property="difficultCaseId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="IN_HOSPITAL_TIMES" jdbcType="DECIMAL" property="inHospitalTimes" />
+    <result column="DISCUSSION_DATE" jdbcType="TIMESTAMP" property="discussionDate" />
+    <result column="DISCUSSION_LOCALTION" jdbcType="VARCHAR" property="discussionLocaltion" />
+    <result column="DISCUSSION_LIST" jdbcType="VARCHAR" property="discussionList" />
+    <result column="HOST_NAME" jdbcType="VARCHAR" property="hostName" />
+    <result column="DISCUSSION_IDEA" jdbcType="VARCHAR" property="discussionIdea" />
+    <result column="TCM_OBSERVE" jdbcType="VARCHAR" property="tcmObserve" />
+    <result column="SYNDROME_DIFFER_DESC" jdbcType="VARCHAR" property="syndromeDifferDesc" />
+    <result column="HOST_SUMMARY_OPINION" jdbcType="VARCHAR" property="hostSummaryOpinion" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="IN_CHARGE_DOCTOR_NAME" jdbcType="VARCHAR" property="inChargeDoctorName" />
+    <result column="CHIEF_DOCTOR_NAME" jdbcType="VARCHAR" property="chiefDoctorName" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrDifficultCaseDiscussion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+    <result column="EMR_CONTENT_CLOB" jdbcType="CLOB" property="emrContentClob" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DIFFICULT_CASE_ID, CASE_NO, IN_HOSPITAL_TIMES, 
+    DISCUSSION_DATE, DISCUSSION_LOCALTION, DISCUSSION_LIST, HOST_NAME, DISCUSSION_IDEA, 
+    TCM_OBSERVE, SYNDROME_DIFFER_DESC, HOST_SUMMARY_OPINION, DOCTOR_SIGNATURE, IN_CHARGE_DOCTOR_NAME, 
+    CHIEF_DOCTOR_NAME, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, TEMPLATE_TYPE_CN, 
+    EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT, EMR_CONTENT_CLOB
+  </sql>
+</mapper>

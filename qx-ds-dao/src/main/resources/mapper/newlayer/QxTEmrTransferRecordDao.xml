@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrTransferRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrTransferRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="ETRUID" jdbcType="VARCHAR" property="etruid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="IN_DATE" jdbcType="VARCHAR" property="inDate" />
+    <result column="OUT_DEPT_DATE" jdbcType="VARCHAR" property="outDeptDate" />
+    <result column="IN_DEPT_DATE" jdbcType="VARCHAR" property="inDeptDate" />
+    <result column="OUT_DEPT_NAME" jdbcType="VARCHAR" property="outDeptName" />
+    <result column="IN_DEPT_NAME" jdbcType="VARCHAR" property="inDeptName" />
+    <result column="CHIEF_COMPLAINTS" jdbcType="VARCHAR" property="chiefComplaints" />
+    <result column="IN_CONDITION_DESC" jdbcType="VARCHAR" property="inConditionDesc" />
+    <result column="IN_DIAGNOSIS_CN" jdbcType="VARCHAR" property="inDiagnosisCn" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="CURRENT_SITUATION" jdbcType="VARCHAR" property="currentSituation" />
+    <result column="CURRENT_DIAGNOSIS" jdbcType="VARCHAR" property="currentDiagnosis" />
+    <result column="IN_DIAG_TREAT_PLAN" jdbcType="VARCHAR" property="inDiagTreatPlan" />
+    <result column="PURPOSE" jdbcType="VARCHAR" property="purpose" />
+    <result column="MIAN_DOCTOR" jdbcType="VARCHAR" property="mianDoctor" />
+    <result column="MIAN_DOCTOR_DATE" jdbcType="VARCHAR" property="mianDoctorDate" />
+    <result column="TRANSFER_TYPE_CODE" jdbcType="VARCHAR" property="transferTypeCode" />
+    <result column="TRANSFER_TYPE_NAME" jdbcType="VARCHAR" property="transferTypeName" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

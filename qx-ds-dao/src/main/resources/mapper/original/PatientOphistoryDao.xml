@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.PatientOphistoryDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.PatientOphistory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OPHISTORY_ID" jdbcType="VARCHAR" property="ophistoryId" />
+    <result column="OPT_CODE" jdbcType="VARCHAR" property="optCode" />
+    <result column="OPT_NAME" jdbcType="VARCHAR" property="optName" />
+    <result column="OCCURED_TIME" jdbcType="TIMESTAMP" property="occuredTime" />
+    <result column="OPERATION_FORM_NO" jdbcType="VARCHAR" property="operationFormNo" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OPHISTORY_ID, OPT_CODE, OPT_NAME, OCCURED_TIME, OPERATION_FORM_NO, 
+    LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

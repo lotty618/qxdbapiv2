@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxzskTWarmCriticalAnalyseDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxzskTWarmCriticalAnalyse">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="VALUE_DATE" jdbcType="VARCHAR" property="valueDate" />
+    <result column="ABNORMAL_IS" jdbcType="VARCHAR" property="abnormalIs" />
+    <result column="ABNORMAL_DETAIL" jdbcType="VARCHAR" property="abnormalDetail" />
+    <result column="DAUID" jdbcType="VARCHAR" property="dauid" />
+    <result column="DISCHARGE_DATE" jdbcType="VARCHAR" property="dischargeDate" />
+    <result column="OUTVALUE_IS" jdbcType="VARCHAR" property="outvalueIs" />
+    <result column="ANALYSE_TIME" jdbcType="VARCHAR" property="analyseTime" />
+    <result column="ORDER_LOCAL_CN" jdbcType="VARCHAR" property="orderLocalCn" />
+  </resultMap>
+</mapper>

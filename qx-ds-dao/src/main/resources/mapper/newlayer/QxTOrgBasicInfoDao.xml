@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOrgBasicInfoDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOrgBasicInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="PRESENT_ADDR_PROVINCE" jdbcType="VARCHAR" property="presentAddrProvince" />
+    <result column="PRESENT_ADDR_CITY" jdbcType="VARCHAR" property="presentAddrCity" />
+    <result column="PRESENT_ADDR_COUNTY" jdbcType="VARCHAR" property="presentAddrCounty" />
+    <result column="PRESENT_ADDR_TOWN" jdbcType="VARCHAR" property="presentAddrTown" />
+    <result column="PRESENT_ADDR_VILLAGE" jdbcType="VARCHAR" property="presentAddrVillage" />
+    <result column="PRESENT_ADDR_HOUSE_NO" jdbcType="VARCHAR" property="presentAddrHouseNo" />
+    <result column="POSTAL_CODE" jdbcType="VARCHAR" property="postalCode" />
+    <result column="DISTRICT_CODE" jdbcType="VARCHAR" property="districtCode" />
+    <result column="CONTACT_TEL_NO" jdbcType="VARCHAR" property="contactTelNo" />
+    <result column="EMAIL_ADRESS" jdbcType="VARCHAR" property="emailAdress" />
+    <result column="WEBSITE_DOMAIN_NAME" jdbcType="VARCHAR" property="websiteDomainName" />
+    <result column="ESTABLISHMENT_DATE" jdbcType="TIMESTAMP" property="establishmentDate" />
+    <result column="CHARGE_NAME" jdbcType="VARCHAR" property="chargeName" />
+    <result column="SUB_INSTITUTION_COUNT" jdbcType="DECIMAL" property="subInstitutionCount" />
+    <result column="CHSS_COUNT" jdbcType="DECIMAL" property="chssCount" />
+    <result column="ORG_LEVEL" jdbcType="DECIMAL" property="orgLevel" />
+    <result column="ORG_CLASSES" jdbcType="DECIMAL" property="orgClasses" />
+    <result column="IS_MEDICAL_CENTER" jdbcType="DECIMAL" property="isMedicalCenter" />
+    <result column="MEDICAL_CENTER_TYPE" jdbcType="DECIMAL" property="medicalCenterType" />
+    <result column="MEDICAL_CENTER_GRADE" jdbcType="DECIMAL" property="medicalCenterGrade" />
+    <result column="STAFF_NO" jdbcType="DECIMAL" property="staffNo" />
+    <result column="ESTABLISHMENT_BEDS" jdbcType="DECIMAL" property="establishmentBeds" />
+    <result column="BUILT_UP_AREA" jdbcType="DECIMAL" property="builtUpArea" />
+    <result column="ECONOMIC_TYPE_NAME" jdbcType="VARCHAR" property="economicTypeName" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, ORGUID, ORG_NAME, ORG_ID, PRESENT_ADDR_PROVINCE, PRESENT_ADDR_CITY, PRESENT_ADDR_COUNTY, 
+    PRESENT_ADDR_TOWN, PRESENT_ADDR_VILLAGE, PRESENT_ADDR_HOUSE_NO, POSTAL_CODE, DISTRICT_CODE, 
+    CONTACT_TEL_NO, EMAIL_ADRESS, WEBSITE_DOMAIN_NAME, ESTABLISHMENT_DATE, CHARGE_NAME, 
+    SUB_INSTITUTION_COUNT, CHSS_COUNT, ORG_LEVEL, ORG_CLASSES, IS_MEDICAL_CENTER, MEDICAL_CENTER_TYPE, 
+    MEDICAL_CENTER_GRADE, STAFF_NO, ESTABLISHMENT_BEDS, BUILT_UP_AREA, ECONOMIC_TYPE_NAME, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, 
+    IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

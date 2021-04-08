@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTPatientInhosDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatientInhos">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="MAIN_DOCTOR_ID" jdbcType="VARCHAR" property="mainDoctorId" />
+    <result column="MAIN_DOCTOR_NAME" jdbcType="VARCHAR" property="mainDoctorName" />
+    <result column="MAIN_NURSE_ID" jdbcType="VARCHAR" property="mainNurseId" />
+    <result column="MAIN_NURSE_NAME" jdbcType="VARCHAR" property="mainNurseName" />
+    <result column="HBUID" jdbcType="VARCHAR" property="hbuid" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="DISABILITY_CODE" jdbcType="VARCHAR" property="disabilityCode" />
+    <result column="DISABILITY_CN" jdbcType="VARCHAR" property="disabilityCn" />
+    <result column="IN_MEDICAL_RECORD_NO" jdbcType="VARCHAR" property="inMedicalRecordNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="VARCHAR" property="hospitaltalizationTimes" />
+    <result column="ACCOUNT_MONEY" jdbcType="VARCHAR" property="accountMoney" />
+    <result column="MONEY_ARREARAGE" jdbcType="VARCHAR" property="moneyArrearage" />
+    <result column="ADMISSION_DATE" jdbcType="TIMESTAMP" property="admissionDate" />
+    <result column="INPATIENT_REASON_CODE" jdbcType="VARCHAR" property="inpatientReasonCode" />
+    <result column="INPATIENT_REASON_CN" jdbcType="VARCHAR" property="inpatientReasonCn" />
+    <result column="INPATIENT_INFECTIVITY_CODE" jdbcType="VARCHAR" property="inpatientInfectivityCode" />
+    <result column="INPATIENT_DIS_STATUE_CODE" jdbcType="VARCHAR" property="inpatientDisStatueCode" />
+    <result column="INPATIENT_DIS_STATUE_CN" jdbcType="VARCHAR" property="inpatientDisStatueCn" />
+    <result column="PAY_WAY_CODE" jdbcType="VARCHAR" property="payWayCode" />
+    <result column="PAY_WAY_CN" jdbcType="VARCHAR" property="payWayCn" />
+    <result column="INSURANCE_NO" jdbcType="VARCHAR" property="insuranceNo" />
+    <result column="DISCHARGE_DATE" jdbcType="TIMESTAMP" property="dischargeDate" />
+    <result column="DISCHARGE_DEPT_CODE" jdbcType="VARCHAR" property="dischargeDeptCode" />
+    <result column="DISCHARGE_DEPT_CN" jdbcType="VARCHAR" property="dischargeDeptCn" />
+    <result column="INPATIENT_REFERRAL_CODE" jdbcType="VARCHAR" property="inpatientReferralCode" />
+    <result column="DEATH_CODE" jdbcType="VARCHAR" property="deathCode" />
+    <result column="DEATH_REASON_CODE" jdbcType="VARCHAR" property="deathReasonCode" />
+    <result column="DEATH_REASON_CN" jdbcType="VARCHAR" property="deathReasonCn" />
+    <result column="DEATH_DATE" jdbcType="TIMESTAMP" property="deathDate" />
+    <result column="INHOS_ID" jdbcType="VARCHAR" property="inhosId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="CHIEF_PHYSICIAN" jdbcType="VARCHAR" property="chiefPhysician" />
+    <result column="CHIEF_PHYSICIAN_NAME" jdbcType="VARCHAR" property="chiefPhysicianName" />
+    <result column="DOCTOR" jdbcType="VARCHAR" property="doctor" />
+    <result column="DOCTOR_NAME" jdbcType="VARCHAR" property="doctorName" />
+    <result column="TREAT_RESULT_CODE" jdbcType="VARCHAR" property="treatResultCode" />
+    <result column="TREAT_RESULT_CN" jdbcType="VARCHAR" property="treatResultCn" />
+    <result column="PATIENT_NAME" jdbcType="VARCHAR" property="patientName" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="IS_SPECIAL" jdbcType="DECIMAL" property="isSpecial" />
+    <result column="ADMISSION_DEPT_CODE" jdbcType="VARCHAR" property="admissionDeptCode" />
+    <result column="ADMISSION_DEPT_CN" jdbcType="VARCHAR" property="admissionDeptCn" />
+    <result column="ADMISSION_BED_NO" jdbcType="VARCHAR" property="admissionBedNo" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, IHUID, PUID, DUID, ORGUID, MAIN_DOCTOR_ID, MAIN_DOCTOR_NAME, MAIN_NURSE_ID, 
+    MAIN_NURSE_NAME, HBUID, BED_NO, INHOS_NO, DISABILITY_CODE, DISABILITY_CN, IN_MEDICAL_RECORD_NO, 
+    HOSPITALTALIZATION_TIMES, ACCOUNT_MONEY, MONEY_ARREARAGE, ADMISSION_DATE, INPATIENT_REASON_CODE, 
+    INPATIENT_REASON_CN, INPATIENT_INFECTIVITY_CODE, INPATIENT_DIS_STATUE_CODE, INPATIENT_DIS_STATUE_CN, 
+    PAY_WAY_CODE, PAY_WAY_CN, INSURANCE_NO, DISCHARGE_DATE, DISCHARGE_DEPT_CODE, DISCHARGE_DEPT_CN, 
+    INPATIENT_REFERRAL_CODE, DEATH_CODE, DEATH_REASON_CODE, DEATH_REASON_CN, DEATH_DATE, 
+    INHOS_ID, ORG_ID, CHIEF_PHYSICIAN, CHIEF_PHYSICIAN_NAME, DOCTOR, DOCTOR_NAME, TREAT_RESULT_CODE, 
+    TREAT_RESULT_CN, PATIENT_NAME, SEX, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATE_NAME, 
+    INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, QID, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME, 
+    IS_SPECIAL, ADMISSION_DEPT_CODE, ADMISSION_DEPT_CN, ADMISSION_BED_NO, PATIENT_ID
+  </sql>
+
+  <select id="selectPatientInhos" parameterType="string" resultType="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTPatientInhos">
+    SELECT bed_no "bedNo", decode(admission_dept_code, NULL, discharge_dept_code, admission_dept_code ) "deptId",
+        ihuid "ihuid",duid "duid",inhos_no as "inhosNo",discharge_dept_cn as "deptName",
+        TO_CHAR(discharge_date,'YYYY-MM-DD HH24:MI:SS') "dischargeDate",
+        TO_CHAR(admission_date,'YYYY-MM-DD HH24:MI:SS') "admissionDate",
+        ROUND( TO_NUMBER( NVL( discharge_date, SYSDATE ) - admission_date ) ) "inhosDays",
+        FLOOR( ROUND( TO_NUMBER( admission_date - ( SELECT birthday FROM qx_t_patient WHERE puid = #{puid} ) ) ) / 365 ) "age",
+        (SELECT * FROM ( SELECT diag_name FROM qx_t_inpatient_diag ORDER BY input_time DESC ) WHERE ihuid = t1.ihuid AND ROWNUM = 1) "mainDiag"
+    FROM qx_t_patient_inhos t1
+    WHERE puid = #{puid} AND is_del=0 AND is_invalid = 0 AND status_code = 0
+  </select>
+</mapper>

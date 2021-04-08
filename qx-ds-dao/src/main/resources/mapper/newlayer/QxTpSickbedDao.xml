@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTpSickbedDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTpSickbed">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="HBUID" jdbcType="VARCHAR" property="hbuid" />
+    <result column="BED_DESC" jdbcType="VARCHAR" property="bedDesc" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="HSUID" jdbcType="VARCHAR" property="hsuid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="BED_ID" jdbcType="VARCHAR" property="bedId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="WARD" jdbcType="VARCHAR" property="ward" />
+    <result column="BED_CODE" jdbcType="VARCHAR" property="bedCode" />
+    <result column="BED_NEAM" jdbcType="VARCHAR" property="bedNeam" />
+    <result column="BED_DOCTOR" jdbcType="VARCHAR" property="bedDoctor" />
+    <result column="BED_NURSE" jdbcType="VARCHAR" property="bedNurse" />
+    <result column="DOCTOR_ID" jdbcType="VARCHAR" property="doctorId" />
+    <result column="NURSE_ID" jdbcType="VARCHAR" property="nurseId" />
+    <result column="BED_MAKE" jdbcType="VARCHAR" property="bedMake" />
+    <result column="BED_EXTRA" jdbcType="VARCHAR" property="bedExtra" />
+    <result column="BED_TYPE" jdbcType="VARCHAR" property="bedType" />
+    <result column="BED_FEE" jdbcType="VARCHAR" property="bedFee" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="IS_HQUALITY" jdbcType="DECIMAL" property="isHquality" />
+  </resultMap>
+</mapper>

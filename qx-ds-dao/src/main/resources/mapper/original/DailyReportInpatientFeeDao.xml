@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.DailyReportInpatientFeeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.DailyReportInpatientFee">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="DATE_T" jdbcType="TIMESTAMP" property="dateT" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="FEE_BED" jdbcType="DECIMAL" property="feeBed" />
+    <result column="FEE_DIAGNOSIS" jdbcType="DECIMAL" property="feeDiagnosis" />
+    <result column="FEE_EXAM" jdbcType="DECIMAL" property="feeExam" />
+    <result column="FEE_MRI" jdbcType="DECIMAL" property="feeMri" />
+    <result column="FEE_CT" jdbcType="DECIMAL" property="feeCt" />
+    <result column="FEE_COLOR_BSCAN" jdbcType="DECIMAL" property="feeColorBscan" />
+    <result column="FEE_TREATMENT" jdbcType="DECIMAL" property="feeTreatment" />
+    <result column="FEE_LAB_TEST" jdbcType="DECIMAL" property="feeLabTest" />
+    <result column="FEE_OXYGEN" jdbcType="DECIMAL" property="feeOxygen" />
+    <result column="FEE_BLOOD" jdbcType="DECIMAL" property="feeBlood" />
+    <result column="FEE_OPERATION" jdbcType="DECIMAL" property="feeOperation" />
+    <result column="FEE_WESTERN_MEDICINE" jdbcType="DECIMAL" property="feeWesternMedicine" />
+    <result column="FEE_CN_MEDICINE" jdbcType="DECIMAL" property="feeCnMedicine" />
+    <result column="FEE_CN_HERBAL_MEDICINE" jdbcType="DECIMAL" property="feeCnHerbalMedicine" />
+    <result column="FEE_NURSING" jdbcType="DECIMAL" property="feeNursing" />
+    <result column="FEE_ANAES" jdbcType="DECIMAL" property="feeAnaes" />
+    <result column="FEE_ANAES_OTHERS" jdbcType="DECIMAL" property="feeAnaesOthers" />
+    <result column="FEE_AMBULANCE" jdbcType="DECIMAL" property="feeAmbulance" />
+    <result column="FEE_OTHER_1" jdbcType="DECIMAL" property="feeOther1" />
+    <result column="FEE_OTHER_2" jdbcType="DECIMAL" property="feeOther2" />
+    <result column="FEE_TOTAL" jdbcType="DECIMAL" property="feeTotal" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ID, ORG_ID, DATE_T, ORG_NAME, DEPT_CODE, DEPT_NAME, FEE_BED, FEE_DIAGNOSIS, 
+    FEE_EXAM, FEE_MRI, FEE_CT, FEE_COLOR_BSCAN, FEE_TREATMENT, FEE_LAB_TEST, FEE_OXYGEN, 
+    FEE_BLOOD, FEE_OPERATION, FEE_WESTERN_MEDICINE, FEE_CN_MEDICINE, FEE_CN_HERBAL_MEDICINE, 
+    FEE_NURSING, FEE_ANAES, FEE_ANAES_OTHERS, FEE_AMBULANCE, FEE_OTHER_1, FEE_OTHER_2, 
+    FEE_TOTAL, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

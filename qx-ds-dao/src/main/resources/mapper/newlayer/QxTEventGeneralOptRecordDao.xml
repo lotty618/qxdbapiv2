@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEventGeneralOptRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEventGeneralOptRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="ETRUID" jdbcType="VARCHAR" property="etruid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <result column="OPER_FORM_NO" jdbcType="VARCHAR" property="operFormNo" />
+    <result column="AUTHOR_DATE" jdbcType="TIMESTAMP" property="authorDate" />
+    <result column="AUTHOR_ID" jdbcType="VARCHAR" property="authorId" />
+    <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName" />
+    <result column="DIR_OPER_PATIENT_TYPE" jdbcType="VARCHAR" property="dirOperPatientType" />
+    <result column="SURGEON_ID" jdbcType="VARCHAR" property="surgeonId" />
+    <result column="SURGEON_NAME" jdbcType="VARCHAR" property="surgeonName" />
+    <result column="ASSISTANT1_ID" jdbcType="VARCHAR" property="assistant1Id" />
+    <result column="ASSISTANT1_NAME" jdbcType="VARCHAR" property="assistant1Name" />
+    <result column="ASSISTANT2_ID" jdbcType="VARCHAR" property="assistant2Id" />
+    <result column="ASSISTANT2_NAME" jdbcType="VARCHAR" property="assistant2Name" />
+    <result column="ANESTHESIOLOGIST_ID" jdbcType="VARCHAR" property="anesthesiologistId" />
+    <result column="ANESTHESIOLOGIST_NAME" jdbcType="VARCHAR" property="anesthesiologistName" />
+    <result column="OPERATION_START_DATE" jdbcType="TIMESTAMP" property="operationStartDate" />
+    <result column="OPERATION_END_DATE" jdbcType="TIMESTAMP" property="operationEndDate" />
+    <result column="PRE_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="preDiagnosisCode" />
+    <result column="PRE_DIAGNOSIS_CN" jdbcType="VARCHAR" property="preDiagnosisCn" />
+    <result column="MID_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="midDiagnosisCode" />
+    <result column="MID_DIAGNOSIS_CN" jdbcType="VARCHAR" property="midDiagnosisCn" />
+    <result column="AFTER_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="afterDiagnosisCode" />
+    <result column="AFTER_DIAGNOSIS_CN" jdbcType="VARCHAR" property="afterDiagnosisCn" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_CN" jdbcType="VARCHAR" property="operationCn" />
+    <result column="OPERATION_SITECODE" jdbcType="VARCHAR" property="operationSitecode" />
+    <result column="OPERATION_SITE_CN" jdbcType="VARCHAR" property="operationSiteCn" />
+    <result column="ANESTHESIA_CODE" jdbcType="VARCHAR" property="anesthesiaCode" />
+    <result column="ANESTHESIA_CN" jdbcType="VARCHAR" property="anesthesiaCn" />
+    <result column="OPERATION_LEVEL_CODE" jdbcType="VARCHAR" property="operationLevelCode" />
+    <result column="OPERATION_LEVEL_NAME" jdbcType="VARCHAR" property="operationLevelName" />
+    <result column="INCISION_HEALING_CODE" jdbcType="VARCHAR" property="incisionHealingCode" />
+    <result column="INCISION_HEALING_CN" jdbcType="VARCHAR" property="incisionHealingCn" />
+    <result column="OPERATION_COURSE" jdbcType="VARCHAR" property="operationCourse" />
+    <result column="INTERVENTION" jdbcType="VARCHAR" property="intervention" />
+    <result column="OP_POSITION_CODE" jdbcType="VARCHAR" property="opPositionCode" />
+    <result column="OP_POSITION_CN" jdbcType="VARCHAR" property="opPositionCn" />
+    <result column="OPERATION_DESCRIBE" jdbcType="VARCHAR" property="operationDescribe" />
+    <result column="SKIN_THIMEROSAL" jdbcType="VARCHAR" property="skinThimerosal" />
+    <result column="WOUND_DESCRIBE" jdbcType="VARCHAR" property="woundDescribe" />
+    <result column="WOUND_CLASS_CODE" jdbcType="VARCHAR" property="woundClassCode" />
+    <result column="WOUND_CLASS_CN" jdbcType="VARCHAR" property="woundClassCn" />
+    <result column="DRAIN_MARK" jdbcType="VARCHAR" property="drainMark" />
+    <result column="DRAIN_MATERIAL_NAME" jdbcType="VARCHAR" property="drainMaterialName" />
+    <result column="DRAIN_MATERIAL_AMOUNT" jdbcType="VARCHAR" property="drainMaterialAmount" />
+    <result column="PLACED_PART" jdbcType="VARCHAR" property="placedPart" />
+    <result column="BLEED_AMOUNT" jdbcType="VARCHAR" property="bleedAmount" />
+    <result column="INFUSION_AMOUNT" jdbcType="VARCHAR" property="infusionAmount" />
+    <result column="TRANSFUSION_AMOUNT" jdbcType="VARCHAR" property="transfusionAmount" />
+    <result column="TRANSFUSE_REACTION_MARK" jdbcType="VARCHAR" property="transfuseReactionMark" />
+    <result column="OP_PRE_DRUG" jdbcType="VARCHAR" property="opPreDrug" />
+    <result column="OP_MID_DRUG" jdbcType="VARCHAR" property="opMidDrug" />
+    <result column="DEVICE_NURSE_NAME" jdbcType="VARCHAR" property="deviceNurseName" />
+    <result column="TOUR_NURSE_NAME" jdbcType="VARCHAR" property="tourNurseName" />
+    <result column="OPERATION_ROOM_NO" jdbcType="VARCHAR" property="operationRoomNo" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="PATHOLOGY_MARK" jdbcType="VARCHAR" property="pathologyMark" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="OPERATION_ROOM" jdbcType="VARCHAR" property="operationRoom" />
+    <result column="OPER_PETITION_NO" jdbcType="VARCHAR" property="operPetitionNo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, ETRUID, PUID, PNUID, QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_TYPE_CN, EVENT_NO, 
+    OPER_FORM_NO, AUTHOR_DATE, AUTHOR_ID, AUTHOR_NAME, DIR_OPER_PATIENT_TYPE, SURGEON_ID, 
+    SURGEON_NAME, ASSISTANT1_ID, ASSISTANT1_NAME, ASSISTANT2_ID, ASSISTANT2_NAME, ANESTHESIOLOGIST_ID, 
+    ANESTHESIOLOGIST_NAME, OPERATION_START_DATE, OPERATION_END_DATE, PRE_DIAGNOSIS_CODE, 
+    PRE_DIAGNOSIS_CN, MID_DIAGNOSIS_CODE, MID_DIAGNOSIS_CN, AFTER_DIAGNOSIS_CODE, AFTER_DIAGNOSIS_CN, 
+    OPERATION_CODE, OPERATION_CN, OPERATION_SITECODE, OPERATION_SITE_CN, ANESTHESIA_CODE, 
+    ANESTHESIA_CN, OPERATION_LEVEL_CODE, OPERATION_LEVEL_NAME, INCISION_HEALING_CODE, 
+    INCISION_HEALING_CN, OPERATION_COURSE, INTERVENTION, OP_POSITION_CODE, OP_POSITION_CN, 
+    OPERATION_DESCRIBE, SKIN_THIMEROSAL, WOUND_DESCRIBE, WOUND_CLASS_CODE, WOUND_CLASS_CN, 
+    DRAIN_MARK, DRAIN_MATERIAL_NAME, DRAIN_MATERIAL_AMOUNT, PLACED_PART, BLEED_AMOUNT, 
+    INFUSION_AMOUNT, TRANSFUSION_AMOUNT, TRANSFUSE_REACTION_MARK, OP_PRE_DRUG, OP_MID_DRUG, 
+    DEVICE_NURSE_NAME, TOUR_NURSE_NAME, OPERATION_ROOM_NO, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATE_NAME, INPUT_TIME, MODIFIER, MODIFIED_TIME, IS_INVALID, IS_DEL, CREATE_TIME, 
+    UPDATE_TIME, PATHOLOGY_MARK, NOTES, OPERATION_ROOM, OPER_PETITION_NO
+  </sql>
+</mapper>

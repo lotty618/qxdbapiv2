@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientRegistDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientRegist">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <result column="DISABILITY_CODE" jdbcType="VARCHAR" property="disabilityCode" />
+    <result column="DISABILITY_CN" jdbcType="VARCHAR" property="disabilityCn" />
+    <result column="IN_MEDICAL_RECORD_NO" jdbcType="VARCHAR" property="inMedicalRecordNo" />
+    <result column="HOSPITALTALIZATION_TIMES" jdbcType="DECIMAL" property="hospitaltalizationTimes" />
+    <result column="ADMISSION_DEPT_CODE" jdbcType="VARCHAR" property="admissionDeptCode" />
+    <result column="ADMISSION_DEPT_CN" jdbcType="VARCHAR" property="admissionDeptCn" />
+    <result column="ADMISSION_DATE" jdbcType="TIMESTAMP" property="admissionDate" />
+    <result column="ADMISSION_BED_NO" jdbcType="VARCHAR" property="admissionBedNo" />
+    <result column="INPATIENT_REASON_CODE" jdbcType="VARCHAR" property="inpatientReasonCode" />
+    <result column="INPATIENT_REASON_CN" jdbcType="VARCHAR" property="inpatientReasonCn" />
+    <result column="INPATIENT_INFECTIVITY_CODE" jdbcType="VARCHAR" property="inpatientInfectivityCode" />
+    <result column="INPATIENT_DIS_STATUE_CODE" jdbcType="VARCHAR" property="inpatientDisStatueCode" />
+    <result column="INPATIENT_DIS_STATUE_CN" jdbcType="VARCHAR" property="inpatientDisStatueCn" />
+    <result column="PAY_WAY_CODE" jdbcType="VARCHAR" property="payWayCode" />
+    <result column="PAY_WAY_CN" jdbcType="VARCHAR" property="payWayCn" />
+    <result column="INSURANCE_NO" jdbcType="VARCHAR" property="insuranceNo" />
+    <result column="DISCHARGE_DATE" jdbcType="TIMESTAMP" property="dischargeDate" />
+    <result column="DISCHARGE_DEPT_CODE" jdbcType="VARCHAR" property="dischargeDeptCode" />
+    <result column="DISCHARGE_DEPT_CN" jdbcType="VARCHAR" property="dischargeDeptCn" />
+    <result column="DISCHARGE_BED_NO" jdbcType="VARCHAR" property="dischargeBedNo" />
+    <result column="INPATIENT_REFERRAL_CODE" jdbcType="VARCHAR" property="inpatientReferralCode" />
+    <result column="DEATH_CODE" jdbcType="VARCHAR" property="deathCode" />
+    <result column="DEATH_REASON_CODE" jdbcType="VARCHAR" property="deathReasonCode" />
+    <result column="DEATH_REASON_CN" jdbcType="VARCHAR" property="deathReasonCn" />
+    <result column="DEATH_DATE" jdbcType="TIMESTAMP" property="deathDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="CHIEF_PHYSICIAN" jdbcType="VARCHAR" property="chiefPhysician" />
+    <result column="CHIEF_PHYSICIAN_NAME" jdbcType="VARCHAR" property="chiefPhysicianName" />
+    <result column="ATTENDING_PHYSICIAN" jdbcType="VARCHAR" property="attendingPhysician" />
+    <result column="ATTENDING_PHYSICIAN_NAME" jdbcType="VARCHAR" property="attendingPhysicianName" />
+    <result column="DOCTOR" jdbcType="VARCHAR" property="doctor" />
+    <result column="DOCTOR_NAME" jdbcType="VARCHAR" property="doctorName" />
+    <result column="PATIENT_NAME" jdbcType="VARCHAR" property="patientName" />
+    <result column="TREAT_RESULT_CODE" jdbcType="VARCHAR" property="treatResultCode" />
+    <result column="TREAT_RESULT_CN" jdbcType="VARCHAR" property="treatResultCn" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, DISABILITY_CODE, DISABILITY_CN, IN_MEDICAL_RECORD_NO, 
+    HOSPITALTALIZATION_TIMES, ADMISSION_DEPT_CODE, ADMISSION_DEPT_CN, ADMISSION_DATE, 
+    ADMISSION_BED_NO, INPATIENT_REASON_CODE, INPATIENT_REASON_CN, INPATIENT_INFECTIVITY_CODE, 
+    INPATIENT_DIS_STATUE_CODE, INPATIENT_DIS_STATUE_CN, PAY_WAY_CODE, PAY_WAY_CN, INSURANCE_NO, 
+    DISCHARGE_DATE, DISCHARGE_DEPT_CODE, DISCHARGE_DEPT_CN, DISCHARGE_BED_NO, INPATIENT_REFERRAL_CODE, 
+    DEATH_CODE, DEATH_REASON_CODE, DEATH_REASON_CN, DEATH_DATE, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME, CHIEF_PHYSICIAN, CHIEF_PHYSICIAN_NAME, ATTENDING_PHYSICIAN, ATTENDING_PHYSICIAN_NAME, 
+    DOCTOR, DOCTOR_NAME, PATIENT_NAME, TREAT_RESULT_CODE, TREAT_RESULT_CN, SEX
+  </sql>
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrPostoptCourseRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrPostoptCourseRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EPCRUID" jdbcType="VARCHAR" property="epcruid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="OPERATION_RECORD_DATE" jdbcType="TIMESTAMP" property="operationRecordDate" />
+    <result column="OPERATION_CODE" jdbcType="VARCHAR" property="operationCode" />
+    <result column="OPERATION_NAME" jdbcType="VARCHAR" property="operationName" />
+    <result column="OPERATION_PART_CODE" jdbcType="VARCHAR" property="operationPartCode" />
+    <result column="OPERATION_PART_NAME" jdbcType="VARCHAR" property="operationPartName" />
+    <result column="OPERATION_DATE" jdbcType="VARCHAR" property="operationDate" />
+    <result column="ANES_WAY_CODE" jdbcType="VARCHAR" property="anesWayCode" />
+    <result column="ANES_WAY_NAME" jdbcType="VARCHAR" property="anesWayName" />
+    <result column="OPERATION_DESC" jdbcType="VARCHAR" property="operationDesc" />
+    <result column="OP_POST_DIAG_CODE" jdbcType="VARCHAR" property="opPostDiagCode" />
+    <result column="OP_POST_DIAG_NAME" jdbcType="VARCHAR" property="opPostDiagName" />
+    <result column="DIAGNOSIS_BASIS" jdbcType="VARCHAR" property="diagnosisBasis" />
+    <result column="OPERATON_NOTE" jdbcType="VARCHAR" property="operatonNote" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="EMR_CONTENT_PARSE" jdbcType="VARCHAR" property="emrContentParse" />
+    <result column="CHARACTERISTICS_ABNORMAL" jdbcType="VARCHAR" property="characteristicsAbnormal" />
+    <result column="CHARACTERISTICS_NORMAL" jdbcType="VARCHAR" property="characteristicsNormal" />
+    <result column="OP_MODE" jdbcType="VARCHAR" property="opMode" />
+    <result column="OP_BEFORE_DIAG_NAME" jdbcType="VARCHAR" property="opBeforeDiagName" />
+    <result column="OP_IN_DIAG_NAME" jdbcType="VARCHAR" property="opInDiagName" />
+    <result column="OP_TREATMENT" jdbcType="VARCHAR" property="opTreatment" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrConsultationRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrConsultationRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="ECRUID" jdbcType="VARCHAR" property="ecruid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="CAREER" jdbcType="VARCHAR" property="career" />
+    <result column="CL_OPINION_DATE" jdbcType="VARCHAR" property="clOpinionDate" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="APPLICANT" jdbcType="VARCHAR" property="applicant" />
+    <result column="APPLICATION_DATE" jdbcType="VARCHAR" property="applicationDate" />
+    <result column="DISEASE_SUMMARY" jdbcType="VARCHAR" property="diseaseSummary" />
+    <result column="INITIAL_DIAGNOSIS" jdbcType="VARCHAR" property="initialDiagnosis" />
+    <result column="CONSULTATION_REASON" jdbcType="VARCHAR" property="consultationReason" />
+    <result column="CONSULTATION_PURPOSE" jdbcType="VARCHAR" property="consultationPurpose" />
+    <result column="INVITE_DOCTOR" jdbcType="VARCHAR" property="inviteDoctor" />
+    <result column="CL_OPINION" jdbcType="VARCHAR" property="clOpinion" />
+    <result column="CL_OPINION_DOCTOR" jdbcType="VARCHAR" property="clOpinionDoctor" />
+    <result column="CL_OPINION_DOCTOR_DATE" jdbcType="VARCHAR" property="clOpinionDoctorDate" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

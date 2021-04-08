@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTInfIllnessNoticeDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTInfIllnessNotice">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <id column="EVENT_NO" jdbcType="VARCHAR" property="eventNo" />
+    <id column="INFORMED_CONSENT_NO" jdbcType="VARCHAR" property="informedConsentNo" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="AGE_MONTH" jdbcType="VARCHAR" property="ageMonth" />
+    <result column="DIAGNOSIS_CODE" jdbcType="VARCHAR" property="diagnosisCode" />
+    <result column="DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diagnosisName" />
+    <result column="MAIN_MEASURE" jdbcType="VARCHAR" property="mainMeasure" />
+    <result column="CRITICALLY_NOTICE_CONTENT" jdbcType="VARCHAR" property="criticallyNoticeContent" />
+    <result column="CRITICALLY_NOTICE_DATE" jdbcType="TIMESTAMP" property="criticallyNoticeDate" />
+    <result column="LEGAL_SIGNATURE" jdbcType="VARCHAR" property="legalSignature" />
+    <result column="PAT_LEGAL_RELATION_CODE" jdbcType="VARCHAR" property="patLegalRelationCode" />
+    <result column="PAT_LEGAL_RELATION_NAME" jdbcType="VARCHAR" property="patLegalRelationName" />
+    <result column="PATIENT_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="patientSignatureDate" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="DOCTOR_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="doctorSignatureDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, EVENT_NO, INFORMED_CONSENT_NO, EVENT_TYPE_CN, 
+    DEPT_CODE, DEPT_NAME, WARD_NAME, ROOM_NO, BED_NO, "NAME", SEX_CODE, SEX_CN, AGE_YEAR,
+    AGE_MONTH, DIAGNOSIS_CODE, DIAGNOSIS_NAME, MAIN_MEASURE, CRITICALLY_NOTICE_CONTENT, 
+    CRITICALLY_NOTICE_DATE, LEGAL_SIGNATURE, PAT_LEGAL_RELATION_CODE, PAT_LEGAL_RELATION_NAME, 
+    PATIENT_SIGNATURE_DATE, DOCTOR_SIGNATURE, DOCTOR_SIGNATURE_DATE, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME, IHUID, EMR_CONTENT
+  </sql>
+</mapper>

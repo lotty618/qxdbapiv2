@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientTreDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientTreDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="PRDUID" jdbcType="VARCHAR" property="prduid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="QID" jdbcType="DECIMAL" property="qid" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="TREATMENT_NO" jdbcType="VARCHAR" property="treatmentNo" />
+    <result column="TREATMENT_DETAIL_NO" jdbcType="VARCHAR" property="treatmentDetailNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="genderCode" />
+    <result column="TRE_CLASS_TYPE_CODE" jdbcType="VARCHAR" property="treClassTypeCode" />
+    <result column="TRE_CLASS_TYPE_NAME" jdbcType="VARCHAR" property="treClassTypeName" />
+    <result column="TREATMENT_CODE" jdbcType="VARCHAR" property="treatmentCode" />
+    <result column="TREATMENT_NAME" jdbcType="VARCHAR" property="treatmentName" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_CN" jdbcType="VARCHAR" property="applyDeptCn" />
+    <result column="APPLY_TIME" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="APPLY_OPERATOR" jdbcType="VARCHAR" property="applyOperator" />
+    <result column="TRE_QUANTITY" jdbcType="VARCHAR" property="treQuantity" />
+    <result column="TRE_PRICE" jdbcType="DECIMAL" property="trePrice" />
+    <result column="COST" jdbcType="DECIMAL" property="cost" />
+    <result column="PERFORM_OPERATOR" jdbcType="VARCHAR" property="performOperator" />
+    <result column="PERFORM_DEPT_CODE" jdbcType="VARCHAR" property="performDeptCode" />
+    <result column="PERFORM_DEPT_NAME" jdbcType="VARCHAR" property="performDeptName" />
+    <result column="PERFORM_DATE" jdbcType="TIMESTAMP" property="performDate" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="QUANTITY_UNIT" jdbcType="VARCHAR" property="quantityUnit" />
+    <result column="APPLY_OPERATOR_CODE" jdbcType="VARCHAR" property="applyOperatorCode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, PRDUID, PNUID, PUID, QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, TREATMENT_NO, 
+    TREATMENT_DETAIL_NO, "NAME", GENDER_CODE, TRE_CLASS_TYPE_CODE, TRE_CLASS_TYPE_NAME,
+    TREATMENT_CODE, TREATMENT_NAME, APPLY_DEPT_CODE, APPLY_DEPT_CN, APPLY_TIME, APPLY_OPERATOR, 
+    TRE_QUANTITY, TRE_PRICE, COST, PERFORM_OPERATOR, PERFORM_DEPT_CODE, PERFORM_DEPT_NAME, 
+    PERFORM_DATE, IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME, NOTES, QUANTITY_UNIT, 
+    APPLY_OPERATOR_CODE
+  </sql>
+</mapper>

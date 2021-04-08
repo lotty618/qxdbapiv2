@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.PatientDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.Patient">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EVENT_TYPE" jdbcType="VARCHAR" property="eventType" />
+    <result column="NATIONALITY_CODE" jdbcType="VARCHAR" property="nationalityCode" />
+    <result column="PATIENT_INFO_NO" jdbcType="VARCHAR" property="patientInfoNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="TEL_NO" jdbcType="VARCHAR" property="telNo" />
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="genderCode" />
+    <result column="ETHNIC_CODE" jdbcType="VARCHAR" property="ethnicCode" />
+    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="ID_CARD_TYPE" jdbcType="VARCHAR" property="idCardType" />
+    <result column="ID_CARD_NO" jdbcType="VARCHAR" property="idCardNo" />
+    <result column="EMPLOYER_ORG" jdbcType="VARCHAR" property="employerOrg" />
+    <result column="WORK_DATE" jdbcType="TIMESTAMP" property="workDate" />
+    <result column="EMPLOYER_ORG_TEL" jdbcType="VARCHAR" property="employerOrgTel" />
+    <result column="CONTACT_NAME" jdbcType="VARCHAR" property="contactName" />
+    <result column="CONTACT_RELATION_CODE" jdbcType="VARCHAR" property="contactRelationCode" />
+    <result column="CONTACT_TEL" jdbcType="VARCHAR" property="contactTel" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="EDU_CODE" jdbcType="VARCHAR" property="eduCode" />
+    <result column="OCCUPATION_CODE" jdbcType="VARCHAR" property="occupationCode" />
+    <result column="MARITAL_STATUS_CODE" jdbcType="VARCHAR" property="maritalStatusCode" />
+    <result column="IS_RESIDENCE_ADD" jdbcType="VARCHAR" property="isResidenceAdd" />
+    <result column="CARD_TYPE_CODE" jdbcType="VARCHAR" property="cardTypeCode" />
+    <result column="HEALTHCARE_TYPE_CODE" jdbcType="VARCHAR" property="healthcareTypeCode" />
+    <result column="HEALTHCARE_NO" jdbcType="VARCHAR" property="healthcareNo" />
+    <result column="SOCIAL_SECURITY_NO" jdbcType="VARCHAR" property="socialSecurityNo" />
+    <result column="HOSPITAL_ACC_NO" jdbcType="VARCHAR" property="hospitalAccNo" />
+    <result column="CARD_NO" jdbcType="VARCHAR" property="cardNo" />
+    <result column="HEALTH_DOC_NO" jdbcType="VARCHAR" property="healthDocNo" />
+    <result column="EHR_MANAGE_ORG_NAME" jdbcType="VARCHAR" property="ehrManageOrgName" />
+    <result column="EHR_MANAGE_ORG_ID" jdbcType="VARCHAR" property="ehrManageOrgId" />
+    <result column="BLOODTYPE_ABO" jdbcType="VARCHAR" property="bloodtypeAbo" />
+    <result column="BLOODTYPE_RH" jdbcType="VARCHAR" property="bloodtypeRh" />
+    <result column="HAS_DRUG_ALLERGY" jdbcType="VARCHAR" property="hasDrugAllergy" />
+    <result column="HAS_OP_HISTORY" jdbcType="VARCHAR" property="hasOpHistory" />
+    <result column="HAS_TRAUMA_HISTORY" jdbcType="VARCHAR" property="hasTraumaHistory" />
+    <result column="HAS_BLOOD_TRANSF" jdbcType="VARCHAR" property="hasBloodTransf" />
+    <result column="CARD_EXP_DATE" jdbcType="TIMESTAMP" property="cardExpDate" />
+    <result column="HAS_ASTHMA" jdbcType="VARCHAR" property="hasAsthma" />
+    <result column="HAS_HEART_DISEASE" jdbcType="VARCHAR" property="hasHeartDisease" />
+    <result column="HAS_CARDIOVASCULAR" jdbcType="VARCHAR" property="hasCardiovascular" />
+    <result column="HAS_EPILEPSY" jdbcType="VARCHAR" property="hasEpilepsy" />
+    <result column="HAS_COAGULOPATHY" jdbcType="VARCHAR" property="hasCoagulopathy" />
+    <result column="HAS_DIABETES" jdbcType="VARCHAR" property="hasDiabetes" />
+    <result column="HAS_GLAUCOMA" jdbcType="VARCHAR" property="hasGlaucoma" />
+    <result column="HAS_DIALYSIS" jdbcType="VARCHAR" property="hasDialysis" />
+    <result column="HAS_ORGAN_TRANSF" jdbcType="VARCHAR" property="hasOrganTransf" />
+    <result column="HAS_ORGAN_DEFECT" jdbcType="VARCHAR" property="hasOrganDefect" />
+    <result column="HAS_REMOVAL_PRO" jdbcType="VARCHAR" property="hasRemovalPro" />
+    <result column="HAS_CARDIAC_PAC" jdbcType="VARCHAR" property="hasCardiacPac" />
+    <result column="HAS_ORTHER_MEDICAL_ALERT" jdbcType="VARCHAR" property="hasOrtherMedicalAlert" />
+    <result column="HAS_PSYCHIATRIC" jdbcType="VARCHAR" property="hasPsychiatric" />
+    <result column="ILLNESS_HISTORY" jdbcType="VARCHAR" property="illnessHistory" />
+    <result column="VACC_HISTORY_CODE" jdbcType="VARCHAR" property="vaccHistoryCode" />
+    <result column="EVENT_NAME" jdbcType="VARCHAR" property="eventName" />
+    <result column="EVENT_DATE" jdbcType="TIMESTAMP" property="eventDate" />
+    <result column="EVENT_PLACE" jdbcType="VARCHAR" property="eventPlace" />
+    <result column="CREATE_OPERATOR" jdbcType="VARCHAR" property="createOperator" />
+    <result column="EHR_CREATE_DATE" jdbcType="TIMESTAMP" property="ehrCreateDate" />
+    <result column="LAST_UPD_DATE" jdbcType="TIMESTAMP" property="lastUpdDate" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EVENT_TYPE_CN" jdbcType="VARCHAR" property="eventTypeCn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, EVENT_TYPE, NATIONALITY_CODE, PATIENT_INFO_NO, "NAME", TEL_NO,
+    GENDER_CODE, ETHNIC_CODE, BIRTHDAY, ID_CARD_TYPE, ID_CARD_NO, EMPLOYER_ORG, WORK_DATE, 
+    EMPLOYER_ORG_TEL, CONTACT_NAME, CONTACT_RELATION_CODE, CONTACT_TEL, EMAIL, EDU_CODE, 
+    OCCUPATION_CODE, MARITAL_STATUS_CODE, IS_RESIDENCE_ADD, CARD_TYPE_CODE, HEALTHCARE_TYPE_CODE, 
+    HEALTHCARE_NO, SOCIAL_SECURITY_NO, HOSPITAL_ACC_NO, CARD_NO, HEALTH_DOC_NO, EHR_MANAGE_ORG_NAME, 
+    EHR_MANAGE_ORG_ID, BLOODTYPE_ABO, BLOODTYPE_RH, HAS_DRUG_ALLERGY, HAS_OP_HISTORY, 
+    HAS_TRAUMA_HISTORY, HAS_BLOOD_TRANSF, CARD_EXP_DATE, HAS_ASTHMA, HAS_HEART_DISEASE, 
+    HAS_CARDIOVASCULAR, HAS_EPILEPSY, HAS_COAGULOPATHY, HAS_DIABETES, HAS_GLAUCOMA, HAS_DIALYSIS, 
+    HAS_ORGAN_TRANSF, HAS_ORGAN_DEFECT, HAS_REMOVAL_PRO, HAS_CARDIAC_PAC, HAS_ORTHER_MEDICAL_ALERT, 
+    HAS_PSYCHIATRIC, ILLNESS_HISTORY, VACC_HISTORY_CODE, EVENT_NAME, EVENT_DATE, EVENT_PLACE, 
+    CREATE_OPERATOR, EHR_CREATE_DATE, LAST_UPD_DATE, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, 
+    EVENT_TYPE_CN
+  </sql>
+
+  <select id="getPatientList" resultMap="BaseResultMap">
+    SELECT * FROM (
+      SELECT
+          <include refid="Base_Column_List" />
+      FROM PATIENT
+      WHERE QID > #{qid} ORDER BY QID ASC) t
+    WHERE ROWNUM &lt;= #{count}
+  </select>
+</mapper>

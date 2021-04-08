@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.CriticalReportValueDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.CriticalReportValue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="REPORT_ID" jdbcType="VARCHAR" property="reportId" />
+    <id column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <id column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="REPORT_TYPE" jdbcType="VARCHAR" property="reportType" />
+    <result column="REPORT_TYPE_CN" jdbcType="VARCHAR" property="reportTypeCn" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="VISIT_TYPE" jdbcType="VARCHAR" property="visitType" />
+    <result column="VISIT_TYPE_CN" jdbcType="VARCHAR" property="visitTypeCn" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="VISIT_NO" jdbcType="VARCHAR" property="visitNo" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="WARD_NAME" jdbcType="VARCHAR" property="wardName" />
+    <result column="ROOM_NO" jdbcType="VARCHAR" property="roomNo" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="AUTHOR_ID" jdbcType="VARCHAR" property="authorId" />
+    <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName" />
+    <result column="REPORT_CREATE_DATE" jdbcType="TIMESTAMP" property="reportCreateDate" />
+    <result column="REPORT_STATUS" jdbcType="VARCHAR" property="reportStatus" />
+    <result column="REPORT_STATUS_CN" jdbcType="VARCHAR" property="reportStatusCn" />
+    <result column="RECEIVER_ID" jdbcType="VARCHAR" property="receiverId" />
+    <result column="RECEIVER_NAME" jdbcType="VARCHAR" property="receiverName" />
+    <result column="RECEIVER__DATE" jdbcType="TIMESTAMP" property="receiverDate" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="CANCEL_NAME" jdbcType="VARCHAR" property="cancelName" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="CRITICAL_VALUES" jdbcType="VARCHAR" property="criticalValues" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ORG_ID, REPORT_ID, CREATOR, CREATE_TIME, REPORT_TYPE, REPORT_TYPE_CN, "NAME",
+    VISIT_TYPE, VISIT_TYPE_CN, PATIENT_ID, VISIT_NO, DEPT_CODE, DEPT_NAME, WARD_NAME, 
+    ROOM_NO, BED_NO, AUTHOR_ID, AUTHOR_NAME, REPORT_CREATE_DATE, REPORT_STATUS, REPORT_STATUS_CN, 
+    RECEIVER_ID, RECEIVER_NAME, RECEIVER__DATE, ORDER_ID, CANCEL_NAME, CANCEL_TIME, MODIFIER, 
+    MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME, CRITICAL_VALUES
+  </sql>
+</mapper>

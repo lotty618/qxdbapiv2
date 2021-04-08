@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.OutpatientPrescriptionDetailDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.OutpatientPrescriptionDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <id column="PRESCRIPTION_NO" jdbcType="VARCHAR" property="prescriptionNo" />
+    <id column="PRESCRIPTION_DETAIL_NO" jdbcType="VARCHAR" property="prescriptionDetailNo" />
+    <result column="PRES_CLASS_TYPE_CODE" jdbcType="VARCHAR" property="presClassTypeCode" />
+    <result column="PRES_CLASS_TYPE_NAME" jdbcType="VARCHAR" property="presClassTypeName" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="GENDER_CODE" jdbcType="VARCHAR" property="genderCode" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_CN" jdbcType="VARCHAR" property="applyDeptCn" />
+    <result column="APPLY_TIME" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="APPLY_OPERATOR" jdbcType="VARCHAR" property="applyOperator" />
+    <result column="DRUG_CODE" jdbcType="VARCHAR" property="drugCode" />
+    <result column="DRUG_NAME" jdbcType="VARCHAR" property="drugName" />
+    <result column="DRUG_CLASSCODE" jdbcType="VARCHAR" property="drugClasscode" />
+    <result column="DRUG_CLASSNAME" jdbcType="VARCHAR" property="drugClassname" />
+    <result column="DRUG_DOSECODE" jdbcType="VARCHAR" property="drugDosecode" />
+    <result column="DRUG_DOSENAME" jdbcType="VARCHAR" property="drugDosename" />
+    <result column="DRUG_DAY" jdbcType="VARCHAR" property="drugDay" />
+    <result column="DRUG_FREQ_CODE" jdbcType="VARCHAR" property="drugFreqCode" />
+    <result column="DRUG_FREQ_CN" jdbcType="VARCHAR" property="drugFreqCn" />
+    <result column="PRES_DOSE" jdbcType="VARCHAR" property="presDose" />
+    <result column="PRES_DOSE_UNIT" jdbcType="VARCHAR" property="presDoseUnit" />
+    <result column="PRES_ONE_DOSE" jdbcType="VARCHAR" property="presOneDose" />
+    <result column="PRES_QUANTITY" jdbcType="VARCHAR" property="presQuantity" />
+    <result column="PRES_QUANTITY_UNIT" jdbcType="VARCHAR" property="presQuantityUnit" />
+    <result column="PRES_ONE_QUANTITY" jdbcType="VARCHAR" property="presOneQuantity" />
+    <result column="PRES_ROUTE" jdbcType="VARCHAR" property="presRoute" />
+    <result column="PRES_SPEC" jdbcType="VARCHAR" property="presSpec" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, OUTPAT_FORM_NO, PRESCRIPTION_NO, PRESCRIPTION_DETAIL_NO, 
+    PRES_CLASS_TYPE_CODE, PRES_CLASS_TYPE_NAME, "NAME", GENDER_CODE, APPLY_DEPT_CODE,
+    APPLY_DEPT_CN, APPLY_TIME, APPLY_OPERATOR, DRUG_CODE, DRUG_NAME, DRUG_CLASSCODE, 
+    DRUG_CLASSNAME, DRUG_DOSECODE, DRUG_DOSENAME, DRUG_DAY, DRUG_FREQ_CODE, DRUG_FREQ_CN, 
+    PRES_DOSE, PRES_DOSE_UNIT, PRES_ONE_DOSE, PRES_QUANTITY, PRES_QUANTITY_UNIT, PRES_ONE_QUANTITY, 
+    PRES_ROUTE, PRES_SPEC, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

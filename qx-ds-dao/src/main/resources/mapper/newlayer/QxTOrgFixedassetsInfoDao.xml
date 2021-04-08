@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOrgFixedassetsInfoDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOrgFixedassetsInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="ACCT_YEAR" jdbcType="VARCHAR" property="acctYear" />
+    <id column="ACCT_MONTH" jdbcType="VARCHAR" property="acctMonth" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="CAPITAL_CARD_NO" jdbcType="VARCHAR" property="capitalCardNo" />
+    <result column="CARD_STATE_CODE" jdbcType="VARCHAR" property="cardStateCode" />
+    <result column="CARD_STATE_NAME" jdbcType="VARCHAR" property="cardStateName" />
+    <result column="CAPITAL_PLACE_TYPE_CODE" jdbcType="VARCHAR" property="capitalPlaceTypeCode" />
+    <result column="CAPITAL_PLACE_TYPE_NAME" jdbcType="VARCHAR" property="capitalPlaceTypeName" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="STORE_CODE" jdbcType="VARCHAR" property="storeCode" />
+    <result column="ATT_CODE" jdbcType="VARCHAR" property="attCode" />
+    <result column="ATT_NAME" jdbcType="VARCHAR" property="attName" />
+    <result column="FIXED_ASSETS_NAME" jdbcType="VARCHAR" property="fixedAssetsName" />
+    <result column="ASSETS_LICENSE_NO" jdbcType="VARCHAR" property="assetsLicenseNo" />
+    <result column="CAPITAL_TYPE_CODE" jdbcType="VARCHAR" property="capitalTypeCode" />
+    <result column="CAPITAL_TYPE_NAME" jdbcType="VARCHAR" property="capitalTypeName" />
+    <result column="SPEC" jdbcType="VARCHAR" property="spec" />
+    <result column="MODEL" jdbcType="VARCHAR" property="model" />
+    <result column="CALCULATE_UNIT" jdbcType="VARCHAR" property="calculateUnit" />
+    <result column="BRAND" jdbcType="VARCHAR" property="brand" />
+    <result column="PRODUCER" jdbcType="VARCHAR" property="producer" />
+    <result column="FACTORY_DATE" jdbcType="TIMESTAMP" property="factoryDate" />
+    <result column="CAPITAL_PLACE_COUNTRY_CODE" jdbcType="VARCHAR" property="capitalPlaceCountryCode" />
+    <result column="EQUIPMENT_NO" jdbcType="VARCHAR" property="equipmentNo" />
+    <result column="PURCHASE_NO" jdbcType="VARCHAR" property="purchaseNo" />
+    <result column="BUYER" jdbcType="VARCHAR" property="buyer" />
+    <result column="SUPPLIER_NAME" jdbcType="VARCHAR" property="supplierName" />
+    <result column="PURCHASE_CONTRACT_NO" jdbcType="VARCHAR" property="purchaseContractNo" />
+    <result column="PURCHASE_UNIVALENT" jdbcType="DECIMAL" property="purchaseUnivalent" />
+    <result column="DUTY_FREE_FLAG" jdbcType="VARCHAR" property="dutyFreeFlag" />
+    <result column="CAPITAL_SOURCE_CODE" jdbcType="VARCHAR" property="capitalSourceCode" />
+    <result column="CAPITAL_SOURCE_NAME" jdbcType="VARCHAR" property="capitalSourceName" />
+    <result column="BUY_DATE" jdbcType="TIMESTAMP" property="buyDate" />
+    <result column="ACCEPTANCE_DATE" jdbcType="TIMESTAMP" property="acceptanceDate" />
+    <result column="ACCEPTANCE_PERSON" jdbcType="VARCHAR" property="acceptancePerson" />
+    <result column="START_USING_DATE" jdbcType="TIMESTAMP" property="startUsingDate" />
+    <result column="EQUIPMENT_OUTPAT_FEE_PRICE" jdbcType="DECIMAL" property="equipmentOutpatFeePrice" />
+    <result column="EQUIPMENT_ORIGINAL_VALUE" jdbcType="DECIMAL" property="equipmentOriginalValue" />
+    <result column="EQUIPMENT_PRESENT_VALUE" jdbcType="DECIMAL" property="equipmentPresentValue" />
+    <result column="EXPECT_RESIDUAL_VALUE" jdbcType="DECIMAL" property="expectResidualValue" />
+    <result column="USE_YEARS" jdbcType="DECIMAL" property="useYears" />
+    <result column="IS_IMPORT" jdbcType="VARCHAR" property="isImport" />
+    <result column="IS_DEPRECIATION" jdbcType="VARCHAR" property="isDepreciation" />
+    <result column="ACCUMULATED_DEPRECIATION" jdbcType="DECIMAL" property="accumulatedDepreciation" />
+    <result column="IS_OLD_EQUIPMENT" jdbcType="VARCHAR" property="isOldEquipment" />
+    <result column="UESD_YEARS" jdbcType="DECIMAL" property="uesdYears" />
+    <result column="CAPITAL_USE_STATE_CODE" jdbcType="VARCHAR" property="capitalUseStateCode" />
+    <result column="CAPITAL_USE_STATE_NAME" jdbcType="VARCHAR" property="capitalUseStateName" />
+    <result column="PLACE" jdbcType="VARCHAR" property="place" />
+    <result column="IS_DISABLE" jdbcType="VARCHAR" property="isDisable" />
+    <result column="DISABLE_DATE" jdbcType="TIMESTAMP" property="disableDate" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ID, ORG_ID, ACCT_YEAR, ACCT_MONTH, ORG_NAME, CAPITAL_CARD_NO, CARD_STATE_CODE, 
+    CARD_STATE_NAME, CAPITAL_PLACE_TYPE_CODE, CAPITAL_PLACE_TYPE_NAME, DEPT_CODE, DEPT_NAME, 
+    STORE_CODE, ATT_CODE, ATT_NAME, FIXED_ASSETS_NAME, ASSETS_LICENSE_NO, CAPITAL_TYPE_CODE, 
+    CAPITAL_TYPE_NAME, SPEC, MODEL, CALCULATE_UNIT, BRAND, PRODUCER, FACTORY_DATE, CAPITAL_PLACE_COUNTRY_CODE, 
+    EQUIPMENT_NO, PURCHASE_NO, BUYER, SUPPLIER_NAME, PURCHASE_CONTRACT_NO, PURCHASE_UNIVALENT, 
+    DUTY_FREE_FLAG, CAPITAL_SOURCE_CODE, CAPITAL_SOURCE_NAME, BUY_DATE, ACCEPTANCE_DATE, 
+    ACCEPTANCE_PERSON, START_USING_DATE, EQUIPMENT_OUTPAT_FEE_PRICE, EQUIPMENT_ORIGINAL_VALUE, 
+    EQUIPMENT_PRESENT_VALUE, EXPECT_RESIDUAL_VALUE, USE_YEARS, IS_IMPORT, IS_DEPRECIATION, 
+    ACCUMULATED_DEPRECIATION, IS_OLD_EQUIPMENT, UESD_YEARS, CAPITAL_USE_STATE_CODE, CAPITAL_USE_STATE_NAME, 
+    PLACE, IS_DISABLE, DISABLE_DATE, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, 
+    MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>

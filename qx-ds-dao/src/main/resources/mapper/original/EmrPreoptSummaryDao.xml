@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrPreoptSummaryDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrPreoptSummary">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="PREOP_SUMMARY_ID" jdbcType="VARCHAR" property="preopSummaryId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="IN_HOSPITAL_TIMES" jdbcType="DECIMAL" property="inHospitalTimes" />
+    <result column="SUMMARY_DATE" jdbcType="TIMESTAMP" property="summaryDate" />
+    <result column="CASE_SUMMARY" jdbcType="VARCHAR" property="caseSummary" />
+    <result column="PRE_DIAGNOSIS_CODE" jdbcType="VARCHAR" property="preDiagnosisCode" />
+    <result column="PRE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="preDiagnosisName" />
+    <result column="DIAGNOSIS_BASIS" jdbcType="VARCHAR" property="diagnosisBasis" />
+    <result column="ALLERGY_HISTORY_MARK" jdbcType="VARCHAR" property="allergyHistoryMark" />
+    <result column="ALLERGY_HISTORY" jdbcType="VARCHAR" property="allergyHistory" />
+    <result column="ASSIST_EXAM_RESULT" jdbcType="VARCHAR" property="assistExamResult" />
+    <result column="OPERATION_SYMP_INDICATION" jdbcType="VARCHAR" property="operationSympIndication" />
+    <result column="SURGICAL_CONTRAINDICATION" jdbcType="VARCHAR" property="surgicalContraindication" />
+    <result column="OPERATION_INDICATION" jdbcType="VARCHAR" property="operationIndication" />
+    <result column="CONSULT_ADVICE" jdbcType="VARCHAR" property="consultAdvice" />
+    <result column="PLAN_OPERATION_CODE" jdbcType="VARCHAR" property="planOperationCode" />
+    <result column="PLAN_OPERATION_NAME" jdbcType="VARCHAR" property="planOperationName" />
+    <result column="PLAN_OPERATION_PART_NAME" jdbcType="VARCHAR" property="planOperationPartName" />
+    <result column="PLAN_OPERATION_DATE" jdbcType="TIMESTAMP" property="planOperationDate" />
+    <result column="PLAN_ANES_WAY_CODE" jdbcType="VARCHAR" property="planAnesWayCode" />
+    <result column="PLAN_ANES_WAY_NAME" jdbcType="VARCHAR" property="planAnesWayName" />
+    <result column="OPERATION_NOTE" jdbcType="VARCHAR" property="operationNote" />
+    <result column="OPERATION_KEY" jdbcType="VARCHAR" property="operationKey" />
+    <result column="OP_PRE_PREPARATION" jdbcType="VARCHAR" property="opPrePreparation" />
+    <result column="OPERATOR_SIGNATURE" jdbcType="VARCHAR" property="operatorSignature" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="SIGNATURE_DATE" jdbcType="TIMESTAMP" property="signatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrPreoptSummary">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, PREOP_SUMMARY_ID, CASE_NO, IN_HOSPITAL_TIMES, 
+    SUMMARY_DATE, CASE_SUMMARY, PRE_DIAGNOSIS_CODE, PRE_DIAGNOSIS_NAME, DIAGNOSIS_BASIS, 
+    ALLERGY_HISTORY_MARK, ALLERGY_HISTORY, ASSIST_EXAM_RESULT, OPERATION_SYMP_INDICATION, 
+    SURGICAL_CONTRAINDICATION, OPERATION_INDICATION, CONSULT_ADVICE, PLAN_OPERATION_CODE, 
+    PLAN_OPERATION_NAME, PLAN_OPERATION_PART_NAME, PLAN_OPERATION_DATE, PLAN_ANES_WAY_CODE, 
+    PLAN_ANES_WAY_NAME, OPERATION_NOTE, OPERATION_KEY, OP_PRE_PREPARATION, OPERATOR_SIGNATURE, 
+    DOCTOR_SIGNATURE, SIGNATURE_DATE, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, 
+    CREATE_TIME, MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE, TEMPLATE_TYPE, 
+    TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT
+  </sql>
+</mapper>

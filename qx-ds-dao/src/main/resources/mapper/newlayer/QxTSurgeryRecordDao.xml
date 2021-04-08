@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTSurgeryRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTSurgeryRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="SRUID" jdbcType="VARCHAR" property="sruid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="DEPT" jdbcType="VARCHAR" property="dept" />
+    <result column="SURGERY_NO" jdbcType="VARCHAR" property="surgeryNo" />
+    <result column="APPLY" jdbcType="VARCHAR" property="apply" />
+    <result column="APPLY_NAME" jdbcType="VARCHAR" property="applyName" />
+    <result column="PLAN_DATE" jdbcType="TIMESTAMP" property="planDate" />
+    <result column="SURGERY_DATE" jdbcType="TIMESTAMP" property="surgeryDate" />
+    <result column="SURGEON_ID" jdbcType="VARCHAR" property="surgeonId" />
+    <result column="SURGEON_NAME" jdbcType="VARCHAR" property="surgeonName" />
+    <result column="SURGERY_LEVEL" jdbcType="VARCHAR" property="surgeryLevel" />
+    <result column="ROOM" jdbcType="VARCHAR" property="room" />
+    <result column="OPERATING_TABLE_NO" jdbcType="VARCHAR" property="operatingTableNo" />
+    <result column="SURGERY_NAME" jdbcType="VARCHAR" property="surgeryName" />
+    <result column="SURGERY_REQUIRE" jdbcType="VARCHAR" property="surgeryRequire" />
+    <result column="OPERATION_NOTE" jdbcType="VARCHAR" property="operationNote" />
+    <result column="DIAG_BEFORE_CODE" jdbcType="VARCHAR" property="diagBeforeCode" />
+    <result column="DIAG_BEFORE_NAME" jdbcType="VARCHAR" property="diagBeforeName" />
+    <result column="DIAG_AFTER_CODE" jdbcType="VARCHAR" property="diagAfterCode" />
+    <result column="DIAG_AFTER_NAME" jdbcType="VARCHAR" property="diagAfterName" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, SRUID, DUID, DEPT, SURGERY_NO, APPLY, APPLY_NAME, PLAN_DATE, SURGERY_DATE, SURGEON_ID, 
+    SURGEON_NAME, SURGERY_LEVEL, ROOM, OPERATING_TABLE_NO, SURGERY_NAME, SURGERY_REQUIRE, 
+    OPERATION_NOTE, DIAG_BEFORE_CODE, DIAG_BEFORE_NAME, DIAG_AFTER_CODE, DIAG_AFTER_NAME, 
+    IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTEmrAdmissonRecord24hDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTEmrAdmissonRecord24h">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="EARUID" jdbcType="VARCHAR" property="earuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ADMISSION_DATE" jdbcType="VARCHAR" property="admissionDate" />
+    <result column="DISCHARGE_DATE" jdbcType="VARCHAR" property="dischargeDate" />
+    <result column="REPRESENTOR_RELATION_CODE" jdbcType="VARCHAR" property="representorRelationCode" />
+    <result column="REPRESENTOR_RELATION_CN" jdbcType="VARCHAR" property="representorRelationCn" />
+    <result column="REPRESENTOR_NAME" jdbcType="VARCHAR" property="representorName" />
+    <result column="RELIABLE_STATEMENT_MARK" jdbcType="DECIMAL" property="reliableStatementMark" />
+    <result column="CHIEF_COMPLAINTS" jdbcType="VARCHAR" property="chiefComplaints" />
+    <result column="CURRENT_DISEASE" jdbcType="VARCHAR" property="currentDisease" />
+    <result column="IN_CONDITION_DESE" jdbcType="VARCHAR" property="inConditionDese" />
+    <result column="SYMPTOM_NAME" jdbcType="VARCHAR" property="symptomName" />
+    <result column="SYMPTOM_DESC" jdbcType="VARCHAR" property="symptomDesc" />
+    <result column="TCM_OBSERVE" jdbcType="VARCHAR" property="tcmObserve" />
+    <result column="THERAPEUTIC_PRINCIPLES" jdbcType="VARCHAR" property="therapeuticPrinciples" />
+    <result column="TREAT_RESCUE_COURSE" jdbcType="VARCHAR" property="treatRescueCourse" />
+    <result column="IN_DIAGOSIS_CODE" jdbcType="VARCHAR" property="inDiagosisCode" />
+    <result column="IN_DIAGOSIS_NAME" jdbcType="VARCHAR" property="inDiagosisName" />
+    <result column="TCM_IN_DIAGOSIS_CODE" jdbcType="VARCHAR" property="tcmInDiagosisCode" />
+    <result column="TMC_IN_DIAGOSIS_NAME" jdbcType="VARCHAR" property="tmcInDiagosisName" />
+    <result column="OUT_CONDITION" jdbcType="VARCHAR" property="outCondition" />
+    <result column="OUT_DIAGOSIS_CODE" jdbcType="VARCHAR" property="outDiagosisCode" />
+    <result column="OUT_DIAGOSIS_NAME" jdbcType="VARCHAR" property="outDiagosisName" />
+    <result column="TCM_OUT_DIAGOSIS_CODE" jdbcType="VARCHAR" property="tcmOutDiagosisCode" />
+    <result column="TMC_OUT_DIAGOSIS_NAME" jdbcType="VARCHAR" property="tmcOutDiagosisName" />
+    <result column="OUT_ORDER" jdbcType="VARCHAR" property="outOrder" />
+    <result column="ORDER_DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="orderDoctorSignature" />
+    <result column="ORDER_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="orderSignatureDate" />
+    <result column="ACCEPT_PHYSICIAN_ID" jdbcType="VARCHAR" property="acceptPhysicianId" />
+    <result column="ACCEPT_PHYSICIAN_NAME" jdbcType="VARCHAR" property="acceptPhysicianName" />
+    <result column="ACCEPT_PHYSICIAN_DATE" jdbcType="TIMESTAMP" property="acceptPhysicianDate" />
+    <result column="RESIDENT_DOCTOR_ID" jdbcType="VARCHAR" property="residentDoctorId" />
+    <result column="RESIDENT_DOCTOR_NAME" jdbcType="VARCHAR" property="residentDoctorName" />
+    <result column="RESIDENT_DOCTOR_DATE" jdbcType="TIMESTAMP" property="residentDoctorDate" />
+    <result column="IN_CHARGE_DOCTOR_ID" jdbcType="VARCHAR" property="inChargeDoctorId" />
+    <result column="IN_CHARGE_DOCTOR_NAME" jdbcType="VARCHAR" property="inChargeDoctorName" />
+    <result column="IN_CHARGE_DOCTOR_DATE" jdbcType="TIMESTAMP" property="inChargeDoctorDate" />
+    <result column="CHIEF_DOCTOR_ID" jdbcType="VARCHAR" property="chiefDoctorId" />
+    <result column="CHIEF_DOCTOR_NAME" jdbcType="VARCHAR" property="chiefDoctorName" />
+    <result column="CHIEF_DOCTOR_DATE" jdbcType="TIMESTAMP" property="chiefDoctorDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="BED_NO" jdbcType="VARCHAR" property="bedNo" />
+    <result column="INHOS_NO" jdbcType="VARCHAR" property="inhosNo" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="AGE" jdbcType="VARCHAR" property="age" />
+    <result column="MARRIAGE" jdbcType="VARCHAR" property="marriage" />
+    <result column="ETHNIC_NAME" jdbcType="VARCHAR" property="ethnicName" />
+    <result column="BIRTHPLACE" jdbcType="VARCHAR" property="birthplace" />
+    <result column="WORK" jdbcType="VARCHAR" property="work" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="EMR_CONTENT_TEXT" jdbcType="VARCHAR" property="emrContentText" />
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+  </resultMap>
+</mapper>

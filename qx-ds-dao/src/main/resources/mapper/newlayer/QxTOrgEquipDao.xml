@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOrgEquipDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOrgEquip">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="EQUIP_NUMBER" jdbcType="VARCHAR" property="equipNumber" />
+    <result column="DOCUMENT_NO" jdbcType="VARCHAR" property="documentNo" />
+    <result column="CONTRACT_NO" jdbcType="VARCHAR" property="contractNo" />
+    <result column="EQUIP_CODE" jdbcType="VARCHAR" property="equipCode" />
+    <result column="EQUIP_SPEC" jdbcType="VARCHAR" property="equipSpec" />
+    <result column="EQUIP_MODEL" jdbcType="VARCHAR" property="equipModel" />
+    <result column="EQUIP_UNIT" jdbcType="VARCHAR" property="equipUnit" />
+    <result column="FIRM_ID" jdbcType="VARCHAR" property="firmId" />
+    <result column="EQUIP_TYPE" jdbcType="VARCHAR" property="equipType" />
+    <result column="INITIAL_VALUE" jdbcType="VARCHAR" property="initialValue" />
+    <result column="FUND_SOURCE" jdbcType="VARCHAR" property="fundSource" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_CODE_DEPR" jdbcType="VARCHAR" property="deptCodeDepr" />
+    <result column="PRODUCE_DATE" jdbcType="TIMESTAMP" property="produceDate" />
+    <result column="START_USE_DATE" jdbcType="TIMESTAMP" property="startUseDate" />
+    <result column="USE_YEARS_LIMITED" jdbcType="VARCHAR" property="useYearsLimited" />
+    <result column="USE_LIMITED_UNIT" jdbcType="VARCHAR" property="useLimitedUnit" />
+    <result column="QUALITY_GRAND" jdbcType="VARCHAR" property="qualityGrand" />
+    <result column="DEPR_MEAN" jdbcType="VARCHAR" property="deprMean" />
+    <result column="DEPR_PER_YEAR" jdbcType="VARCHAR" property="deprPerYear" />
+    <result column="DEPR_SUM" jdbcType="VARCHAR" property="deprSum" />
+    <result column="REPAIR_INDICATOR" jdbcType="VARCHAR" property="repairIndicator" />
+    <result column="USE_STATUS" jdbcType="VARCHAR" property="useStatus" />
+    <result column="CREA_DOCU_DATE" jdbcType="TIMESTAMP" property="creaDocuDate" />
+    <result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+    <result column="REMAINED_VALUE" jdbcType="VARCHAR" property="remainedValue" />
+    <result column="KEEPER" jdbcType="VARCHAR" property="keeper" />
+    <result column="FIXING_FEE" jdbcType="VARCHAR" property="fixingFee" />
+    <result column="CURRENCY" jdbcType="VARCHAR" property="currency" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, ORG_ID, EQUIP_NUMBER, DOCUMENT_NO, CONTRACT_NO, EQUIP_CODE, EQUIP_SPEC, EQUIP_MODEL, 
+    EQUIP_UNIT, FIRM_ID, EQUIP_TYPE, INITIAL_VALUE, FUND_SOURCE, DEPT_CODE, DEPT_CODE_DEPR, 
+    PRODUCE_DATE, START_USE_DATE, USE_YEARS_LIMITED, USE_LIMITED_UNIT, QUALITY_GRAND, 
+    DEPR_MEAN, DEPR_PER_YEAR, DEPR_SUM, REPAIR_INDICATOR, USE_STATUS, CREA_DOCU_DATE, 
+    "OPERATOR", REMAINED_VALUE, KEEPER, FIXING_FEE, CURRENCY, EFFECTIVE, SYSUP_TIME,
+    SYSCR_TIME
+  </sql>
+</mapper>

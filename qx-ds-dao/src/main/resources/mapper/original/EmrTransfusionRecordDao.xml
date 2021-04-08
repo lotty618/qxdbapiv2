@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.EmrTransfusionRecordDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrTransfusionRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="TRANSFUSION_ID" jdbcType="VARCHAR" property="transfusionId" />
+    <result column="CASE_NO" jdbcType="VARCHAR" property="caseNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_CN" jdbcType="VARCHAR" property="sexCn" />
+    <result column="AGE_YEAR" jdbcType="VARCHAR" property="ageYear" />
+    <result column="ABO_CODE" jdbcType="VARCHAR" property="aboCode" />
+    <result column="ABO_CN" jdbcType="VARCHAR" property="aboCn" />
+    <result column="RH_CODE" jdbcType="VARCHAR" property="rhCode" />
+    <result column="RH_CN" jdbcType="VARCHAR" property="rhCn" />
+    <result column="TRANSFUSE_HISTORY_CODE" jdbcType="VARCHAR" property="transfuseHistoryCode" />
+    <result column="TRANSFUSE_HISTORY_CN" jdbcType="VARCHAR" property="transfuseHistoryCn" />
+    <result column="DISEASE_DIAGNOSIS" jdbcType="VARCHAR" property="diseaseDiagnosis" />
+    <result column="DISEASE_DIAGNOSIS_NAME" jdbcType="VARCHAR" property="diseaseDiagnosisName" />
+    <result column="DIAGNOSIS_DATE" jdbcType="TIMESTAMP" property="diagnosisDate" />
+    <result column="TRANS_KIND_CODE" jdbcType="VARCHAR" property="transKindCode" />
+    <result column="TRANS_KIND_CN" jdbcType="VARCHAR" property="transKindCn" />
+    <result column="APPLY_ABO_BLOOD_CODE" jdbcType="VARCHAR" property="applyAboBloodCode" />
+    <result column="APPLY_ABO_BLOOD_CN" jdbcType="VARCHAR" property="applyAboBloodCn" />
+    <result column="APPLY_RH_BLOOD_CODE" jdbcType="VARCHAR" property="applyRhBloodCode" />
+    <result column="APPLY_RH_BLOOD_CN" jdbcType="VARCHAR" property="applyRhBloodCn" />
+    <result column="TRANSFUSION_INDICATION" jdbcType="VARCHAR" property="transfusionIndication" />
+    <result column="TRANSFUSION_PROCESS_DESC" jdbcType="VARCHAR" property="transfusionProcessDesc" />
+    <result column="TRANSFUSION_CODE" jdbcType="VARCHAR" property="transfusionCode" />
+    <result column="TRANSFUSION_CN" jdbcType="VARCHAR" property="transfusionCn" />
+    <result column="BAGS_CODING" jdbcType="VARCHAR" property="bagsCoding" />
+    <result column="BLOOD" jdbcType="DECIMAL" property="blood" />
+    <result column="TRANSFUSION_UNIT" jdbcType="VARCHAR" property="transfusionUnit" />
+    <result column="TRANSFUSION_REACTION_MARK" jdbcType="VARCHAR" property="transfusionReactionMark" />
+    <result column="TRANSFUSION_REACTION_TYPE" jdbcType="VARCHAR" property="transfusionReactionType" />
+    <result column="TRANSFUSION_REACTION_NAME" jdbcType="VARCHAR" property="transfusionReactionName" />
+    <result column="TRANSFUSION_COUNT" jdbcType="DECIMAL" property="transfusionCount" />
+    <result column="BLOOD_TRANSF_DATE" jdbcType="TIMESTAMP" property="bloodTransfDate" />
+    <result column="BLOOD_TRANSF_CAUSE" jdbcType="VARCHAR" property="bloodTransfCause" />
+    <result column="DOCTOR_SIGNATURE" jdbcType="VARCHAR" property="doctorSignature" />
+    <result column="DOCTOR_SIGNATURE_DATE" jdbcType="TIMESTAMP" property="doctorSignatureDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="TEMPLATE_TYPE" jdbcType="VARCHAR" property="templateType" />
+    <result column="TEMPLATE_TYPE_CN" jdbcType="VARCHAR" property="templateTypeCn" />
+    <result column="EMR_TITLE" jdbcType="VARCHAR" property="emrTitle" />
+    <result column="EMR_TEMPLATE_CODE" jdbcType="VARCHAR" property="emrTemplateCode" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.EmrTransfusionRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="EMR_CONTENT" jdbcType="BLOB" property="emrContent" />
+    <result column="EMR_CONTENT_CLOB" jdbcType="CLOB" property="emrContentClob" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, TRANSFUSION_ID, CASE_NO, "NAME", SEX_CODE,
+    SEX_CN, AGE_YEAR, ABO_CODE, ABO_CN, RH_CODE, RH_CN, TRANSFUSE_HISTORY_CODE, TRANSFUSE_HISTORY_CN, 
+    DISEASE_DIAGNOSIS, DISEASE_DIAGNOSIS_NAME, DIAGNOSIS_DATE, TRANS_KIND_CODE, TRANS_KIND_CN, 
+    APPLY_ABO_BLOOD_CODE, APPLY_ABO_BLOOD_CN, APPLY_RH_BLOOD_CODE, APPLY_RH_BLOOD_CN, 
+    TRANSFUSION_INDICATION, TRANSFUSION_PROCESS_DESC, TRANSFUSION_CODE, TRANSFUSION_CN, 
+    BAGS_CODING, BLOOD, TRANSFUSION_UNIT, TRANSFUSION_REACTION_MARK, TRANSFUSION_REACTION_TYPE, 
+    TRANSFUSION_REACTION_NAME, TRANSFUSION_COUNT, BLOOD_TRANSF_DATE, BLOOD_TRANSF_CAUSE, 
+    DOCTOR_SIGNATURE, DOCTOR_SIGNATURE_DATE, NOTES, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, SYSUP_TIME, SYSCR_TIME, EFFECTIVE, 
+    TEMPLATE_TYPE, TEMPLATE_TYPE_CN, EMR_TITLE, EMR_TEMPLATE_CODE
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMR_CONTENT, EMR_CONTENT_CLOB
+  </sql>
+</mapper>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTDoctoradviceDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTDoctoradvice">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SID" jdbcType="DECIMAL" property="sid" />
+    <result column="DAUID" jdbcType="VARCHAR" property="dauid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="FIRST" jdbcType="DECIMAL" property="first" />
+    <result column="LAST" jdbcType="DECIMAL" property="last" />
+    <result column="MEDUID" jdbcType="VARCHAR" property="meduid" />
+    <result column="MED_NAME" jdbcType="VARCHAR" property="medName" />
+    <result column="ORDER_TYPE_CODE" jdbcType="VARCHAR" property="orderTypeCode" />
+    <result column="ORDER_TYPE_NAME" jdbcType="VARCHAR" property="orderTypeName" />
+    <result column="ORDER_DATE" jdbcType="TIMESTAMP" property="orderDate" />
+    <result column="ORDER_DOCTOR_NAME" jdbcType="VARCHAR" property="orderDoctorName" />
+    <result column="CHECK_NURSE_NAME" jdbcType="VARCHAR" property="checkNurseName" />
+    <result column="ORDER_STOP_DATE" jdbcType="TIMESTAMP" property="orderStopDate" />
+    <result column="ORDER_STOP_DOCTOR_NAME" jdbcType="VARCHAR" property="orderStopDoctorName" />
+    <result column="ORDER_STOP_NURSE_NAME" jdbcType="VARCHAR" property="orderStopNurseName" />
+    <result column="ORDER_STANDARD_CODE" jdbcType="VARCHAR" property="orderStandardCode" />
+    <result column="ORDER_STANDARD_CN" jdbcType="VARCHAR" property="orderStandardCn" />
+    <result column="ORDER_LOCAL_CODE" jdbcType="VARCHAR" property="orderLocalCode" />
+    <result column="ORDER_LOCAL_CN" jdbcType="VARCHAR" property="orderLocalCn" />
+    <result column="ORDER_FREQ_CODE" jdbcType="VARCHAR" property="orderFreqCode" />
+    <result column="ORDER_FREQ_CN" jdbcType="VARCHAR" property="orderFreqCn" />
+    <result column="ORDER_FORM_NO" jdbcType="VARCHAR" property="orderFormNo" />
+    <result column="ORDER_ITEM_NO" jdbcType="VARCHAR" property="orderItemNo" />
+    <result column="SUBJECT_CLASS_CODE" jdbcType="VARCHAR" property="subjectClassCode" />
+    <result column="SUBJECT_CLASS_CN" jdbcType="VARCHAR" property="subjectClassCn" />
+    <result column="PLAN_START_DATE" jdbcType="TIMESTAMP" property="planStartDate" />
+    <result column="PLAN_END_DATE" jdbcType="TIMESTAMP" property="planEndDate" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_CN" jdbcType="VARCHAR" property="applyDeptCn" />
+    <result column="APPLY_DEPT_UID" jdbcType="VARCHAR" property="applyDeptUid" />
+    <result column="AUDITOR_SIGNATURE" jdbcType="VARCHAR" property="auditorSignature" />
+    <result column="AUDIT_DATE" jdbcType="TIMESTAMP" property="auditDate" />
+    <result column="CHECK_DATE" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="PERFORMER_SIGNATURE" jdbcType="VARCHAR" property="performerSignature" />
+    <result column="PERFORMER_DATE" jdbcType="TIMESTAMP" property="performerDate" />
+    <result column="PERFORMER_DEPT_CODE" jdbcType="VARCHAR" property="performerDeptCode" />
+    <result column="PERFORMER_DEPT_CN" jdbcType="VARCHAR" property="performerDeptCn" />
+    <result column="PERFORMER_DEPT_UID" jdbcType="VARCHAR" property="performerDeptUid" />
+    <result column="PERFORMER_STATUS_CODE" jdbcType="VARCHAR" property="performerStatusCode" />
+    <result column="PERFORMER_STATUS_CN" jdbcType="VARCHAR" property="performerStatusCn" />
+    <result column="CANCEL_DATE" jdbcType="TIMESTAMP" property="cancelDate" />
+    <result column="CANCEL_OPERATOR_SIGNATURE" jdbcType="VARCHAR" property="cancelOperatorSignature" />
+    <result column="ORDER_DOSE" jdbcType="VARCHAR" property="orderDose" />
+    <result column="ORDER_DOSE_UNIT" jdbcType="VARCHAR" property="orderDoseUnit" />
+    <result column="ORDER_QUANTITY" jdbcType="VARCHAR" property="orderQuantity" />
+    <result column="ORDER_QUANTITY_UNIT" jdbcType="VARCHAR" property="orderQuantityUnit" />
+    <result column="ORDER_SPEC" jdbcType="VARCHAR" property="orderSpec" />
+    <result column="ORDER_ROUTE" jdbcType="VARCHAR" property="orderRoute" />
+    <result column="ORDER_USING_DAYS" jdbcType="VARCHAR" property="orderUsingDays" />
+    <result column="DDD_VALUE" jdbcType="VARCHAR" property="dddValue" />
+    <result column="ITEM_PRICE" jdbcType="VARCHAR" property="itemPrice" />
+    <result column="ANT_PURPOSE" jdbcType="VARCHAR" property="antPurpose" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="IS_REVIEWS" jdbcType="DECIMAL" property="isReviews" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORDER_STATUS_CODE" jdbcType="VARCHAR" property="orderStatusCode" />
+    <result column="ORDER_STATUS_NAME" jdbcType="VARCHAR" property="orderStatusName" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+  </resultMap>
+</mapper>

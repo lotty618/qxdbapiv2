@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTMedicalRecordPageacDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTMedicalRecordPageac">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="MRPUID" jdbcType="VARCHAR" property="mrpuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="SAME_DISEASE" jdbcType="VARCHAR" property="sameDisease" />
+    <result column="OPERATING_ROOM" jdbcType="VARCHAR" property="operatingRoom" />
+    <result column="SURGICAL_NAME" jdbcType="VARCHAR" property="surgicalName" />
+    <result column="HOSPITAL_INFECT" jdbcType="VARCHAR" property="hospitalInfect" />
+    <result column="INFECTION_NAME" jdbcType="VARCHAR" property="infectionName" />
+    <result column="INCISION_INFECTION" jdbcType="VARCHAR" property="incisionInfection" />
+    <result column="PERIOPERATIVE_DEATH" jdbcType="VARCHAR" property="perioperativeDeath" />
+    <result column="SURGICAL_COMPLICATIONS" jdbcType="VARCHAR" property="surgicalComplications" />
+    <result column="TRANSFUSION_REACTION_MARK" jdbcType="VARCHAR" property="transfusionReactionMark" />
+    <result column="CT_COMPLIANCE_MARK" jdbcType="VARCHAR" property="ctComplianceMark" />
+    <result column="MR_COMPLIANCE_MARK" jdbcType="VARCHAR" property="mrComplianceMark" />
+    <result column="X_COMPLIANCE_MARK" jdbcType="VARCHAR" property="xComplianceMark" />
+    <result column="CS_COMPLIANCE_MARK" jdbcType="VARCHAR" property="csComplianceMark" />
+    <result column="DAIG_COMPLIANCE" jdbcType="VARCHAR" property="daigCompliance" />
+    <result column="ANTI_DRUGS_MARK" jdbcType="VARCHAR" property="antiDrugsMark" />
+    <result column="DRUG_COMBINATION_MARK" jdbcType="VARCHAR" property="drugCombinationMark" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, MRPUID, IHUID, PUID, ORGUID, SAME_DISEASE, OPERATING_ROOM, SURGICAL_NAME, HOSPITAL_INFECT, 
+    INFECTION_NAME, INCISION_INFECTION, PERIOPERATIVE_DEATH, SURGICAL_COMPLICATIONS, 
+    TRANSFUSION_REACTION_MARK, CT_COMPLIANCE_MARK, MR_COMPLIANCE_MARK, X_COMPLIANCE_MARK, 
+    CS_COMPLIANCE_MARK, DAIG_COMPLIANCE, ANTI_DRUGS_MARK, DRUG_COMBINATION_MARK, IS_INVALID, 
+    IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

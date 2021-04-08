@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTOutpatientHistoryDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTOutpatientHistory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="OPHUID" jdbcType="VARCHAR" property="ophuid" />
+    <result column="OPRUID" jdbcType="VARCHAR" property="opruid" />
+    <result column="PNUID" jdbcType="VARCHAR" property="pnuid" />
+    <result column="DUID" jdbcType="VARCHAR" property="duid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="OUTPAT_TYPE_CODE" jdbcType="VARCHAR" property="outpatTypeCode" />
+    <result column="DEPT_CODE" jdbcType="VARCHAR" property="deptCode" />
+    <result column="DEPT_NAME" jdbcType="VARCHAR" property="deptName" />
+    <result column="DOCTOR_NAME" jdbcType="VARCHAR" property="doctorName" />
+    <result column="DOCTOR_CODE" jdbcType="VARCHAR" property="doctorCode" />
+    <result column="DOCTOR_TITLE_CODE" jdbcType="VARCHAR" property="doctorTitleCode" />
+    <result column="HEALTH_SERVICE_DEMAND" jdbcType="VARCHAR" property="healthServiceDemand" />
+    <result column="SBP" jdbcType="DECIMAL" property="sbp" />
+    <result column="DBP" jdbcType="DECIMAL" property="dbp" />
+    <result column="SEC_TYPE_CODE" jdbcType="VARCHAR" property="secTypeCode" />
+    <result column="SEC_NO" jdbcType="VARCHAR" property="secNo" />
+    <result column="NATIONALITY" jdbcType="VARCHAR" property="nationality" />
+    <result column="IS_LOCAL" jdbcType="DECIMAL" property="isLocal" />
+    <result column="OCCURRED_TIME" jdbcType="TIMESTAMP" property="occurredTime" />
+    <result column="QID" jdbcType="VARCHAR" property="qid" />
+    <result column="STATUS_CODE" jdbcType="DECIMAL" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATE_NAME" jdbcType="VARCHAR" property="createName" />
+    <result column="INPUT_TIME" jdbcType="TIMESTAMP" property="inputTime" />
+    <result column="UPDATE_NAME" jdbcType="VARCHAR" property="updateName" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="IS_SPECIAL" jdbcType="DECIMAL" property="isSpecial" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="HEALTH_PROBLEM_EVAL" jdbcType="VARCHAR" property="healthProblemEval" />
+    <result column="TREATMENT_PLAN" jdbcType="VARCHAR" property="treatmentPlan" />
+    <result column="OTHER_MEDICAL_TREATMENT" jdbcType="VARCHAR" property="otherMedicalTreatment" />
+    <result column="CONSULT_QUESTION" jdbcType="VARCHAR" property="consultQuestion" />
+    <result column="OUTPAT_FORM_NO" jdbcType="VARCHAR" property="outpatFormNo" />
+    <result column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, OPHUID, OPRUID, PNUID, DUID, ORGUID, OUTPAT_TYPE_CODE, DEPT_CODE, DEPT_NAME, 
+    DOCTOR_NAME, DOCTOR_CODE, DOCTOR_TITLE_CODE, HEALTH_SERVICE_DEMAND, SBP, DBP, SEC_TYPE_CODE, 
+    SEC_NO, NATIONALITY, IS_LOCAL, OCCURRED_TIME, QID, STATUS_CODE, STATUS_CN, CANCEL_TIME, 
+    CREATE_NAME, INPUT_TIME, UPDATE_NAME, MODIFIED_TIME, IS_INVALID, IS_DEL, CREATE_TIME, 
+    UPDATE_TIME, IS_SPECIAL, ORG_ID, HEALTH_PROBLEM_EVAL, TREATMENT_PLAN, OTHER_MEDICAL_TREATMENT, 
+    CONSULT_QUESTION, OUTPAT_FORM_NO, PATIENT_ID, PUID
+  </sql>
+</mapper>

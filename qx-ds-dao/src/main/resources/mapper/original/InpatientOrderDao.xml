@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientOrderDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <id column="ORDER_TYPE_CODE" jdbcType="VARCHAR" property="orderTypeCode" />
+    <result column="ORDER_TYPE_NAME" jdbcType="VARCHAR" property="orderTypeName" />
+    <result column="ORDER_DATE" jdbcType="TIMESTAMP" property="orderDate" />
+    <result column="ORDER_DOCTOR_NAME" jdbcType="VARCHAR" property="orderDoctorName" />
+    <result column="CHECK_NURSE_NAME" jdbcType="VARCHAR" property="checkNurseName" />
+    <result column="ORDER_STOP_DATE" jdbcType="TIMESTAMP" property="orderStopDate" />
+    <result column="ORDER_STOP_DOCTOR_NAME" jdbcType="VARCHAR" property="orderStopDoctorName" />
+    <result column="ORDER_STOP_NURSE_NAME" jdbcType="VARCHAR" property="orderStopNurseName" />
+    <result column="ORDER_STANDARD_CODE" jdbcType="VARCHAR" property="orderStandardCode" />
+    <result column="ORDER_STANDARD_CN" jdbcType="VARCHAR" property="orderStandardCn" />
+    <result column="ORDER_LOCAL_CODE" jdbcType="VARCHAR" property="orderLocalCode" />
+    <result column="ORDER_LOCAL_CN" jdbcType="VARCHAR" property="orderLocalCn" />
+    <result column="ORDER_FREQ_CODE" jdbcType="VARCHAR" property="orderFreqCode" />
+    <result column="ORDER_FREQ_CN" jdbcType="VARCHAR" property="orderFreqCn" />
+    <result column="ORDER_FORM_NO" jdbcType="VARCHAR" property="orderFormNo" />
+    <result column="ORDER_ITEM_NO" jdbcType="VARCHAR" property="orderItemNo" />
+    <result column="SUBJECT_CLASS_CODE" jdbcType="VARCHAR" property="subjectClassCode" />
+    <result column="SUBJECT_CLASS_CN" jdbcType="VARCHAR" property="subjectClassCn" />
+    <result column="PLAN_START_DATE" jdbcType="TIMESTAMP" property="planStartDate" />
+    <result column="PLAN_END_DATE" jdbcType="TIMESTAMP" property="planEndDate" />
+    <result column="NOTES" jdbcType="VARCHAR" property="notes" />
+    <result column="APPLY_DEPT_CODE" jdbcType="VARCHAR" property="applyDeptCode" />
+    <result column="APPLY_DEPT_CN" jdbcType="VARCHAR" property="applyDeptCn" />
+    <result column="AUDITOR_SIGNATURE" jdbcType="VARCHAR" property="auditorSignature" />
+    <result column="AUDIT_DATE" jdbcType="TIMESTAMP" property="auditDate" />
+    <result column="CHECK_DATE" jdbcType="TIMESTAMP" property="checkDate" />
+    <result column="PERFORMER_SIGNATURE" jdbcType="VARCHAR" property="performerSignature" />
+    <result column="PERFORMER_DATE" jdbcType="TIMESTAMP" property="performerDate" />
+    <result column="PERFORMER_DEPT_CODE" jdbcType="VARCHAR" property="performerDeptCode" />
+    <result column="PERFORMER_DEPT_CN" jdbcType="VARCHAR" property="performerDeptCn" />
+    <result column="PERFORMER_STATUS_CODE" jdbcType="VARCHAR" property="performerStatusCode" />
+    <result column="PERFORMER_STATUS_CN" jdbcType="VARCHAR" property="performerStatusCn" />
+    <result column="CANCEL_DATE" jdbcType="TIMESTAMP" property="cancelDate" />
+    <result column="CANCEL_OPERATOR_SIGNATURE" jdbcType="VARCHAR" property="cancelOperatorSignature" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+    <result column="ORDER_DOSE" jdbcType="DECIMAL" property="orderDose" />
+    <result column="ORDER_DOSE_UNIT" jdbcType="VARCHAR" property="orderDoseUnit" />
+    <result column="ORDER_QUANTITY" jdbcType="DECIMAL" property="orderQuantity" />
+    <result column="ORDER_QUANTITY_UNIT" jdbcType="VARCHAR" property="orderQuantityUnit" />
+    <result column="ORDER_FIRST_QUANTITY" jdbcType="DECIMAL" property="orderFirstQuantity" />
+    <result column="ORDER_LAST_QUANTITY" jdbcType="DECIMAL" property="orderLastQuantity" />
+    <result column="ORDER_SPEC" jdbcType="VARCHAR" property="orderSpec" />
+    <result column="ORDER_ROUTE" jdbcType="VARCHAR" property="orderRoute" />
+    <result column="ORDER_USING_DAYS" jdbcType="VARCHAR" property="orderUsingDays" />
+    <result column="ITEM_PRICE" jdbcType="VARCHAR" property="itemPrice" />
+    <result column="ORDER_ROUTE_CODE" jdbcType="VARCHAR" property="orderRouteCode" />
+    <result column="ANT_PURPOSE" jdbcType="VARCHAR" property="antPurpose" />
+    <result column="ORDER_STATUS_CODE" jdbcType="VARCHAR" property="orderStatusCode" />
+    <result column="ORDER_STATUS_NAME" jdbcType="VARCHAR" property="orderStatusName" />
+    <result column="PERFORMER_COUNT" jdbcType="VARCHAR" property="performerCount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, ORDER_ID, ORDER_TYPE_CODE, ORDER_TYPE_NAME, 
+    ORDER_DATE, ORDER_DOCTOR_NAME, CHECK_NURSE_NAME, ORDER_STOP_DATE, ORDER_STOP_DOCTOR_NAME, 
+    ORDER_STOP_NURSE_NAME, ORDER_STANDARD_CODE, ORDER_STANDARD_CN, ORDER_LOCAL_CODE, 
+    ORDER_LOCAL_CN, ORDER_FREQ_CODE, ORDER_FREQ_CN, ORDER_FORM_NO, ORDER_ITEM_NO, SUBJECT_CLASS_CODE, 
+    SUBJECT_CLASS_CN, PLAN_START_DATE, PLAN_END_DATE, NOTES, APPLY_DEPT_CODE, APPLY_DEPT_CN, 
+    AUDITOR_SIGNATURE, AUDIT_DATE, CHECK_DATE, PERFORMER_SIGNATURE, PERFORMER_DATE, PERFORMER_DEPT_CODE, 
+    PERFORMER_DEPT_CN, PERFORMER_STATUS_CODE, PERFORMER_STATUS_CN, CANCEL_DATE, CANCEL_OPERATOR_SIGNATURE, 
+    STATUS_CODE, STATUS_CN, CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, 
+    EFFECTIVE, SYSUP_TIME, SYSCR_TIME, ORDER_DOSE, ORDER_DOSE_UNIT, ORDER_QUANTITY, ORDER_QUANTITY_UNIT, 
+    ORDER_FIRST_QUANTITY, ORDER_LAST_QUANTITY, ORDER_SPEC, ORDER_ROUTE, ORDER_USING_DAYS, 
+    ITEM_PRICE, ORDER_ROUTE_CODE, ANT_PURPOSE, ORDER_STATUS_CODE, ORDER_STATUS_NAME, 
+    PERFORMER_COUNT
+  </sql>
+</mapper>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.quanxi.qxdbapiv2</groupId>
+    <artifactId>qx-model</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>qx-model</name>
+    <description>全息新建层实体模块</description>
+
+    <!-- 子模块的parent使用顶层的父模块-->
+    <parent>
+        <groupId>com.quanxi</groupId>
+        <artifactId>qxdbapiv2</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+    </properties>
+
+    <dependencies>
+        <!-- 依赖qx-common模块 -->
+<!--        <dependency>-->
+<!--            <groupId>com.quanxi.qxdbapiv2</groupId>-->
+<!--            <artifactId>qx-common</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.quanxi</groupId>
+            <artifactId>qx-common</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+
+        <!-- tk.mybatis -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>4.1.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

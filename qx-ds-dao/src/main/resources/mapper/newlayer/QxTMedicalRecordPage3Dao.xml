@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.newlayer.QxTMedicalRecordPage3Dao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxmodel.entity.newlayer.QxTMedicalRecordPage3">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SID" jdbcType="DECIMAL" property="sid" />
+    <id column="MRPUID" jdbcType="VARCHAR" property="mrpuid" />
+    <result column="IHUID" jdbcType="VARCHAR" property="ihuid" />
+    <result column="PUID" jdbcType="VARCHAR" property="puid" />
+    <result column="ORGUID" jdbcType="VARCHAR" property="orguid" />
+    <result column="TUMOUR_STAGES_TYPE" jdbcType="VARCHAR" property="tumourStagesType" />
+    <result column="TUMOUR_LIMITS" jdbcType="VARCHAR" property="tumourLimits" />
+    <result column="TUMOUR_LYMPH" jdbcType="VARCHAR" property="tumourLymph" />
+    <result column="TUMOUR_CHANGE" jdbcType="VARCHAR" property="tumourChange" />
+    <result column="TUMOUR_STAGES" jdbcType="VARCHAR" property="tumourStages" />
+    <result column="RADIO_WAY" jdbcType="VARCHAR" property="radioWay" />
+    <result column="RADIO_DEVICE" jdbcType="VARCHAR" property="radioDevice" />
+    <result column="RADIO_FORM" jdbcType="VARCHAR" property="radioForm" />
+    <result column="PRIMARY_CODE" jdbcType="VARCHAR" property="primaryCode" />
+    <result column="PRIMARY_DOSAGE" jdbcType="VARCHAR" property="primaryDosage" />
+    <result column="PRIMARY_BEGIN" jdbcType="VARCHAR" property="primaryBegin" />
+    <result column="PRIMARY_END" jdbcType="VARCHAR" property="primaryEnd" />
+    <result column="LYMPH_CODE" jdbcType="VARCHAR" property="lymphCode" />
+    <result column="LYMPH_DOSAGE" jdbcType="VARCHAR" property="lymphDosage" />
+    <result column="LYMPH_BEGIN" jdbcType="VARCHAR" property="lymphBegin" />
+    <result column="LYMPH_END" jdbcType="VARCHAR" property="lymphEnd" />
+    <result column="CHANGE_PLACE" jdbcType="VARCHAR" property="changePlace" />
+    <result column="CHANGE_DOSAGE" jdbcType="VARCHAR" property="changeDosage" />
+    <result column="CHANGE_BEGIN" jdbcType="VARCHAR" property="changeBegin" />
+    <result column="CHANGE_END" jdbcType="VARCHAR" property="changeEnd" />
+    <result column="CHEMO_WAY" jdbcType="VARCHAR" property="chemoWay" />
+    <result column="CHEMO_MEANS" jdbcType="VARCHAR" property="chemoMeans" />
+    <result column="IS_INVALID" jdbcType="DECIMAL" property="isInvalid" />
+    <result column="IS_DEL" jdbcType="DECIMAL" property="isDel" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    SID, MRPUID, IHUID, PUID, ORGUID, TUMOUR_STAGES_TYPE, TUMOUR_LIMITS, TUMOUR_LYMPH, 
+    TUMOUR_CHANGE, TUMOUR_STAGES, RADIO_WAY, RADIO_DEVICE, RADIO_FORM, PRIMARY_CODE, 
+    PRIMARY_DOSAGE, PRIMARY_BEGIN, PRIMARY_END, LYMPH_CODE, LYMPH_DOSAGE, LYMPH_BEGIN, 
+    LYMPH_END, CHANGE_PLACE, CHANGE_DOSAGE, CHANGE_BEGIN, CHANGE_END, CHEMO_WAY, CHEMO_MEANS, 
+    IS_INVALID, IS_DEL, CREATE_TIME, UPDATE_TIME
+  </sql>
+</mapper>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.HealthExamStudentDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.HealthExamStudent">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="HEALTH_EXAM_FORM_NO" jdbcType="VARCHAR" property="healthExamFormNo" />
+    <result column="SCHOOL_NAME" jdbcType="VARCHAR" property="schoolName" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="SEX_CODE" jdbcType="VARCHAR" property="sexCode" />
+    <result column="SEX_NAME" jdbcType="VARCHAR" property="sexName" />
+    <result column="BIRTH_DATE" jdbcType="TIMESTAMP" property="birthDate" />
+    <result column="COUNTRY_CODE" jdbcType="VARCHAR" property="countryCode" />
+    <result column="COUNTRY_NAME" jdbcType="VARCHAR" property="countryName" />
+    <result column="NATIONALITY_CODE" jdbcType="VARCHAR" property="nationalityCode" />
+    <result column="NATIONALITY_NAME" jdbcType="VARCHAR" property="nationalityName" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="ID_NO" jdbcType="VARCHAR" property="idNo" />
+    <result column="PAST_DISEASE_CODE" jdbcType="VARCHAR" property="pastDiseaseCode" />
+    <result column="PAST_DISEASE_NAME" jdbcType="VARCHAR" property="pastDiseaseName" />
+    <result column="LOCAL_DISEASE" jdbcType="VARCHAR" property="localDisease" />
+    <result column="FAMILY_DISEASE" jdbcType="VARCHAR" property="familyDisease" />
+    <result column="PRESENT_DISEASE" jdbcType="VARCHAR" property="presentDisease" />
+    <result column="EXAM_DATE" jdbcType="TIMESTAMP" property="examDate" />
+    <result column="HEIGHT" jdbcType="DECIMAL" property="height" />
+    <result column="WEIGHT" jdbcType="DECIMAL" property="weight" />
+    <result column="LUNG_RATE" jdbcType="DECIMAL" property="lungRate" />
+    <result column="HEAD_CODE" jdbcType="VARCHAR" property="headCode" />
+    <result column="HEAD_NAME" jdbcType="VARCHAR" property="headName" />
+    <result column="NICK_CODE" jdbcType="VARCHAR" property="nickCode" />
+    <result column="NICK_NAME" jdbcType="VARCHAR" property="nickName" />
+    <result column="BREAST_CODE" jdbcType="VARCHAR" property="breastCode" />
+    <result column="BREAST_NAME" jdbcType="VARCHAR" property="breastName" />
+    <result column="BACK_BONE_CODE" jdbcType="VARCHAR" property="backBoneCode" />
+    <result column="BACK_BONE_NAME" jdbcType="VARCHAR" property="backBoneName" />
+    <result column="LIMBS_CODE" jdbcType="VARCHAR" property="limbsCode" />
+    <result column="LIMBS_NAME" jdbcType="VARCHAR" property="limbsName" />
+    <result column="SKIN_CODE" jdbcType="VARCHAR" property="skinCode" />
+    <result column="SKIN_NAME" jdbcType="VARCHAR" property="skinName" />
+    <result column="LYMPH_CODE" jdbcType="VARCHAR" property="lymphCode" />
+    <result column="LYMPH_NAME" jdbcType="VARCHAR" property="lymphName" />
+    <result column="THYROID_CODE" jdbcType="VARCHAR" property="thyroidCode" />
+    <result column="THYROID_NAME" jdbcType="VARCHAR" property="thyroidName" />
+    <result column="LEFT_VISION" jdbcType="DECIMAL" property="leftVision" />
+    <result column="RIGHT_VISION" jdbcType="DECIMAL" property="rightVision" />
+    <result column="LEFT_DETECT_CODE" jdbcType="VARCHAR" property="leftDetectCode" />
+    <result column="LEFT_DETECT_NAME" jdbcType="VARCHAR" property="leftDetectName" />
+    <result column="RIGHT_DETECT_CODE" jdbcType="VARCHAR" property="rightDetectCode" />
+    <result column="RIGHT_DETECT_NAME" jdbcType="VARCHAR" property="rightDetectName" />
+    <result column="IS_LEFT_CONJUNCT" jdbcType="VARCHAR" property="isLeftConjunct" />
+    <result column="IS_RIGHT_COUNJUNCT" jdbcType="VARCHAR" property="isRightCounjunct" />
+    <result column="IS_LEFT_TRACHOMA" jdbcType="VARCHAR" property="isLeftTrachoma" />
+    <result column="IS_RIGHT_TRACHOMA" jdbcType="VARCHAR" property="isRightTrachoma" />
+    <result column="MINUS_PRESSURE" jdbcType="DECIMAL" property="minusPressure" />
+    <result column="EXTEND_PRESSURE" jdbcType="DECIMAL" property="extendPressure" />
+    <result column="HEART_CODE" jdbcType="VARCHAR" property="heartCode" />
+    <result column="HEART_NAME" jdbcType="VARCHAR" property="heartName" />
+    <result column="BREATHING_RATE" jdbcType="DECIMAL" property="breathingRate" />
+    <result column="LUNG_CODE" jdbcType="VARCHAR" property="lungCode" />
+    <result column="LUNG_NAME" jdbcType="VARCHAR" property="lungName" />
+    <result column="LIVER_CODE" jdbcType="VARCHAR" property="liverCode" />
+    <result column="LIVER_NAME" jdbcType="VARCHAR" property="liverName" />
+    <result column="SPLEEN_CODE" jdbcType="VARCHAR" property="spleenCode" />
+    <result column="SPLEEN_NAME" jdbcType="VARCHAR" property="spleenName" />
+    <result column="TOOTH_AROUND_CODE" jdbcType="VARCHAR" property="toothAroundCode" />
+    <result column="TOOTH_AROUND_NAME" jdbcType="VARCHAR" property="toothAroundName" />
+    <result column="TONSIL_CODE" jdbcType="VARCHAR" property="tonsilCode" />
+    <result column="TONSIL_NAME" jdbcType="VARCHAR" property="tonsilName" />
+    <result column="TOOTH_NUM" jdbcType="DECIMAL" property="toothNum" />
+    <result column="HEIGHT_DOCTOR_NAME" jdbcType="VARCHAR" property="heightDoctorName" />
+    <result column="WEIGHT_DOCTOR_NAME" jdbcType="VARCHAR" property="weightDoctorName" />
+    <result column="LUNG_RATE_DOCTOR_NAME" jdbcType="VARCHAR" property="lungRateDoctorName" />
+    <result column="HEAD_DOCTOR_NAME" jdbcType="VARCHAR" property="headDoctorName" />
+    <result column="NICK_DOCTOR_NAME" jdbcType="VARCHAR" property="nickDoctorName" />
+    <result column="BREAST_DOCTOR_NAME" jdbcType="VARCHAR" property="breastDoctorName" />
+    <result column="BACK_BONE_DOCTOR_NAME" jdbcType="VARCHAR" property="backBoneDoctorName" />
+    <result column="LIMBS_DOCTOR_NAME" jdbcType="VARCHAR" property="limbsDoctorName" />
+    <result column="SKIN_DOCTOR_NAME" jdbcType="VARCHAR" property="skinDoctorName" />
+    <result column="LYMPH_DOCTOR_NAME" jdbcType="VARCHAR" property="lymphDoctorName" />
+    <result column="THYROIDDOCTOR_NAME" jdbcType="VARCHAR" property="thyroiddoctorName" />
+    <result column="VISION_DOCTOR_NAME" jdbcType="VARCHAR" property="visionDoctorName" />
+    <result column="DETECT_DOCTOR_NAME" jdbcType="VARCHAR" property="detectDoctorName" />
+    <result column="CONJUNCT_DOCTOR_NAME" jdbcType="VARCHAR" property="conjunctDoctorName" />
+    <result column="TRACHOMA_DOCTOR_NAME" jdbcType="VARCHAR" property="trachomaDoctorName" />
+    <result column="PRESSURE_DOCTOR_NAME" jdbcType="VARCHAR" property="pressureDoctorName" />
+    <result column="HEART_DOCTOR_NAME" jdbcType="VARCHAR" property="heartDoctorName" />
+    <result column="BREATHING_RATE_DOCTOR_NAME" jdbcType="VARCHAR" property="breathingRateDoctorName" />
+    <result column="LUNG_DOCTOR_NAME" jdbcType="VARCHAR" property="lungDoctorName" />
+    <result column="LIVER_DOCTOR_NAME" jdbcType="VARCHAR" property="liverDoctorName" />
+    <result column="SPLEEN_DOCTOR_NAME" jdbcType="VARCHAR" property="spleenDoctorName" />
+    <result column="TOOTH_AROUND_DOCTOR_NAME" jdbcType="VARCHAR" property="toothAroundDoctorName" />
+    <result column="TOOTH_DOCTOR_NAME" jdbcType="VARCHAR" property="toothDoctorName" />
+    <result column="TONSIL_DOCTOR_NAME" jdbcType="VARCHAR" property="tonsilDoctorName" />
+    <result column="STATUS_CODE" jdbcType="VARCHAR" property="statusCode" />
+    <result column="STATUS_CN" jdbcType="VARCHAR" property="statusCn" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIED_TIME" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, HEALTH_EXAM_FORM_NO, SCHOOL_NAME, "NAME", SEX_CODE, SEX_NAME,
+    BIRTH_DATE, COUNTRY_CODE, COUNTRY_NAME, NATIONALITY_CODE, NATIONALITY_NAME, ADDRESS, 
+    ID_NO, PAST_DISEASE_CODE, PAST_DISEASE_NAME, LOCAL_DISEASE, FAMILY_DISEASE, PRESENT_DISEASE, 
+    EXAM_DATE, HEIGHT, WEIGHT, LUNG_RATE, HEAD_CODE, HEAD_NAME, NICK_CODE, NICK_NAME, 
+    BREAST_CODE, BREAST_NAME, BACK_BONE_CODE, BACK_BONE_NAME, LIMBS_CODE, LIMBS_NAME, 
+    SKIN_CODE, SKIN_NAME, LYMPH_CODE, LYMPH_NAME, THYROID_CODE, THYROID_NAME, LEFT_VISION, 
+    RIGHT_VISION, LEFT_DETECT_CODE, LEFT_DETECT_NAME, RIGHT_DETECT_CODE, RIGHT_DETECT_NAME, 
+    IS_LEFT_CONJUNCT, IS_RIGHT_COUNJUNCT, IS_LEFT_TRACHOMA, IS_RIGHT_TRACHOMA, MINUS_PRESSURE, 
+    EXTEND_PRESSURE, HEART_CODE, HEART_NAME, BREATHING_RATE, LUNG_CODE, LUNG_NAME, LIVER_CODE, 
+    LIVER_NAME, SPLEEN_CODE, SPLEEN_NAME, TOOTH_AROUND_CODE, TOOTH_AROUND_NAME, TONSIL_CODE, 
+    TONSIL_NAME, TOOTH_NUM, HEIGHT_DOCTOR_NAME, WEIGHT_DOCTOR_NAME, LUNG_RATE_DOCTOR_NAME, 
+    HEAD_DOCTOR_NAME, NICK_DOCTOR_NAME, BREAST_DOCTOR_NAME, BACK_BONE_DOCTOR_NAME, LIMBS_DOCTOR_NAME, 
+    SKIN_DOCTOR_NAME, LYMPH_DOCTOR_NAME, THYROIDDOCTOR_NAME, VISION_DOCTOR_NAME, DETECT_DOCTOR_NAME, 
+    CONJUNCT_DOCTOR_NAME, TRACHOMA_DOCTOR_NAME, PRESSURE_DOCTOR_NAME, HEART_DOCTOR_NAME, 
+    BREATHING_RATE_DOCTOR_NAME, LUNG_DOCTOR_NAME, LIVER_DOCTOR_NAME, SPLEEN_DOCTOR_NAME, 
+    TOOTH_AROUND_DOCTOR_NAME, TOOTH_DOCTOR_NAME, TONSIL_DOCTOR_NAME, STATUS_CODE, STATUS_CN, 
+    CANCEL_TIME, CREATOR, CREATE_TIME, MODIFIER, MODIFIED_TIME, EFFECTIVE, SYSUP_TIME, 
+    SYSCR_TIME
+  </sql>
+</mapper>

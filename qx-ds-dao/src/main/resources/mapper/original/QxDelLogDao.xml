@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.QxDelLogDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.QxDelLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <result column="DEL_TABLE_NAME" jdbcType="VARCHAR" property="delTableName" />
+    <result column="DEL_QID" jdbcType="DECIMAL" property="delQid" />
+    <result column="DEL_TIME" jdbcType="TIMESTAMP" property="delTime" />
+    <result column="COMMENTS" jdbcType="VARCHAR" property="comments" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, DEL_TABLE_NAME, DEL_QID, DEL_TIME, COMMENTS
+  </sql>
+</mapper>

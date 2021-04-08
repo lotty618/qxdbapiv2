@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quanxi.qxdbapiv2.qxdsdao.dao.original.InpatientConsultApplyDao">
+  <resultMap id="BaseResultMap" type="com.quanxi.qxdbapiv2.qxdsdao.entity.original.InpatientConsultApply">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="QID" jdbcType="DECIMAL" property="qid" />
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <id column="INPATIENT_FORM_NO" jdbcType="VARCHAR" property="inpatientFormNo" />
+    <id column="CONSULT_APPLY_NO" jdbcType="VARCHAR" property="consultApplyNo" />
+    <result column="CONSULT_APPLY_DEPT_CODE" jdbcType="VARCHAR" property="consultApplyDeptCode" />
+    <result column="CONSULT_APPLY_DEPT_CN" jdbcType="VARCHAR" property="consultApplyDeptCn" />
+    <result column="CONSULT_APPLY_DOCTOR_CODE" jdbcType="VARCHAR" property="consultApplyDoctorCode" />
+    <result column="CONSULT_APPLY_DOCTOR_NAME" jdbcType="VARCHAR" property="consultApplyDoctorName" />
+    <result column="CONSULT_APPLY_DATE" jdbcType="TIMESTAMP" property="consultApplyDate" />
+    <result column="CONSULT_REASON" jdbcType="VARCHAR" property="consultReason" />
+    <result column="CONSULTATION_TYPE" jdbcType="VARCHAR" property="consultationType" />
+    <result column="CONSULTATION_PURPOSE" jdbcType="VARCHAR" property="consultationPurpose" />
+    <result column="CONSULT_DATE" jdbcType="TIMESTAMP" property="consultDate" />
+    <result column="INVITE_OBJECT" jdbcType="VARCHAR" property="inviteObject" />
+    <result column="INVITE_DEPT" jdbcType="VARCHAR" property="inviteDept" />
+    <result column="INVITE_DOCTOR" jdbcType="VARCHAR" property="inviteDoctor" />
+    <result column="ISURGENT" jdbcType="VARCHAR" property="isurgent" />
+    <result column="ISSEND" jdbcType="VARCHAR" property="issend" />
+    <result column="SEND_TIME" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="ISEND" jdbcType="VARCHAR" property="isend" />
+    <result column="END_TIEM" jdbcType="TIMESTAMP" property="endTiem" />
+    <result column="EMR_ID" jdbcType="VARCHAR" property="emrId" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="EFFECTIVE" jdbcType="VARCHAR" property="effective" />
+    <result column="SYSUP_TIME" jdbcType="TIMESTAMP" property="sysupTime" />
+    <result column="SYSCR_TIME" jdbcType="TIMESTAMP" property="syscrTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    QID, PATIENT_ID, ORG_ID, INPATIENT_FORM_NO, CONSULT_APPLY_NO, CONSULT_APPLY_DEPT_CODE, 
+    CONSULT_APPLY_DEPT_CN, CONSULT_APPLY_DOCTOR_CODE, CONSULT_APPLY_DOCTOR_NAME, CONSULT_APPLY_DATE, 
+    CONSULT_REASON, CONSULTATION_TYPE, CONSULTATION_PURPOSE, CONSULT_DATE, INVITE_OBJECT, 
+    INVITE_DEPT, INVITE_DOCTOR, ISURGENT, ISSEND, SEND_TIME, ISEND, END_TIEM, EMR_ID, 
+    CREATOR, CREATE_TIME, EFFECTIVE, SYSUP_TIME, SYSCR_TIME
+  </sql>
+</mapper>
